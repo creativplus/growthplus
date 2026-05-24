@@ -1,0 +1,1895 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth bg-[#020202]">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Creativ Plus | AI-Powered Client Acquisition Systems</title>
+    <meta name="description" content="AI Powered Client Acquisition Systems for Health & Wellness Coaches globally. Scale your practice with AI Automation.">
+    
+    
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            wine: '#741731', 
+                            deepblue: '#043457',
+                            crimson: '#9C1F42',
+                            cherry: '#4A0E1F',
+                            rose: '#D48A9A',
+                            bg: '#020202',
+                            panel: '#08080a',
+                            border: 'rgba(255,255,255,0.06)'
+                        }
+                    },
+                    animation: {
+                        'shimmer': 'shimmer 3s infinite linear',
+                        'flow': 'flow 2s infinite ease-in-out',
+                        'pulse-slow': 'pulse 8s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 6s ease-in-out infinite',
+                        'scan-down': 'scan-down 3s linear infinite',
+                        'float-emoji': 'float-emoji 4s ease-out infinite',
+                        'blob': 'blob 10s infinite alternate',
+                        'spotlight': 'spotlight 4s ease-in-out infinite alternate',
+                        'aurora': 'aurora 15s linear infinite',
+                        'fade-in-up': 'fadeInUp 1s cubic-bezier(0.16, 1, 0.3, 1) forwards',
+                    },
+                    keyframes: {
+                        fadeInUp: {
+                            '0%': { opacity: '0', transform: 'translateY(20px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' }
+                        },
+                        shimmer: {
+                            '0%': { transform: 'translateX(-100%)' },
+                            '100%': { transform: 'translateX(100%)' }
+                        },
+                        flow: {
+                            '0%': { transform: 'translateX(-4px)', opacity: '0.3' },
+                            '50%': { transform: 'translateX(0)', opacity: '1' },
+                            '100%': { transform: 'translateX(4px)', opacity: '0.3' }
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-8px)' }
+                        },
+                        draw: {
+                            '0%': { strokeDashoffset: '100' },
+                            '100%': { strokeDashoffset: '0' }
+                        },
+                        'scan-down': {
+                            '0%': { top: '-10%', opacity: '0' },
+                            '10%': { opacity: '1' },
+                            '90%': { opacity: '1' },
+                            '100%': { top: '110%', opacity: '0' }
+                        },
+                        'float-emoji': {
+                            '0%': { transform: 'translateY(0) scale(0.8)', opacity: '0' },
+                            '20%': { opacity: '1', transform: 'translateY(-15px) scale(1.1)' },
+                            '80%': { opacity: '1', transform: 'translateY(-60px) scale(1)' },
+                            '100%': { transform: 'translateY(-80px) scale(0.8)', opacity: '0' }
+                        },
+                        blob: {
+                            '0%': { transform: 'translate(0px, 0px) scale(1)' },
+                            '33%': { transform: 'translate(30px, -50px) scale(1.1)' },
+                            '66%': { transform: 'translate(-20px, 20px) scale(0.9)' },
+                            '100%': { transform: 'translate(0px, 0px) scale(1)' }
+                        },
+                        spotlight: {
+                            '0%': { opacity: '0.2', transform: 'scale(1)' },
+                            '100%': { opacity: '0.5', transform: 'scale(1.2)' }
+                        },
+                        aurora: {
+                            '0%, 100%': { transform: 'rotate(0deg) scale(1)' },
+                            '50%': { transform: 'rotate(180deg) scale(1.2)' }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body { 
+            background-color: #020202; 
+            color: #FFFFFF; 
+            overflow-x: hidden; 
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        
+        ::selection { background-color: #741731; color: #ffffff; }
+        
+        .bg-noise {
+            position: fixed; inset: 0; z-index: -1; opacity: 0.035; pointer-events: none;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+        }
+
+        .glass-panel {
+            background: linear-gradient(180deg, rgba(20,20,22,0.4) 0%, rgba(10,10,12,0.6) 100%);
+            backdrop-filter: blur(32px); -webkit-backdrop-filter: blur(32px);
+            box-shadow: inset 0 1px 0 0 rgba(255,255,255,0.08), 0 8px 32px 0 rgba(0,0,0,0.5);
+            border: 1px solid rgba(255,255,255,0.03);
+        }
+
+        .bg-grid {
+            background-image: 
+                linear-gradient(to right, rgba(255,255,255,0.015) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(255,255,255,0.015) 1px, transparent 1px);
+            background-size: 48px 48px;
+            mask-image: radial-gradient(ellipse 80% 50% at 50% 0%, black 40%, transparent 100%);
+            -webkit-mask-image: radial-gradient(ellipse 80% 50% at 50% 0%, black 40%, transparent 100%);
+        }
+
+        /* Premium Animations */
+        @keyframes fadeUpPremium {
+            0% { opacity: 0; transform: translateY(30px) scale(0.95); filter: blur(10px); }
+            100% { opacity: 1; transform: translateY(0) scale(1); filter: blur(0); }
+        }
+        .animate-premium-in { animation: fadeUpPremium 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards; opacity: 0; }
+        .delay-150 { animation-delay: 150ms; } .delay-300 { animation-delay: 300ms; }
+        .delay-450 { animation-delay: 450ms; } .delay-600 { animation-delay: 600ms; }
+
+        /* Seamless Marquee - Perfect Infinite Loop */
+        @keyframes scroll-infinite { 
+            0% { transform: translateX(0); } 
+            100% { transform: translateX(-50%); } 
+        }
+        .marquee-container {
+            display: flex; width: max-content;
+            animation: scroll-infinite 45s linear infinite;
+        }
+        .marquee-container:hover { animation-play-state: paused; }
+
+        .bento-card { transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1); }
+        .bento-card:hover { 
+            transform: translateY(-4px); 
+            background: linear-gradient(180deg, rgba(30,20,25,0.6) 0%, rgba(10,10,12,0.8) 100%);
+            box-shadow: inset 0 1px 0 0 rgba(255,255,255,0.15), 0 20px 40px -10px rgba(116,23,49,0.25); 
+            border-color: rgba(116,23,49,0.2);
+        }
+
+        .btn-brand {
+            background: linear-gradient(135deg, #9C1F42 0%, #741731 100%);
+            color: #FFFFFF; transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+            box-shadow: inset 0 1px 0 rgba(255,255,255,0.3), 0 8px 30px -6px rgba(116, 23, 49, 0.6);
+            position: relative; overflow: hidden;
+        }
+        .btn-brand::before {
+            content: ''; position: absolute; top: 0; left: -100%; width: 100%; height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            transition: left 0.6s ease;
+        }
+        .btn-brand:hover {
+            box-shadow: inset 0 1px 0 rgba(255,255,255,0.4), 0 15px 35px -8px rgba(156, 31, 66, 0.9);
+            transform: translateY(-2px);
+        }
+        .btn-brand:hover::before { left: 100%; }
+
+        .text-gradient-premium { background: linear-gradient(180deg, #FFFFFF 0%, #E2E8F0 50%, #94A3B8 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .text-gradient-wine { background: linear-gradient(135deg, #D48A9A 0%, #9C1F42 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+
+        .glow-orb { position: absolute; border-radius: 50%; filter: blur(120px); z-index: -1; pointer-events: none; mix-blend-screen: screen; will-change: transform, opacity; }
+        .phone-frame { background: #000; border: 6px solid #111111; border-radius: 2.5rem; box-shadow: inset 0 0 0 2px rgba(255,255,255,0.05), inset 0 0 20px rgba(255,255,255,0.02), 0 25px 50px -12px rgba(0,0,0,0.9); transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1); }
+
+        /* Advanced Mobile Menu */
+        #mobile-menu {
+            opacity: 0; visibility: hidden; backdrop-filter: blur(0px); background: rgba(2, 2, 2, 0);
+            transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        #mobile-menu.active { opacity: 1; visibility: visible; backdrop-filter: blur(40px); background: rgba(2, 2, 2, 0.95); }
+        .menu-link { opacity: 0; transform: translateY(20px); transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1); }
+        #mobile-menu.active .menu-link { opacity: 1; transform: translateY(0); }
+        
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+        @keyframes orbit { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+        @keyframes anti-orbit { from { transform: rotate(360deg); } to { transform: rotate(0deg); } }
+        @keyframes radiate-ring { 0% { transform: scale(0.5); opacity: 0.8; border-width: 2px; } 100% { transform: scale(2.5); opacity: 0; border-width: 0px; } }
+        @keyframes funnel-drop { 0% { transform: translateY(-10px) scale(0.8); opacity: 0; } 20% { transform: translateY(15px) scale(1); opacity: 1; } 80% { transform: translateY(85px) scale(1); opacity: 1; } 100% { transform: translateY(105px) scale(0.5); opacity: 0; } }
+        @keyframes ad-float-left { 0%, 100% { transform: translateY(0) rotate(-4deg); } 50% { transform: translateY(-15px) rotate(-1deg); } }
+        @keyframes ad-float-right { 0%, 100% { transform: translateY(0) rotate(4deg); } 50% { transform: translateY(-10px) rotate(6deg); } }
+        @keyframes chart-grow { 0% { stroke-dasharray: 0, 1000; } 100% { stroke-dasharray: 1000, 0; } }
+        .clip-funnel { clip-path: polygon(0 0, 100% 0, 60% 100%, 40% 100%); }
+        @keyframes flow-right { 0% { left: -30%; opacity: 0; } 10% { opacity: 1; } 90% { opacity: 1; } 100% { left: 100%; opacity: 0; } }
+        @keyframes flow-down { 0% { top: -30%; opacity: 0; } 10% { opacity: 1; } 90% { opacity: 1; } 100% { top: 100%; opacity: 0; } }
+
+        .faq-grid { display: grid; grid-template-rows: 0fr; transition: grid-template-rows 0.5s cubic-bezier(0.4, 0, 0.2, 1); }
+        .faq-peer:checked ~ .faq-grid { grid-template-rows: 1fr; }
+        .faq-inner { overflow: hidden; }
+        .faq-text-anim { opacity: 0; transform: translateY(15px); transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1); transition-delay: 0s; }
+        .faq-peer:checked ~ .faq-grid .faq-text-anim { opacity: 1; transform: translateY(0); transition-delay: 0.15s; }
+
+        .digital-grid { background-size: 30px 30px; background-image: linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px), linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px); }
+        .result-scan-line { position: absolute; left: 0; right: 0; height: 2px; background: linear-gradient(to right, transparent, #34d399, transparent); box-shadow: 0 0 20px 2px rgba(52, 211, 153, 0.4); z-index: 20; pointer-events: none; animation: scan-down 3s linear infinite; }
+        .reaction-bubble { position: absolute; right: 24px; bottom: 110px; font-size: 24px; z-index: 30; opacity: 0; animation: float-emoji 4s ease-out infinite; }
+        .r-delay-1 { animation-delay: 0.8s; right: 48px; font-size: 20px; } .r-delay-2 { animation-delay: 1.5s; right: 32px; font-size: 22px; }
+        
+        /* Mobile Touch Support for Orbits (JS triggers this class) */
+        .force-hover-tooltip .opacity-0 {
+            opacity: 1 !important;
+            transform: translateY(-0.25rem) scale(1) !important;
+        }
+        .force-hover-tooltip { border-color: rgba(255,255,255,0.4) !important; }
+    </style>
+</head>
+<body class="antialiased selection:bg-brand-wine/80 selection:text-white">
+
+    <div class="bg-noise"></div>
+    <div class="fixed inset-0 bg-grid z-[-2]"></div>
+    
+    <div class="fixed top-4 md:top-6 w-full z-50 flex justify-center px-4 pointer-events-none animate-premium-in delay-150">
+        <nav id="navbar" class="pointer-events-auto glass-panel rounded-full py-2.5 md:py-3 px-5 md:px-8 w-full max-w-5xl flex justify-between items-center transition-all duration-300 border border-white/5">
+            
+            <a href="/" class="flex items-center group relative w-fit z-50"> 
+                <div class="w-[140px] md:w-[150px] relative z-10 transition-all duration-300 group-hover:opacity-80">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="200 280 680 130" class="w-full h-auto drop-shadow-lg">
+                      <defs><linearGradient id="brand" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" style="stop-color:#9C1F42"/><stop offset="100%" style="stop-color:#4A0E1F"/></linearGradient></defs>
+                      <g fill="url(#brand)"><path d="M329.24,358.88l-22.57,22.61c-7.85,7.86-20.58,7.86-28.44,0.02l-23.01-22.98c-7.86-7.85-7.87-20.58-0.02-28.44l22.98-23.01c7.85-7.86,20.58-7.87,28.44-0.02l22.5,22.47c5.16,5.16,13.53,5.15,18.69-0.01s5.15-13.53-0.01-18.69l-20.6-20.57c-6.42-6.41-16.81-6.4-23.21,0.01c-6.41,6.42-16.79,6.43-23.21,0.02c-3.21-3.2-7.4-4.8-11.6-4.8c-4.2,0-8.39,1.61-11.6,4.82l-19.18,19.21c-6.41,6.42-6.4,16.81,0.01,23.21c3.21,3.2,4.81,7.4,4.82,11.6c0,4.2-1.6,8.4-4.8,11.6c-3.2,3.2-4.8,7.41-4.79,11.61c0,4.2,1.61,8.39,4.82,11.6l19.21,19.18c6.42,6.41,16.8,6.39,23.2-0.02c3.2-3.21,7.4-4.81,11.61-4.81c4.2,0,8.4,1.6,11.6,4.8c3.2,3.2,7.41,4.8,11.6,4.8c4.21-0.01,8.4-1.62,11.61-4.83l20.68-20.7c5.16-5.16,5.15-13.53-0.01-18.69C342.77,353.71,334.4,353.72,329.24,358.88z"/><path d="M375.84,342.88c-5.61-3.07-10.22-7.68-13.29-13.29l-1.4-2.57l-1.4,2.57c-3.07,5.61-7.68,10.22-13.29,13.29l-2.57,1.4l2.57,1.4c5.61,3.07,10.22,7.68,13.29,13.29l1.4,2.57l1.4-2.57c3.07-5.61,7.68-10.22,13.29-13.29l2.57-1.4L375.84,342.88z"/><path d="M294.1,329.59l-1.4-2.57l-1.4,2.57c-3.07,5.61-7.68,10.22-13.29,13.29l-2.57,1.4l2.57,1.4c5.61,3.07,10.22,7.68,13.29,13.29l1.4,2.57l1.4-2.57c3.07-5.61,7.68-10.22,13.29-13.29l2.57-1.4l-2.57-1.4C301.78,339.81,297.17,335.2,294.1,329.59z"/></g>
+                      <g transform="translate(315, -112)" fill="#FFFFFF"><path d="M123.77,485.36c-2.21,2.49-4.86,4.44-7.96,5.83c-3.1,1.39-6.37,2.09-9.79,2.09c-6.67,0-12.38-2.12-17.14-6.35c-5.05-4.52-7.57-10.29-7.57-17.31c0-6.79,2.32-12.63,6.96-17.53c4.64-4.9,10.5-7.35,17.57-7.35c4.12,0,8.18,1.19,12.18,3.57c1.33,0.75,2.93,1.97,4.79,3.65l-6.7,6.44c-1.22-1.28-2.81-2.33-4.79-3.18c-1.97-0.84-4.03-1.26-6.18-1.26c-4.06,0-7.45,1.51-10.18,4.52c-2.73,3.02-4.09,6.61-4.09,10.79c0,4.29,1.45,7.83,4.35,10.62c2.9,2.78,6.38,4.18,10.44,4.18c1.97,0,4.03-0.52,6.18-1.57c2.15-1.04,3.86-2.2,5.13-3.48L123.77,485.36z"/><path d="M155.44,444.64l-1.39,9.4c-4.7,0.7-8.24,2.55-10.61,5.57c-2.61,3.31-3.92,8.18-3.92,14.62v18.18h-9.48v-46.98h9.48v7.4c1.98-2.61,4.4-4.62,7.26-6.05C149.64,445.35,152.52,444.64,155.44,444.64z"/><path d="M205.64,472.92h-32.63v-8h22.97c-0.75-3.02-2.49-5.57-5.22-7.66c-2.73-2.09-5.69-3.13-8.87-3.13c-4.23,0-7.79,1.44-10.66,4.31c-2.87,2.87-4.31,6.48-4.31,10.83c0,4.29,1.45,7.86,4.35,10.7c2.9,2.84,6.44,4.26,10.61,4.26c1.39,0,3.6-0.75,6.61-2.26c0.99-0.46,2.38-1.25,4.18-2.35l6.87,5.92c-2.03,2.38-4.63,4.26-7.79,5.66c-3.16,1.39-6.51,2.09-10.05,2.09c-6.67,0-12.3-2.03-16.88-6.09c-4.99-4.41-7.48-10.27-7.48-17.58c0-6.61,2.44-12.35,7.31-17.23c4.87-4.87,10.56-7.31,17.05-7.31c6.55,0,12.27,2.55,17.14,7.66c4.7,4.93,7.05,10.59,7.05,16.97C205.9,470.8,205.82,471.87,205.64,472.92z"/><path d="M258.71,492.41h-9.57v-3.65c0-2.03,0.49-3.92,1.48-5.66c-1.62,2.26-3.04,3.95-4.26,5.05c-3.83,3.42-8.12,5.13-12.88,5.13c-6.15,0-11.63-2.46-16.44-7.4c-4.81-4.93-7.22-10.58-7.22-16.97c0-6.21,2.39-11.73,7.18-16.57c4.79-4.84,10.16-7.26,16.14-7.26c4.81,0,9.19,1.71,13.14,5.13c1.27,1.1,2.75,2.84,4.44,5.22c-0.87-1.74-1.3-3.68-1.3-5.83v-4.18h9.31V492.41z M249.14,468.74c0-3.83-1.57-7.28-4.7-10.35c-3.13-3.07-6.61-4.61-10.44-4.61c-3.83,0-7.19,1.51-10.09,4.52c-2.9,3.02-4.35,6.53-4.35,10.53c0,4.23,1.39,7.89,4.18,10.96c2.78,3.08,6.09,4.61,9.92,4.61s7.31-1.45,10.44-4.35C247.46,476.98,249.14,473.21,249.14,468.74z"/><path d="M292.3,453.6h-12.79v38.8h-9.57v-38.8h-6.53v-8.18h6.53v-15.66h9.57v15.66h12.79V453.6z"/><path d="M307.78,439.94h-9.57v-10.18h9.57V439.94z M307.78,492.41h-9.57v-46.98h9.57V492.41z"/><path d="M361.89,445.42l-24.52,50.18l-24.54-50.18l10.46-0.01l14.08,30.18l14.08-30.18L361.89,445.42z"/></g>
+                      <g transform="translate(315, -112)" fill="url(#brand)"><path d="M425.41,467.74c0,6.51-2.32,12.29-6.96,17.35c-4.64,5.06-10.15,7.58-16.53,7.58c-3.42,0-6.5-0.69-9.22-2.06c-2.73-1.38-4.99-3.41-6.79-6.1l-1.39-2.11c0.87,1.86,1.31,3.81,1.31,5.85v19.9h-9.48v-62.73h9.48v3.65c0,0.93-0.09,1.8-0.27,2.61c-0.18,0.81-0.5,1.83-0.95,3.04c0.75-1.39,1.45-2.46,2.09-3.22c3.94-4.76,8.96-7.13,15.05-7.13c6.21,0,11.7,2.34,16.49,7.02S425.41,461.52,425.41,467.74z M415.67,467.56c0-3.78-1.38-7.08-4.13-9.9c-2.76-2.82-6.02-4.23-9.79-4.23c-3.89,0-7.34,1.34-10.35,4.01c-3.36,2.97-5.05,6.72-5.05,11.26c0,4.25,1.45,7.76,4.35,10.56c2.9,2.79,6.41,4.19,10.53,4.19c4,0,7.41-1.61,10.22-4.84S415.67,471.69,415.67,467.56z"/><path d="M441.6,492.41h-9.75v-62.64h9.75V492.41z"/><path d="M493.1,492.41h-9.48v-2.31c0-2.01,0.43-3.97,1.3-5.87c-1.16,2.54-3.09,4.66-5.79,6.35s-5.79,2.53-9.27,2.53c-5.57,0-10.24-1.97-14.01-5.92c-4-4.18-6-9.71-6-16.62v-25.14h9.31v23.84c0,4.52,1.1,8.15,3.31,10.88c2.2,2.73,5.02,4.09,8.44,4.09c3.83,0,6.73-0.87,8.7-2.61c2.67-2.38,4-6.47,4-12.27v-23.93h9.48V492.41z"/><path d="M530.69,477.27c0,5.1-1.65,9.11-4.96,12.01c-3.02,2.67-6.82,4-11.4,4c-4.87,0-8.85-1.38-11.92-4.13c-3.08-2.75-4.61-6.48-4.61-11.18h9.22c0,1.91,0.68,3.58,2.04,5c1.36,1.42,3.18,2.13,5.44,2.13c1.86,0,3.42-0.49,4.7-1.48c1.28-0.99,1.91-2.26,1.91-3.83c0.35-2.9-1.33-5.05-5.05-6.44l-3.83-1.31c-5.39-1.86-9.06-3.81-11.01-5.87c-1.94-2.06-2.92-4.74-2.92-8.05c0-3.77,1.64-7.09,4.92-9.96c3.28-2.87,6.86-4.31,10.75-4.31c5.28,0,9.25,1.68,11.92,5.05c1.91,2.44,3.05,5.54,3.39,9.31h-9.74v-0.44c-0.41-1.16-0.75-2-1.04-2.52c-1.04-1.68-2.38-2.52-4-2.52c-1.97,0-3.48,0.49-4.52,1.48c-1.04,0.99-1.57,2.12-1.57,3.39c0.12,1.04,0.51,1.96,1.17,2.74c0.67,0.78,1.84,1.41,3.52,1.87l6.96,2.52C527.15,467.29,530.69,471.47,530.69,477.27z"/></g>
+                    </svg>
+                </div>
+            </a>
+            
+            <div class="hidden md:flex items-center gap-8 text-[13px] font-medium text-zinc-400">
+                <a href="#services" class="hover:text-white transition-colors">Services</a>
+                <a href="#process" class="hover:text-white transition-colors">Process</a>
+                <a href="https://ai.creativplus.in/" class="hover:text-white transition-colors">AI Automation</a>
+                <a href="#reviews" class="hover:text-white transition-colors">Testimonials</a>
+            </div>
+
+            <div class="flex items-center gap-4">
+                <a href="https://calendly.com/your-calendly-link" class="hidden md:flex bg-white text-black px-5 py-2.5 rounded-full text-xs font-bold tracking-widest uppercase transition-all shadow-[0_4px_15px_rgba(255,255,255,0.1)] hover:shadow-[0_8px_25px_rgba(255,255,255,0.2)] hover:-translate-y-0.5">
+                    Book Growth Call
+                </a>
+                <button id="mobile-menu-btn" class="md:hidden w-10 h-10 flex items-center justify-center bg-white/5 border border-white/10 rounded-full text-white focus:outline-none hover:bg-white/10 transition-colors shadow-inner"><i class='bx bx-menu text-xl'></i></button>
+            </div>
+        </nav>
+    </div>
+
+<nav id="mobile-menu" aria-label="Mobile Navigation" class="fixed inset-0 z-[100] flex flex-col pt-24 px-6 pb-12 bg-black/80 backdrop-blur-3xl transition-all duration-500 transform-gpu select-none">
+    
+    <div class="absolute top-6 left-6 right-6 flex justify-between items-center z-50">
+        <div class="w-[120px] sm:w-[130px] opacity-100 transition-opacity duration-300">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="200 280 680 130" class="w-full h-auto drop-shadow-md" aria-hidden="true"><defs><linearGradient id="brand-grad" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#9C1F42"/><stop offset="100%" stop-color="#4A0E1F"/></linearGradient></defs><g fill="url(#brand-grad)"><path d="M329.24 358.88l-22.57 22.61c-7.85 7.86-20.58 7.86-28.44.02l-23.01-22.98c-7.86-7.85-7.87-20.58-.02-28.44l22.98-23.01c7.85-7.86 20.58-7.87 28.44-.02l22.5 22.47c5.16 5.16 13.53 5.15 18.69-.01s5.15-13.53-.01-18.69l-20.6-20.57c-6.42-6.41-16.81-6.4-23.21.01-6.41 6.42-16.79 6.43-23.21.02-3.21-3.2-7.4-4.8-11.6-4.8-4.2 0-8.39 1.61-11.6 4.82l-19.18 19.21c-6.41 6.42-6.4 16.81.01 23.21 3.21 3.2 4.81 7.4 4.82 11.6 0 4.2-1.6 8.4-4.8 11.6-3.2 3.2-4.8 7.41-4.79 11.61 0 4.2 1.61 8.39 4.82 11.6l19.21 19.18c6.42 6.41 16.8 6.39 23.2-.02 3.2-3.21 7.4-4.81 11.61-4.81 4.2 0 8.4 1.6 11.6 4.8 3.2 3.2 7.41 4.8 11.6 4.8 4.21-.01 8.4-1.62 11.61-4.83l20.68-20.7c5.16-5.16 5.15-13.53-.01-18.69-5.16-5.17-13.53-5.16-18.69 0z"/><path d="M375.84 342.88c-5.61-3.07-10.22-7.68-13.29-13.29l-1.4-2.57-1.4 2.57c-3.07 5.61-7.68 10.22-13.29 13.29l-2.57 1.4 2.57 1.4c5.61 3.07 10.22 7.68 13.29 13.29l1.4 2.57 1.4-2.57c3.07-5.61 7.68-10.22 13.29-13.29l2.57-1.4-2.57-1.4zM294.1 329.59l-1.4-2.57-1.4 2.57c-3.07 5.61-7.68 10.22-13.29 13.29l-2.57 1.4 2.57 1.4c5.61 3.07 10.22 7.68 13.29 13.29l1.4 2.57 1.4-2.57c3.07-5.61 7.68-10.22 13.29-13.29l2.57-1.4-2.57-1.4c-3.08-5.6-7.69-10.21-10.76-15.82z"/></g><g transform="translate(315 -112)" fill="#FFF"><path d="M123.77 485.36c-2.21 2.49-4.86 4.44-7.96 5.83-3.1 1.39-6.37 2.09-9.79 2.09-6.67 0-12.38-2.12-17.14-6.35-5.05-4.52-7.57-10.29-7.57-17.31 0-6.79 2.32-12.63 6.96-17.53 4.64-4.9 10.5-7.35 17.57-7.35 4.12 0 8.18 1.19 12.18 3.57 1.33.75 2.93 1.97 4.79 3.65l-6.7 6.44c-1.22-1.28-2.81-2.33-4.79-3.18-1.97-.84-4.03-1.26-6.18-1.26-4.06 0-7.45 1.51-10.18 4.52-2.73 3.02-4.09 6.61-4.09 10.79 0 4.29 1.45 7.83 4.35 10.62 2.9 2.78 6.38 4.18 10.44 4.18 1.97 0 4.03-.52 6.18-1.57 2.15-1.04 3.86-2.2 5.13-3.48l7.23 5.48zM155.44 444.64l-1.39 9.4c-4.7.7-8.24 2.55-10.61 5.57-2.61 3.31-3.92 8.18-3.92 14.62v18.18h-9.48v-46.98h9.48v7.4c1.98-2.61 4.4-4.62 7.26-6.05 2.86-1.43 5.74-2.14 8.66-2.14zM205.64 472.92h-32.63v-8h22.97c-.75-3.02-2.49-5.57-5.22-7.66-2.73-2.09-5.69-3.13-8.87-3.13-4.23 0-7.79 1.44-10.66 4.31-2.87 2.87-4.31 6.48-4.31 10.83 0 4.29 1.45 7.86 4.35 10.7 2.9 2.84 6.44 4.26 10.61 4.26 1.39 0 3.6-.75 6.61-2.26.99-.46 2.38-1.25 4.18-2.35l6.87 5.92c-2.03 2.38-4.63 4.26-7.79 5.66-3.16 1.39-6.51 2.09-10.05 2.09-6.67 0-12.3-2.03-16.88-6.09-4.99-4.41-7.48-10.27-7.48-17.58 0-6.61 2.44-12.35 7.31-17.23 4.87-4.87 10.56-7.31 17.05-7.31 6.55 0 12.27 2.55 17.14 7.66 4.7 4.93 7.05 10.59 7.05 16.97.26 2.06.18 3.13 0 4.18zM258.71 492.41h-9.57v-3.65c0-2.03.49-3.92 1.48-5.66-1.62 2.26-3.04 3.95-4.26 5.05-3.83 3.42-8.12 5.13-12.88 5.13-6.15 0-11.63-2.46-16.44-7.4-4.81-4.93-7.22-10.58-7.22-16.97 0-6.21 2.39-11.73 7.18-16.57 4.79-4.84 10.16-7.26 16.14-7.26 4.81 0 9.19 1.71 13.14 5.13 1.27 1.1 2.75 2.84 4.44 5.22-.87-1.74-1.3-3.68-1.3-5.83v-4.18h9.31v30.01zm-9.57-23.67c0-3.83-1.57-7.28-4.7-10.35-3.13-3.07-6.61-4.61-10.44-4.61-3.83 0-7.19 1.51-10.09 4.52-2.9 3.02-4.35 6.53-4.35 10.53 0 4.23 1.39 7.89 4.18 10.96 2.78 3.08 6.09 4.61 9.92 4.61s7.31-1.45 10.44-4.35c1.68-1.58 3.36-5.35 3.36-9.82zM292.3 453.6h-12.79v38.8h-9.57v-38.8h-6.53v-8.18h6.53v-15.66h9.57v15.66h12.79v8.18zM307.78 439.94h-9.57v-10.18h9.57v10.18zm0 52.47h-9.57v-46.98h9.57v46.98zM361.89 445.42l-24.52 50.18-24.54-50.18 10.46-.01 14.08 30.18 14.08-30.18 10.44.01z"/></g><g transform="translate(315 -112)" fill="url(#brand-grad)"><path d="M425.41 467.74c0 6.51-2.32 12.29-6.96 17.35-4.64 5.06-10.15 7.58-16.53 7.58-3.42 0-6.5-.69-9.22-2.06-2.73-1.38-4.99-3.41-6.79-6.1l-1.39-2.11c.87 1.86 1.31 3.81 1.31 5.85v19.9h-9.48v-62.73h9.48v3.65c0 .93-.09 1.8-.27 2.61-.18.81-.5 1.83-.95 3.04.75-1.39 1.45-2.46 2.09-3.22 3.94-4.76 8.96-7.13 15.05-7.13 6.21 0 11.7 2.34 16.49 7.02s7.17 10.13 7.17 16.35zm-9.74-.18c0-3.78-1.38-7.08-4.13-9.9-2.76-2.82-6.02-4.23-9.79-4.23-3.89 0-7.34 1.34-10.35 4.01-3.36 2.97-5.05 6.72-5.05 11.26 0 4.25 1.45 7.76 4.35 10.56 2.9 2.79 6.41 4.19 10.53 4.19 4 0 7.41-1.61 10.22-4.84s4.22-6.92 4.22-11.05zM441.6 492.41h-9.75v-62.64h9.75v62.64zM493.1 492.41h-9.48v-2.31c0-2.01.43-3.97 1.3-5.87-1.16 2.54-3.09 4.66-5.79 6.35s-5.79 2.53-9.27 2.53c-5.57 0-10.24-1.97-14.01-5.92-4-4.18-6-9.71-6-16.62v-25.14h9.31v23.84c0 4.52 1.1 8.15 3.31 10.88 2.2 2.73 5.02 4.09 8.44 4.09 3.83 0 6.73-.87 8.7-2.61 2.67-2.38 4-6.47 4-12.27v-23.93h9.48v46.98zM530.69 477.27c0 5.1-1.65 9.11-4.96 12.01-3.02 2.67-6.82 4-11.4 4-4.87 0-8.85-1.38-11.92-4.13-3.08-2.75-4.61-6.48-4.61-11.18h9.22c0 1.91.68 3.58 2.04 5 1.36 1.42 3.18 2.13 5.44 2.13 1.86 0 3.42-.49 4.7-1.48 1.28-.99 1.91-2.26 1.91-3.83.35-2.9-1.33-5.05-5.05-6.44l-3.83-1.31c-5.39-1.86-9.06-3.81-11.01-5.87-1.94-2.06-2.92-4.74-2.92-8.05 0-3.77 1.64-7.09 4.92-9.96 3.28-2.87 6.86-4.31 10.75-4.31 5.28 0 9.25 1.68 11.92 5.05 1.91 2.44 3.05 5.54 3.39 9.31h-9.74v-.44c-.41-1.16-.75-2-1.04-2.52-1.04-1.68-2.38-2.52-4-2.52-1.97 0-3.48.49-4.52 1.48-1.04.99-1.57 2.12-1.57 3.39.12 1.04.51 1.96 1.17 2.74.67.78 1.84 1.41 3.52 1.87l6.96 2.52c3.41 1.2 6.95 5.38 6.95 11.18z"/></g></svg>
+        </div>
+        
+        <button id="close-menu" aria-label="Close mobile menu" class="w-10 h-10 flex items-center justify-center rounded-full bg-white/5 hover:bg-white/10 transition-colors duration-300 focus:outline-none [-webkit-tap-highlight-color:transparent]">
+            <i class='bx bx-x text-2xl text-zinc-400 hover:text-white transition-colors duration-300' aria-hidden="true"></i>
+        </button>
+    </div>
+
+    <ul class="flex flex-col justify-center gap-8 sm:gap-10 text-[36px] sm:text-[44px] font-semibold tracking-tight text-left flex-1 list-none p-0 mt-8">
+        <li>
+            <a href="#services" class="group flex items-center gap-3 text-zinc-500 hover:text-white transition-all duration-300 hover:translate-x-4 w-fit focus:outline-none [-webkit-tap-highlight-color:transparent]" style="transition-delay: 0.1s;">
+                Services
+                <i class='bx bx-chevron-right text-3xl opacity-0 -translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300 ease-out transform-gpu'></i>
+            </a>
+        </li>
+        <li>
+            <a href="#process" class="group flex items-center gap-3 text-zinc-500 hover:text-white transition-all duration-300 hover:translate-x-4 w-fit focus:outline-none [-webkit-tap-highlight-color:transparent]" style="transition-delay: 0.15s;">
+                Process
+                <i class='bx bx-chevron-right text-3xl opacity-0 -translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300 ease-out transform-gpu'></i>
+            </a>
+        </li>
+        <li>
+            <a href="https://ai.creativplus.in/" class="group flex items-center gap-3 text-zinc-500 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-white hover:to-zinc-400 transition-all duration-300 hover:translate-x-4 w-fit whitespace-nowrap focus:outline-none [-webkit-tap-highlight-color:transparent]" style="transition-delay: 0.2s;">
+                AI Automation 
+                <i class='bx bx-sparkles text-[28px] opacity-0 -translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 text-white transition-all duration-300 ease-out transform-gpu'></i>
+            </a>
+        </li>
+        <li>
+            <a href="#reviews" class="group flex items-center gap-3 text-zinc-500 hover:text-white transition-all duration-300 hover:translate-x-4 w-fit focus:outline-none [-webkit-tap-highlight-color:transparent]" style="transition-delay: 0.25s;">
+                Testimonials
+                <i class='bx bx-chevron-right text-3xl opacity-0 -translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300 ease-out transform-gpu'></i>
+            </a>
+        </li>
+    </ul>
+
+    <div class="mt-auto pb-4" style="transition-delay: 0.35s;">
+        
+        <a href="https://calendly.com/your-calendly-link" class="group relative w-full py-[18px] sm:py-[20px] rounded-full text-[14px] sm:text-[15px] font-semibold text-black bg-white hover:bg-zinc-200 transition-all duration-300 active:scale-[0.98] focus:outline-none flex items-center justify-center gap-2 shadow-[0_0_40px_rgba(255,255,255,0.15)] [-webkit-tap-highlight-color:transparent]">
+            Book your growth call
+            <i class='bx bx-right-arrow-alt text-xl group-hover:translate-x-1 transition-transform duration-300 ease-out transform-gpu' aria-hidden="true"></i>
+        </a>
+        
+        <div class="flex items-center justify-center gap-8 mt-8">
+            <a href="#" aria-label="Instagram" class="text-zinc-500 hover:text-white transition-colors duration-300 focus:outline-none [-webkit-tap-highlight-color:transparent]">
+                <i class='bx bxl-instagram text-2xl' aria-hidden="true"></i>
+            </a>
+            <a href="#" aria-label="LinkedIn" class="text-zinc-500 hover:text-white transition-colors duration-300 focus:outline-none [-webkit-tap-highlight-color:transparent]">
+                <i class='bx bxl-linkedin text-2xl' aria-hidden="true"></i>
+            </a>
+            <a href="#" aria-label="YouTube" class="text-zinc-500 hover:text-white transition-colors duration-300 focus:outline-none [-webkit-tap-highlight-color:transparent]">
+                <i class='bx bxl-youtube text-2xl' aria-hidden="true"></i>
+            </a>
+        </div>
+    </div>
+</nav>
+
+<section class="relative min-h-[100svh] w-full flex flex-col justify-between overflow-hidden bg-[#020202]">
+
+        <!-- Background Effects -->
+        <div class="absolute inset-0 flex items-center justify-center pointer-events-none z-0 overflow-hidden will-change-transform">
+            <div class="absolute w-[80vw] h-[80vw] max-w-[900px] max-h-[900px] bg-brand-deepblue/40 blur-[120px] rounded-full top-[10%] left-[-10%] animate-aurora mix-blend-screen"></div>
+            <div class="absolute w-[60vw] h-[60vw] max-w-[700px] max-h-[700px] bg-brand-wine/40 blur-[120px] rounded-full bottom-[5%] right-[-5%] animate-aurora mix-blend-screen" style="animation-direction: reverse; animation-duration: 20s;"></div>
+            <div class="absolute inset-0 bg-[#020202]/60 backdrop-blur-[40px]"></div>
+            <div class="absolute bottom-0 w-full h-32 bg-gradient-to-t from-[#020202] to-transparent z-10"></div>
+        </div>
+
+        <!-- Main Hero Content (Padding applied here instead of section) -->
+        <div class="flex-1 flex flex-col items-center justify-center relative w-full max-w-5xl mx-auto z-10 pt-28 pb-10 text-center px-4 md:px-12">
+            
+            <!-- Top Badge -->
+            <div class="animate-premium-in delay-150 inline-flex items-center gap-2 px-3 sm:px-4 py-1.5 rounded-full glass-panel mb-6 border border-white/10 shadow-[0_0_20px_rgba(116,23,49,0.15)] hover:border-brand-wine/50 transition-colors cursor-default">
+                <span class="text-[9px] sm:text-[11px] font-bold text-zinc-200 uppercase tracking-[0.2em] flex items-center gap-1.5 drop-shadow-sm whitespace-nowrap">
+                    <span class="text-[#FFD700] text-sm drop-shadow-[0_0_8px_rgba(255,215,0,0.6)]">⚡</span> AI-POWERED GROWTH PARTNER
+                </span>
+            </div>
+
+            <!-- Heading with Casual Underline -->
+            <h1 class="animate-premium-in delay-300 text-[32px] min-[375px]:text-[38px] leading-[1.08] sm:text-5xl md:text-6xl lg:text-7xl font-display font-bold text-white tracking-tight mb-6 w-full max-w-[360px] sm:max-w-none mx-auto">
+                AI-Powered Client<br> 
+                Acquisition System<br>
+                <span class="relative inline-block mt-1">
+                    <span class="absolute -inset-2 bg-gradient-to-r from-brand-wine to-brand-deepblue blur-2xl opacity-40 mix-blend-screen pointer-events-none"></span>
+                    <span class="relative z-10 text-brand-rose inline-block">
+                        For Health Coaches.
+                        <svg class="absolute w-[105%] h-[12px] sm:h-[16px] -bottom-1 sm:-bottom-2 -left-[2.5%] text-brand-rose opacity-90" viewBox="0 0 200 12" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                            <path d="M2.5 9.5C45.5 3.5 125.5 -2.5 197.5 9.5" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" vector-effect="non-scaling-stroke"/>
+                        </svg>
+                    </span>
+                </span>
+            </h1>
+
+            <!-- Subtitle -->
+            <p class="animate-premium-in delay-450 text-[13px] sm:text-base md:text-lg lg:text-xl text-zinc-400 max-w-2xl mx-auto mb-10 leading-relaxed font-normal px-2">
+                We help health & wellness experts generate qualified leads, automate follow-ups, and scale with absolute confidence.
+            </p>
+
+            <!-- CTA Section -->
+            <div class="animate-premium-in delay-600 flex flex-col items-center gap-5 w-full">
+                <a href="https://calendly.com/your-calendly-link" class="btn-brand px-6 sm:px-8 py-4 sm:py-5 rounded-full text-[11px] min-[375px]:text-[13px] md:text-sm font-bold uppercase tracking-widest flex items-center justify-center gap-3 group border border-white/10 shadow-[0_0_40px_rgba(116,23,49,0.4)] whitespace-nowrap">
+                    <span>Book Your Growth Call</span>
+                    <div class="w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-white/10 flex items-center justify-center group-hover:bg-white/20 transition-colors">
+                        <i class='bx bx-right-arrow-alt text-lg sm:text-xl group-hover:translate-x-1 transition-transform'></i>
+                    </div>
+                </a>
+
+                <div class="flex items-center justify-center gap-1.5 min-[375px]:gap-2 sm:gap-3 text-[8px] min-[375px]:text-[9px] md:text-xs font-semibold text-zinc-500 uppercase tracking-widest flex-nowrap whitespace-nowrap">
+                    <span class="flex items-center gap-1 hover:text-zinc-300 transition-colors">
+                        <i class='bx bx-chip text-[#60a5fa] text-[10px] sm:text-sm drop-shadow-[0_0_5px_rgba(96,165,250,0.4)]'></i> AI Ecosystem
+                    </span>
+                    <span class="text-zinc-800">•</span>
+                    <span class="flex items-center gap-1 hover:text-zinc-300 transition-colors">
+                        <i class='bx bx-target-lock text-brand-rose text-[10px] sm:text-sm drop-shadow-[0_0_5px_rgba(212,138,154,0.4)]'></i> Qualified Leads
+                    </span>
+                    <span class="text-zinc-800">•</span>
+                    <span class="flex items-center gap-1 hover:text-zinc-300 transition-colors">
+                        <i class='bx bx-rocket text-[#34d399] text-[10px] sm:text-sm drop-shadow-[0_0_5px_rgba(52,211,153,0.4)]'></i> Live in 7 Days
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Edge-to-Edge Optimized Marquee Bottom Bar -->
+        <div class="w-full relative z-20 pb-6 pt-3 overflow-hidden border-t border-white/5 bg-[#020202]/40 backdrop-blur-md mt-auto group">
+            
+            <!-- Edge Fade Gradients (Expanded slightly for a smoother blend at the edges) -->
+            <div class="absolute inset-y-0 left-0 w-16 md:w-32 bg-gradient-to-r from-[#020202] to-transparent z-10 pointer-events-none"></div>
+            <div class="absolute inset-y-0 right-0 w-16 md:w-32 bg-gradient-to-l from-[#020202] to-transparent z-10 pointer-events-none"></div>
+            
+            <!-- Marquee Container -->
+            <div class="marquee-container flex gap-4 sm:gap-6 group-hover:[animation-play-state:paused] w-full min-w-max">
+                
+                <!-- Track 1 -->
+                <div class="flex gap-4 sm:gap-6 items-center will-change-transform pl-4 sm:pl-6">
+                    <div class="flex items-center gap-2 sm:gap-3 px-4 sm:px-5 py-2 sm:py-2.5 rounded-full bg-white/[0.02] hover:bg-white/[0.06] border border-white/10 hover:border-white/20 text-[10px] sm:text-xs font-bold uppercase tracking-widest text-zinc-300 whitespace-nowrap shadow-inner transition-all duration-300 cursor-default"><i class='bx bxl-google text-base sm:text-lg'></i> Google Ads</div>
+                    <div class="flex items-center gap-2 sm:gap-3 px-4 sm:px-5 py-2 sm:py-2.5 rounded-full bg-white/[0.02] hover:bg-white/[0.06] border border-white/10 hover:border-white/20 text-[10px] sm:text-xs font-bold uppercase tracking-widest text-zinc-300 whitespace-nowrap shadow-inner transition-all duration-300 cursor-default"><i class='bx bxl-meta text-base sm:text-lg text-blue-500'></i> Meta Ads</div>
+                    <div class="flex items-center gap-2 sm:gap-3 px-4 sm:px-5 py-2 sm:py-2.5 rounded-full bg-white/[0.02] hover:bg-white/[0.06] border border-white/10 hover:border-white/20 text-[10px] sm:text-xs font-bold uppercase tracking-widest text-zinc-300 whitespace-nowrap shadow-inner transition-all duration-300 cursor-default"><i class='bx bxl-linkedin text-base sm:text-lg text-blue-400'></i> LinkedIn</div>
+                    <div class="flex items-center gap-2 sm:gap-3 px-4 sm:px-5 py-2 sm:py-2.5 rounded-full bg-white/[0.02] hover:bg-white/[0.06] border border-white/10 hover:border-white/20 text-[10px] sm:text-xs font-bold uppercase tracking-widest text-zinc-300 whitespace-nowrap shadow-inner transition-all duration-300 cursor-default"><i class='bx bxl-whatsapp text-base sm:text-lg text-emerald-500'></i> WhatsApp</div>
+                    <div class="flex items-center gap-2 sm:gap-3 px-4 sm:px-5 py-2 sm:py-2.5 rounded-full bg-white/[0.02] hover:bg-white/[0.06] border border-white/10 hover:border-white/20 text-[10px] sm:text-xs font-bold uppercase tracking-widest text-zinc-300 whitespace-nowrap shadow-inner transition-all duration-300 cursor-default"><i class='bx bx-calendar text-base sm:text-lg text-rose-500'></i> Smart Calendar</div>
+                    <div class="flex items-center gap-2 sm:gap-3 px-4 sm:px-5 py-2 sm:py-2.5 rounded-full bg-white/[0.02] hover:bg-white/[0.06] border border-white/10 hover:border-white/20 text-[10px] sm:text-xs font-bold uppercase tracking-widest text-zinc-300 whitespace-nowrap shadow-inner transition-all duration-300 cursor-default"><i class='bx bx-data text-base sm:text-lg text-amber-500'></i> CRM Integration</div>
+                    <div class="flex items-center gap-2 sm:gap-3 px-4 sm:px-5 py-2 sm:py-2.5 rounded-full bg-white/[0.02] hover:bg-white/[0.06] border border-white/10 hover:border-white/20 text-[10px] sm:text-xs font-bold uppercase tracking-widest text-zinc-300 whitespace-nowrap shadow-inner transition-all duration-300 cursor-default"><i class='bx bx-phone-call text-base sm:text-lg text-indigo-400'></i> AI Voice Call</div>
+                    <div class="flex items-center gap-2 sm:gap-3 px-4 sm:px-5 py-2 sm:py-2.5 rounded-full bg-white/[0.02] hover:bg-white/[0.06] border border-white/10 hover:border-white/20 text-[10px] sm:text-xs font-bold uppercase tracking-widest text-zinc-300 whitespace-nowrap shadow-inner transition-all duration-300 cursor-default"><i class='bx bx-droplet text-base sm:text-lg text-cyan-400'></i> Drip Campaign</div>
+                    <div class="flex items-center gap-2 sm:gap-3 px-4 sm:px-5 py-2 sm:py-2.5 rounded-full bg-white/[0.02] hover:bg-white/[0.06] border border-white/10 hover:border-white/20 text-[10px] sm:text-xs font-bold uppercase tracking-widest text-zinc-300 whitespace-nowrap shadow-inner transition-all duration-300 cursor-default"><i class='bx bx-envelope text-base sm:text-lg text-zinc-400'></i> Mail Sequence</div>
+                    <div class="flex items-center gap-2 sm:gap-3 px-4 sm:px-5 py-2 sm:py-2.5 rounded-full bg-white/[0.02] hover:bg-white/[0.06] border border-white/10 hover:border-white/20 text-[10px] sm:text-xs font-bold uppercase tracking-widest text-zinc-300 whitespace-nowrap shadow-inner transition-all duration-300 cursor-default"><i class='bx bx-brain text-base sm:text-lg text-purple-500'></i> LLM Engine</div>
+                    <div class="flex items-center gap-2 sm:gap-3 px-4 sm:px-5 py-2 sm:py-2.5 rounded-full bg-white/[0.02] hover:bg-white/[0.06] border border-white/10 hover:border-white/20 text-[10px] sm:text-xs font-bold uppercase tracking-widest text-zinc-300 whitespace-nowrap shadow-inner transition-all duration-300 cursor-default"><i class='bx bx-filter-alt text-base sm:text-lg text-brand-rose'></i> Funnel Logic</div>
+                </div>
+
+                <!-- Track 2 (Duplicated for infinite scroll) -->
+                <div class="flex gap-4 sm:gap-6 items-center will-change-transform pr-4 sm:pr-6" aria-hidden="true">
+                    <div class="flex items-center gap-2 sm:gap-3 px-4 sm:px-5 py-2 sm:py-2.5 rounded-full bg-white/[0.02] hover:bg-white/[0.06] border border-white/10 hover:border-white/20 text-[10px] sm:text-xs font-bold uppercase tracking-widest text-zinc-300 whitespace-nowrap shadow-inner transition-all duration-300 cursor-default"><i class='bx bxl-google text-base sm:text-lg'></i> Google Ads</div>
+                    <div class="flex items-center gap-2 sm:gap-3 px-4 sm:px-5 py-2 sm:py-2.5 rounded-full bg-white/[0.02] hover:bg-white/[0.06] border border-white/10 hover:border-white/20 text-[10px] sm:text-xs font-bold uppercase tracking-widest text-zinc-300 whitespace-nowrap shadow-inner transition-all duration-300 cursor-default"><i class='bx bxl-meta text-base sm:text-lg text-blue-500'></i> Meta Ads</div>
+                    <div class="flex items-center gap-2 sm:gap-3 px-4 sm:px-5 py-2 sm:py-2.5 rounded-full bg-white/[0.02] hover:bg-white/[0.06] border border-white/10 hover:border-white/20 text-[10px] sm:text-xs font-bold uppercase tracking-widest text-zinc-300 whitespace-nowrap shadow-inner transition-all duration-300 cursor-default"><i class='bx bxl-linkedin text-base sm:text-lg text-blue-400'></i> LinkedIn</div>
+                    <div class="flex items-center gap-2 sm:gap-3 px-4 sm:px-5 py-2 sm:py-2.5 rounded-full bg-white/[0.02] hover:bg-white/[0.06] border border-white/10 hover:border-white/20 text-[10px] sm:text-xs font-bold uppercase tracking-widest text-zinc-300 whitespace-nowrap shadow-inner transition-all duration-300 cursor-default"><i class='bx bxl-whatsapp text-base sm:text-lg text-emerald-500'></i> WhatsApp</div>
+                    <div class="flex items-center gap-2 sm:gap-3 px-4 sm:px-5 py-2 sm:py-2.5 rounded-full bg-white/[0.02] hover:bg-white/[0.06] border border-white/10 hover:border-white/20 text-[10px] sm:text-xs font-bold uppercase tracking-widest text-zinc-300 whitespace-nowrap shadow-inner transition-all duration-300 cursor-default"><i class='bx bx-calendar text-base sm:text-lg text-rose-500'></i> Smart Calendar</div>
+                    <div class="flex items-center gap-2 sm:gap-3 px-4 sm:px-5 py-2 sm:py-2.5 rounded-full bg-white/[0.02] hover:bg-white/[0.06] border border-white/10 hover:border-white/20 text-[10px] sm:text-xs font-bold uppercase tracking-widest text-zinc-300 whitespace-nowrap shadow-inner transition-all duration-300 cursor-default"><i class='bx bx-data text-base sm:text-lg text-amber-500'></i> CRM Integration</div>
+                    <div class="flex items-center gap-2 sm:gap-3 px-4 sm:px-5 py-2 sm:py-2.5 rounded-full bg-white/[0.02] hover:bg-white/[0.06] border border-white/10 hover:border-white/20 text-[10px] sm:text-xs font-bold uppercase tracking-widest text-zinc-300 whitespace-nowrap shadow-inner transition-all duration-300 cursor-default"><i class='bx bx-phone-call text-base sm:text-lg text-indigo-400'></i> AI Voice Call</div>
+                    <div class="flex items-center gap-2 sm:gap-3 px-4 sm:px-5 py-2 sm:py-2.5 rounded-full bg-white/[0.02] hover:bg-white/[0.06] border border-white/10 hover:border-white/20 text-[10px] sm:text-xs font-bold uppercase tracking-widest text-zinc-300 whitespace-nowrap shadow-inner transition-all duration-300 cursor-default"><i class='bx bx-droplet text-base sm:text-lg text-cyan-400'></i> Drip Campaign</div>
+                    <div class="flex items-center gap-2 sm:gap-3 px-4 sm:px-5 py-2 sm:py-2.5 rounded-full bg-white/[0.02] hover:bg-white/[0.06] border border-white/10 hover:border-white/20 text-[10px] sm:text-xs font-bold uppercase tracking-widest text-zinc-300 whitespace-nowrap shadow-inner transition-all duration-300 cursor-default"><i class='bx bx-envelope text-base sm:text-lg text-zinc-400'></i> Mail Sequence</div>
+                    <div class="flex items-center gap-2 sm:gap-3 px-4 sm:px-5 py-2 sm:py-2.5 rounded-full bg-white/[0.02] hover:bg-white/[0.06] border border-white/10 hover:border-white/20 text-[10px] sm:text-xs font-bold uppercase tracking-widest text-zinc-300 whitespace-nowrap shadow-inner transition-all duration-300 cursor-default"><i class='bx bx-brain text-base sm:text-lg text-purple-500'></i> LLM Engine</div>
+                    <div class="flex items-center gap-2 sm:gap-3 px-4 sm:px-5 py-2 sm:py-2.5 rounded-full bg-white/[0.02] hover:bg-white/[0.06] border border-white/10 hover:border-white/20 text-[10px] sm:text-xs font-bold uppercase tracking-widest text-zinc-300 whitespace-nowrap shadow-inner transition-all duration-300 cursor-default"><i class='bx bx-filter-alt text-base sm:text-lg text-brand-rose'></i> Funnel Logic</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section id="problem" class="pt-10 pb-20 md:pt-16 md:pb-32 px-4 sm:px-6 md:px-12 relative overflow-hidden bg-[#020202]">
+    <!-- Animated Ambient Background Glow -->
+    <div class="absolute top-0 right-0 w-[80vw] h-[80vw] max-w-[800px] max-h-[800px] bg-brand-wine/10 blur-[150px] rounded-full pointer-events-none translate-x-1/3 -translate-y-1/3 animate-pulse" style="animation-duration: 8s;"></div>
+    
+    <div class="max-w-6xl mx-auto relative z-10">
+        <!-- Section Header (Scroll Reveal Target) -->
+        <div class="text-center mb-12 md:mb-16 max-w-4xl mx-auto reveal-element opacity-0 translate-y-8 transition-all duration-1000 ease-[cubic-bezier(0.16,1,0.3,1)]">
+            <span class="inline-block text-brand-rose font-bold tracking-[0.2em] uppercase text-[10px] md:text-xs mb-4 md:mb-5 px-4 py-1.5 rounded-full border border-brand-rose/20 bg-brand-rose/5 relative overflow-hidden group">
+                <span class="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:animate-[shimmer_1.5s_infinite]"></span>
+                The Core Issue
+            </span>
+            
+            <!-- Tighter Headline (FIXED "Y" CLIPPING) -->
+            <h2 class="text-4xl sm:text-5xl md:text-6xl lg:text-[64px] font-display font-bold tracking-tight leading-[1.05]">
+                <span class="text-white block mb-1">You Don't Need More Leads.</span>
+                <!-- Added pb-2 here so the descender of the "y" has room to breathe inside the gradient clip -->
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-zinc-100 to-zinc-400 block pb-2">You Need A Growth System.</span>
+            </h2>
+            
+            <!-- New Subheadline -->
+            <p class="text-base md:text-lg text-zinc-400 max-w-2xl mx-auto mt-6 font-normal leading-relaxed">
+                Most businesses don't struggle because of a lack of leads. They struggle because they lack a system to attract, nurture, and convert them consistently.
+            </p>
+        </div>
+
+        <!-- Bento Box Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-4 sm:gap-6" id="bento-grid">
+            
+            <!-- Card 1: Unpredictable Lead Flow -->
+            <div class="col-span-1 md:col-span-2 lg:col-span-3 spotlight-card reveal-element opacity-0 translate-y-12 transition-all duration-1000 ease-[cubic-bezier(0.16,1,0.3,1)] group relative glass-panel bg-[#0a0a0a]/80 backdrop-blur-xl border border-white/5 hover:border-white/10 rounded-[2rem] p-8 sm:p-10 overflow-hidden flex flex-col h-full" style="transition-delay: 100ms;">
+                <div class="spotlight-overlay absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none z-0"></div>
+                
+                <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-white/10 to-transparent border border-white/10 shadow-inner flex items-center justify-center mb-8 relative overflow-hidden group-hover:scale-110 group-hover:-rotate-3 transition-all duration-500 z-10">
+                    <div class="absolute inset-0 bg-brand-rose/20 blur-md group-hover:bg-brand-rose/40 transition-colors duration-500"></div>
+                    <i class='bx bx-trending-down text-2xl text-brand-rose relative z-10'></i>
+                </div>
+                
+                <h3 class="text-xl sm:text-2xl font-semibold text-white mb-3 tracking-tight z-10">Unpredictable Lead Flow</h3>
+                <p class="text-base text-zinc-400 leading-relaxed font-normal mt-auto z-10 group-hover:text-zinc-300 transition-colors duration-500">
+                    Some weeks bring plenty of inquiries. Others bring none. Growth shouldn't depend on luck.
+                </p>
+            </div>
+
+            <!-- Card 2: Too Dependent On Referrals -->
+            <div class="col-span-1 md:col-span-2 lg:col-span-3 spotlight-card reveal-element opacity-0 translate-y-12 transition-all duration-1000 ease-[cubic-bezier(0.16,1,0.3,1)] group relative glass-panel bg-[#0a0a0a]/80 backdrop-blur-xl border border-white/5 hover:border-white/10 rounded-[2rem] p-8 sm:p-10 overflow-hidden flex flex-col h-full" style="transition-delay: 200ms;">
+                <div class="spotlight-overlay absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none z-0"></div>
+                
+                <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-white/10 to-transparent border border-white/10 shadow-inner flex items-center justify-center mb-8 relative overflow-hidden group-hover:scale-110 group-hover:rotate-3 transition-all duration-500 z-10">
+                    <div class="absolute inset-0 bg-brand-rose/20 blur-md group-hover:bg-brand-rose/40 transition-colors duration-500"></div>
+                    <i class='bx bx-share-alt text-2xl text-brand-rose relative z-10'></i>
+                </div>
+                
+                <h3 class="text-xl sm:text-2xl font-semibold text-white mb-3 tracking-tight z-10">Too Dependent On Referrals</h3>
+                <p class="text-base text-zinc-400 leading-relaxed font-normal mt-auto z-10 group-hover:text-zinc-300 transition-colors duration-500">
+                    Referrals are great, but they're not a scalable way to grow consistently.
+                </p>
+            </div>
+
+            <!-- Card 3: Leads Go Cold -->
+            <div class="col-span-1 md:col-span-1 lg:col-span-2 spotlight-card reveal-element opacity-0 translate-y-12 transition-all duration-1000 ease-[cubic-bezier(0.16,1,0.3,1)] group relative glass-panel bg-[#0a0a0a]/80 backdrop-blur-xl border border-white/5 hover:border-white/10 rounded-[2rem] p-8 overflow-hidden flex flex-col h-full" style="transition-delay: 300ms;">
+                <div class="spotlight-overlay absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none z-0"></div>
+                
+                <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-white/10 to-transparent border border-white/10 shadow-inner flex items-center justify-center mb-6 relative overflow-hidden group-hover:scale-110 group-hover:-rotate-3 transition-all duration-500 z-10">
+                    <div class="absolute inset-0 bg-brand-rose/20 blur-md group-hover:bg-brand-rose/40 transition-colors duration-500"></div>
+                    <i class='bx bx-time text-xl text-brand-rose relative z-10'></i>
+                </div>
+                
+                <h3 class="text-lg sm:text-xl font-semibold text-white mb-2 tracking-tight z-10">Leads Go Cold</h3>
+                <p class="text-sm sm:text-base text-zinc-400 leading-relaxed font-normal mt-auto z-10 group-hover:text-zinc-300 transition-colors duration-500">
+                    Every delayed response increases the chance of losing a potential client.
+                </p>
+            </div>
+
+            <!-- Card 4: Too Much Manual Work -->
+            <div class="col-span-1 md:col-span-1 lg:col-span-2 spotlight-card reveal-element opacity-0 translate-y-12 transition-all duration-1000 ease-[cubic-bezier(0.16,1,0.3,1)] group relative glass-panel bg-[#0a0a0a]/80 backdrop-blur-xl border border-white/5 hover:border-white/10 rounded-[2rem] p-8 overflow-hidden flex flex-col h-full" style="transition-delay: 400ms;">
+                <div class="spotlight-overlay absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none z-0"></div>
+                
+                <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-white/10 to-transparent border border-white/10 shadow-inner flex items-center justify-center mb-6 relative overflow-hidden group-hover:scale-110 group-hover:rotate-3 transition-all duration-500 z-10">
+                    <div class="absolute inset-0 bg-brand-rose/20 blur-md group-hover:bg-brand-rose/40 transition-colors duration-500"></div>
+                    <i class='bx bx-slider-alt text-xl text-brand-rose relative z-10'></i>
+                </div>
+                
+                <h3 class="text-lg sm:text-xl font-semibold text-white mb-2 tracking-tight z-10">Too Much Manual Work</h3>
+                <p class="text-sm sm:text-base text-zinc-400 leading-relaxed font-normal mt-auto z-10 group-hover:text-zinc-300 transition-colors duration-500">
+                    Manual follow-ups and admin tasks steal time that should be spent serving clients and growing revenue.
+                </p>
+            </div>
+
+            <!-- Card 5: Revenue Feels Uncertain -->
+            <div class="col-span-1 md:col-span-2 lg:col-span-2 spotlight-card reveal-element opacity-0 translate-y-12 transition-all duration-1000 ease-[cubic-bezier(0.16,1,0.3,1)] group relative glass-panel bg-[#0a0a0a]/80 backdrop-blur-xl border border-white/5 hover:border-white/10 rounded-[2rem] p-8 overflow-hidden flex flex-col h-full" style="transition-delay: 500ms;">
+                <div class="spotlight-overlay absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none z-0"></div>
+                
+                <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-white/10 to-transparent border border-white/10 shadow-inner flex items-center justify-center mb-6 relative overflow-hidden group-hover:scale-110 group-hover:-rotate-3 transition-all duration-500 z-10">
+                    <div class="absolute inset-0 bg-brand-rose/20 blur-md group-hover:bg-brand-rose/40 transition-colors duration-500"></div>
+                    <i class='bx bx-line-chart-down text-xl text-brand-rose relative z-10'></i>
+                </div>
+                
+                <h3 class="text-lg sm:text-xl font-semibold text-white mb-2 tracking-tight z-10">Revenue Feels Uncertain</h3>
+                <p class="text-sm sm:text-base text-zinc-400 leading-relaxed font-normal mt-auto z-10 group-hover:text-zinc-300 transition-colors duration-500">
+                    Without predictable lead generation and follow-up systems, revenue becomes difficult to forecast.
+                </p>
+            </div>
+
+        </div>
+
+        <!-- Connection Line (Bridge to Solution Section) -->
+        <div class="mt-16 md:mt-20 text-center reveal-element opacity-0 translate-y-8 transition-all duration-1000 ease-[cubic-bezier(0.16,1,0.3,1)]" style="transition-delay: 600ms;">
+            <div class="inline-block relative">
+                <!-- Subtle glow behind the text box -->
+                <div class="absolute inset-0 bg-brand-rose/10 blur-2xl rounded-full"></div>
+                <p class="relative text-sm sm:text-base md:text-lg font-medium text-white px-6 sm:px-8 py-4 sm:py-5 glass-panel bg-[#0a0a0a]/80 border border-white/10 rounded-2xl shadow-[0_0_30px_rgba(0,0,0,0.5)] backdrop-blur-xl max-w-3xl mx-auto leading-relaxed">
+                    That's why we build <span class="text-brand-rose font-bold">AI-powered Growth systems</span> designed to attract high intent prospects, streamline follow-ups, and create more opportunities to close deals.
+                </p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- Tailwind Config for Shimmer Effect -->
+<style>
+    @keyframes shimmer {
+        100% { transform: translateX(100%); }
+    }
+</style>
+
+<!-- Pro-Level Animation Script -->
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        
+        // 1. Mouse-Tracking Spotlight Effect
+        const cards = document.querySelectorAll('.spotlight-card');
+        
+        cards.forEach(card => {
+            card.addEventListener('mousemove', (e) => {
+                const rect = card.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                
+                const overlay = card.querySelector('.spotlight-overlay');
+                // Applies a soft, glowing radial gradient that follows the exact cursor coordinates
+                overlay.style.background = `radial-gradient(400px circle at ${x}px ${y}px, rgba(212, 138, 154, 0.08), transparent 40%)`;
+            });
+        });
+
+        // 2. Viewport Scroll Reveal (Intersection Observer)
+        const revealElements = document.querySelectorAll('.reveal-element');
+        
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px 0px -100px 0px', 
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.remove('opacity-0', 'translate-y-8', 'translate-y-12');
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        revealElements.forEach(el => observer.observe(el));
+    });
+</script>
+    <section id="solution" class="py-24 md:py-32 px-6 md:px-12 bg-gradient-to-b from-[#020202] via-[#050505] to-[#020202] border-y border-white/5 relative scroll-reveal">
+        <div class="absolute left-0 top-1/2 -translate-y-1/2 w-[400px] h-[400px] bg-emerald-500/10 rounded-full blur-[120px] pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto text-center relative z-10">
+            <span class="text-emerald-400 font-bold tracking-[0.2em] uppercase text-[10px] md:text-xs mb-4 block">The Solution</span>
+            <h2 class="text-3xl md:text-5xl font-display font-semibold text-white tracking-tight mb-12 md:mb-16">
+                Meet Your <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-teal-200">AI-Powered</span> Growth System
+            </h2>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 text-left">
+                
+                <div class="bg-[#0a0a0c] border border-white/5 p-6 rounded-2xl hover:border-emerald-500/30 transition-all duration-300 hover:-translate-y-1 group shadow-lg relative overflow-hidden">
+                    <div class="absolute inset-0 bg-gradient-to-br from-emerald-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    <div class="flex items-center gap-4 relative z-10">
+                        <div class="w-10 h-10 shrink-0 rounded-full bg-emerald-500/10 flex items-center justify-center border border-emerald-500/20 text-emerald-400">
+                            <i class='bx bx-magnet text-xl'></i>
+                        </div>
+                        <h3 class="text-white font-medium text-sm md:text-base">Lead Generation</h3>
+                    </div>
+                </div>
+
+                <div class="bg-[#0a0a0c] border border-white/5 p-6 rounded-2xl hover:border-emerald-500/30 transition-all duration-300 hover:-translate-y-1 group shadow-lg relative overflow-hidden">
+                    <div class="absolute inset-0 bg-gradient-to-br from-emerald-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    <div class="flex items-center gap-4 relative z-10">
+                        <div class="w-10 h-10 shrink-0 rounded-full bg-emerald-500/10 flex items-center justify-center border border-emerald-500/20 text-emerald-400">
+                            <i class='bx bx-filter-alt text-xl'></i>
+                        </div>
+                        <h3 class="text-white font-medium text-sm md:text-base">Funnel Systems</h3>
+                    </div>
+                </div>
+
+                <div class="bg-[#0a0a0c] border border-white/5 p-6 rounded-2xl hover:border-emerald-500/30 transition-all duration-300 hover:-translate-y-1 group shadow-lg relative overflow-hidden">
+                    <div class="absolute inset-0 bg-gradient-to-br from-emerald-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    <div class="flex items-center gap-4 relative z-10">
+                        <div class="w-10 h-10 shrink-0 rounded-full bg-emerald-500/10 flex items-center justify-center border border-emerald-500/20 text-emerald-400">
+                            <i class='bx bx-bot text-xl'></i>
+                        </div>
+                        <h3 class="text-white font-medium text-sm md:text-base">AI Follow-Up</h3>
+                    </div>
+                </div>
+
+                <div class="bg-[#0a0a0c] border border-white/5 p-6 rounded-2xl hover:border-emerald-500/30 transition-all duration-300 hover:-translate-y-1 group shadow-lg relative overflow-hidden">
+                    <div class="absolute inset-0 bg-gradient-to-br from-emerald-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    <div class="flex items-center gap-4 relative z-10">
+                        <div class="w-10 h-10 shrink-0 rounded-full bg-emerald-500/10 flex items-center justify-center border border-emerald-500/20 text-emerald-400">
+                            <i class='bx bx-calendar-check text-xl'></i>
+                        </div>
+                        <h3 class="text-white font-medium text-sm md:text-base">Appointment Booking</h3>
+                    </div>
+                </div>
+
+                <div class="bg-[#0a0a0c] border border-white/5 p-6 rounded-2xl hover:border-emerald-500/30 transition-all duration-300 hover:-translate-y-1 group shadow-lg relative overflow-hidden">
+                    <div class="absolute inset-0 bg-gradient-to-br from-emerald-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    <div class="flex items-center gap-4 relative z-10">
+                        <div class="w-10 h-10 shrink-0 rounded-full bg-emerald-500/10 flex items-center justify-center border border-emerald-500/20 text-emerald-400">
+                            <i class='bx bx-target-lock text-xl'></i>
+                        </div>
+                        <h3 class="text-white font-medium text-sm md:text-base">Prospect Retargeting</h3>
+                    </div>
+                </div>
+
+                <div class="bg-[#0a0a0c] border border-white/5 p-6 rounded-2xl hover:border-emerald-500/30 transition-all duration-300 hover:-translate-y-1 group shadow-lg relative overflow-hidden">
+                    <div class="absolute inset-0 bg-gradient-to-br from-emerald-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    <div class="flex items-center gap-4 relative z-10">
+                        <div class="w-10 h-10 shrink-0 rounded-full bg-emerald-500/10 flex items-center justify-center border border-emerald-500/20 text-emerald-400">
+                            <i class='bx bx-rocket text-xl drop-shadow-[0_0_5px_rgba(16,185,129,0.8)]'></i>
+                        </div>
+                        <h3 class="text-white font-medium text-sm md:text-base">Growth Optimization</h3>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-32 px-6 md:px-12 max-w-7xl mx-auto relative overflow-hidden scroll-reveal">
+        <div class="absolute top-1/3 left-1/2 -translate-x-1/2 w-[800px] h-[800px] bg-brand-wine/5 blur-[120px] rounded-full pointer-events-none z-0"></div>
+
+        <div class="text-center mb-20 relative z-10">
+            <span class="text-brand-rose font-bold tracking-[0.2em] uppercase text-[10px] md:text-xs mb-4 block">Services</span>
+            <h2 class="text-3xl md:text-5xl font-display font-semibold text-white tracking-tight mb-4">The Growth System</h2>
+            <p class="text-zinc-400 text-lg max-w-2xl mx-auto">AI-powered conversion-focused funnels built to attract, nurture, and convert qualified prospect.</p>
+        </div>
+
+        <div class="space-y-8 relative z-10">
+            <div class="bento-card glass-panel rounded-[2rem] border border-white/5 overflow-hidden flex flex-col lg:flex-row group shadow-lg bg-[#070707]">
+                
+                <div class="p-10 lg:w-1/2 flex flex-col justify-center border-b lg:border-b-0 lg:border-r border-white/5 z-10">
+                    <div class="w-14 h-14 rounded-2xl bg-[#111] flex items-center justify-center border border-white/5 mb-8 group-hover:border-brand-rose/50 transition-colors shadow-inner">
+                        <i class='bx bx-filter-alt text-2xl text-brand-rose'></i>
+                    </div>
+                    <h3 class="text-2xl md:text-3xl font-display font-semibold text-white mb-4 tracking-tight">High-Converting Leads Funnel</h3>
+                    <p class="text-zinc-400 leading-relaxed mb-8">We engineer frictionless pathways that guide prospects from cold awareness to red-hot desire. Our landing pages are scientifically structured to capture intent and maximize conversion rates.</p>
+                    <ul class="space-y-4">
+                        <li class="flex items-center gap-3 text-sm text-zinc-300 font-medium"><i class='bx bx-check-circle text-brand-rose text-lg'></i> Optimized Landing Pages</li>
+                        <li class="flex items-center gap-3 text-sm text-zinc-300 font-medium"><i class='bx bx-check-circle text-brand-rose text-lg'></i> Frictionless Lead Capture</li>
+                        <li class="flex items-center gap-3 text-sm text-zinc-300 font-medium"><i class='bx bx-check-circle text-brand-rose text-lg'></i> High-Intent Qualification</li>
+                    </ul>
+                </div>
+
+                <div class="lg:w-1/2 min-h-[480px] bg-[#030303] relative flex items-center justify-center overflow-hidden py-12">
+                    <div class="absolute inset-0 bg-grid opacity-10"></div>
+                    <div class="absolute w-[400px] h-[400px] bg-brand-rose/5 rounded-full blur-[120px] top-0 pointer-events-none"></div>
+                    
+                    <div class="relative w-[90%] sm:w-full max-w-[340px] flex flex-col items-center z-10">
+                        <div class="relative w-full z-20 group/browser cursor-default">
+                            <div class="absolute -inset-1 bg-gradient-to-r from-brand-rose/10 via-brand-wine/20 to-brand-rose/10 rounded-3xl blur-xl opacity-50 group-hover/browser:opacity-100 transition duration-1000 pointer-events-none"></div>
+                            
+                            <div class="relative w-full bg-[#0a0a0c]/95 backdrop-blur-xl border border-white/10 rounded-[1.5rem] p-6 shadow-[0_25px_60px_rgba(0,0,0,0.9)]">
+                                <div class="flex items-center gap-4 mb-6">
+                                    <div class="flex gap-2">
+                                        <div class="w-3 h-3 rounded-full bg-[#FF5F56] shadow-[0_0_10px_rgba(255,95,86,0.3)]"></div>
+                                        <div class="w-3 h-3 rounded-full bg-[#FFBD2E] shadow-[0_0_10px_rgba(255,189,46,0.3)]"></div>
+                                        <div class="w-3 h-3 rounded-full bg-[#27C93F] shadow-[0_0_10px_rgba(39,201,63,0.3)]"></div>
+                                    </div>
+                                    <div class="flex-1 h-6 bg-white/5 rounded-md border border-white/5 flex items-center px-3 overflow-hidden relative">
+                                        <i class='bx bx-lock-alt text-white/20 text-[10px] mr-2'></i>
+                                        <div class="w-1/2 h-1 bg-white/10 rounded-full"></div>
+                                    </div>
+                                </div>
+                                
+                                <div class="w-3/4 h-3 bg-gradient-to-r from-white/20 to-white/5 rounded-full mb-3 shadow-inner"></div>
+                                <div class="w-1/2 h-2 bg-white/10 rounded-full mb-8"></div>
+                                
+                                <div class="w-full py-4 relative overflow-hidden rounded-xl bg-gradient-to-b from-[#2A1118] to-[#1A0A0F] border border-brand-rose/20 flex items-center justify-center group-hover/browser:border-brand-rose/50 transition-colors duration-500 shadow-[inset_0_1px_0_rgba(255,255,255,0.05)]">
+                                    <div class="absolute top-0 -left-[100%] w-1/2 h-full bg-gradient-to-r from-transparent via-white/5 to-transparent skew-x-[30deg] group-hover/browser:animate-[shimmer_1.5s_ease-in-out]"></div>
+                                    <span class="text-[10px] uppercase tracking-[0.25em] text-[#D48A9A] font-bold drop-shadow-sm">Capture Form</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="relative w-full h-[180px] flex justify-center -mt-2 z-10">
+                            <div class="absolute top-0 w-[65%] h-[120px] bg-gradient-to-b from-brand-wine/30 via-[#1a0e12]/60 to-transparent clip-funnel border-t-[2px] border-brand-rose/20 shadow-[0_20px_50px_rgba(212,138,154,0.1)]"></div>
+                            <div class="absolute top-0 w-[1px] h-[110px] bg-gradient-to-b from-brand-rose/30 to-transparent border-dashed border-l border-brand-rose/30"></div>
+
+                            <div class="absolute top-8 left-[5%] sm:left-[10%] bg-[#111]/80 backdrop-blur-md border border-white/10 px-2 py-1 rounded-md shadow-xl z-20" style="animation: float 4s ease-in-out infinite;">
+                                <span class="text-[8px] font-bold text-zinc-400 tracking-wider">INTENT: <span class="text-brand-rose">HIGH</span></span>
+                            </div>
+                            <div class="absolute top-16 right-[5%] sm:right-[10%] bg-[#111]/80 backdrop-blur-md border border-white/10 px-2 py-1 rounded-md shadow-xl z-20" style="animation: float 5s ease-in-out infinite; animation-delay: 1s;">
+                                <span class="text-[8px] font-bold text-emerald-400 tracking-wider flex items-center gap-1"><i class='bx bx-check'></i> LEAD</span>
+                            </div>
+
+                            <div class="absolute top-0 w-10 h-10 bg-gradient-to-b from-[#33151D] to-[#1A0A0F] border border-brand-rose/40 rounded-full flex items-center justify-center shadow-[0_0_25px_rgba(212,138,154,0.4)] backdrop-blur-md z-30" style="animation: funnel-drop 3.5s infinite cubic-bezier(0.4, 0, 0.2, 1);">
+                                <div class="absolute inset-0 bg-brand-rose/20 blur-sm rounded-full -z-10"></div>
+                                <i class='bx bxs-user text-[#ffb6c1] text-lg'></i>
+                            </div>
+
+                            <div class="absolute bottom-2 z-40 group/badge cursor-default">
+                                <div class="absolute -inset-3 bg-emerald-500/10 rounded-2xl blur-xl group-hover/badge:bg-emerald-500/30 transition-colors duration-500 animate-pulse"></div>
+                                <div class="relative bg-gradient-to-r from-[#064e3b] to-[#022c22] border border-emerald-500/40 rounded-xl pl-2 pr-4 py-2 flex items-center gap-3 shadow-[0_10px_30px_rgba(16,185,129,0.3)] backdrop-blur-xl group-hover/badge:-translate-y-1 transition-transform duration-300">
+                                    <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-[#10b981] to-[#047857] flex items-center justify-center shadow-inner border border-emerald-400/50">
+                                        <i class='bx bx-calendar-check text-white text-base'></i>
+                                    </div>
+                                    <span class="text-[11px] font-bold text-emerald-400 uppercase tracking-widest drop-shadow-md">Qualified</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bento-card glass-panel rounded-[2rem] border border-white/5 overflow-hidden flex flex-col-reverse lg:flex-row group shadow-lg bg-[#070707]">
+                
+                <div class="lg:w-1/2 min-h-[450px] bg-[#030303] relative flex items-center justify-center overflow-hidden border-t lg:border-t-0 lg:border-r border-white/5 z-10">
+                    <div class="absolute inset-0 bg-grid opacity-20"></div>
+                    
+                    <svg class="absolute bottom-0 w-full h-[60%] opacity-50" viewBox="0 0 100 50" preserveAspectRatio="none">
+                        <path d="M0,50 L0,40 C20,40 30,30 50,25 C70,20 80,10 100,5 L100,50 Z" fill="url(#emerald-gradient)"/>
+                        <path d="M0,40 C20,40 30,30 50,25 C70,20 80,10 100,5" fill="none" stroke="#10b981" stroke-width="0.5" style="animation: chart-grow 3s ease-out forwards;"/>
+                        <defs>
+                            <linearGradient id="emerald-gradient" x1="0" y1="0" x2="0" y2="1">
+                                <stop offset="0%" stop-color="#059669" stop-opacity="0.3"/>
+                                <stop offset="100%" stop-color="#059669" stop-opacity="0"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+
+                    <div class="relative w-[90%] sm:w-full max-w-[340px] h-[280px]">
+                        <div class="absolute top-4 left-0 sm:left-4 w-40 sm:w-44 bg-[#0c0c0e] border border-white/10 rounded-2xl p-4 shadow-[0_20px_40px_rgba(0,0,0,0.9)] z-20" style="animation: ad-float-left 6s infinite ease-in-out;">
+                            <div class="flex items-center gap-2 mb-3">
+                                <div class="w-6 h-6 rounded bg-blue-600 flex items-center justify-center"><i class='bx bxl-meta text-white text-xs'></i></div>
+                                <span class="text-[10px] font-bold text-white uppercase tracking-widest">Meta Ads</span>
+                            </div>
+                            <div class="w-full h-24 bg-zinc-800 rounded-xl mb-3 overflow-hidden relative">
+                                <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?q=80&w=300&auto=format&fit=crop" class="w-full h-full object-cover opacity-60" alt="ad">
+                                <div class="absolute bottom-2 right-2 bg-black/80 backdrop-blur px-2 py-1 rounded-md text-[8px] text-white font-bold">Scroll Stopping</div>
+                            </div>
+                            <div class="w-3/4 h-2 bg-white/10 rounded-full"></div>
+                        </div>
+
+                        <div class="absolute bottom-4 right-0 sm:right-2 w-40 sm:w-44 bg-[#0c0c0e] border border-white/10 rounded-2xl p-4 shadow-[0_20px_40px_rgba(0,0,0,0.9)] z-30" style="animation: ad-float-right 7s infinite ease-in-out;">
+                            <div class="flex items-center gap-2 mb-3">
+                                <div class="w-6 h-6 rounded bg-white flex items-center justify-center"><i class='bx bxl-google text-black text-xs'></i></div>
+                                <span class="text-[10px] font-bold text-white uppercase tracking-widest">Google Ads</span>
+                            </div>
+                            <div class="w-full h-14 bg-[#151518] rounded-xl mb-3 flex flex-col justify-center px-3 border-l-[3px] border-[#10b981]">
+                                <div class="w-4/5 h-2 bg-white/20 rounded-full mb-2"></div>
+                                <div class="w-1/2 h-2 bg-white/10 rounded-full"></div>
+                            </div>
+                            <div class="flex justify-between items-center px-1">
+                                <span class="text-[10px] text-zinc-500 font-medium">Search Intent</span>
+                                <span class="text-[10px] text-[#10b981] font-bold flex items-center"><i class='bx bx-up-arrow-alt'></i> High</span>
+                            </div>
+                        </div>
+
+                        <div class="absolute -top-4 right-4 sm:right-10 bg-[#064e3b]/80 border border-emerald-500/30 backdrop-blur-md px-3 py-1.5 rounded-full flex items-center gap-1.5 shadow-[0_0_25px_rgba(16,185,129,0.25)] z-40">
+                            <i class='bx bx-trending-up text-[#34d399]'></i>
+                            <span class="text-[9px] font-bold text-[#34d399] tracking-widest uppercase">Scalable ROI</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="p-10 lg:w-1/2 flex flex-col justify-center z-10">
+                    <div class="w-14 h-14 rounded-2xl bg-[#111] flex items-center justify-center border border-white/5 mb-8 group-hover:border-emerald-500/50 transition-colors shadow-inner">
+                        <i class='bx bx-bullseye text-2xl text-[#10b981]'></i>
+                    </div>
+                    <h3 class="text-2xl md:text-3xl font-display font-semibold text-white mb-4 tracking-tight">Proven Paid Ads Framework</h3>
+                    <p class="text-zinc-400 leading-relaxed mb-8">Stop burning budget on generic campaigns. We deploy hyper-targeted Meta & Google ads utilizing scroll-stopping creatives and robust data tracking to ensure exponential ROI growth.</p>
+                    <ul class="space-y-4">
+                        <li class="flex items-center gap-3 text-sm text-zinc-300 font-medium"><i class='bx bx-check-circle text-[#10b981] text-lg'></i> High-Converting Creatives</li>
+                        <li class="flex items-center gap-3 text-sm text-zinc-300 font-medium"><i class='bx bx-check-circle text-[#10b981] text-lg'></i> Advanced Omnipresence Retargeting</li>
+                        <li class="flex items-center gap-3 text-sm text-zinc-300 font-medium"><i class='bx bx-check-circle text-[#10b981] text-lg'></i> Real-Time ROAS Scaling</li>
+                    </ul>
+                </div>
+            </div>
+
+<div class="bento-card glass-panel rounded-[2rem] border border-white/5 overflow-hidden flex flex-col lg:flex-row group shadow-lg bg-[#070707]">
+                
+    <!-- Text Section -->
+    <div class="p-6 md:p-10 lg:w-1/2 flex flex-col justify-center border-b lg:border-b-0 lg:border-r border-white/5 z-10 relative">
+        <div class="w-12 h-12 md:w-14 md:h-14 rounded-2xl bg-[#111] flex items-center justify-center border border-white/5 mb-6 md:mb-8 group-hover:border-brand-deepblue/50 transition-colors shadow-inner">
+            <i class='bx bx-brain text-xl md:text-2xl text-[#60a5fa]'></i>
+        </div>
+        <h3 class="text-2xl md:text-3xl font-display font-semibold text-white mb-4 tracking-tight">AI Automation System</h3>
+        <p class="text-sm md:text-base text-zinc-400 leading-relaxed mb-6 md:mb-8">Replace manual follow-ups with intelligent, conversational AI agents. Our systems handle everything from voice triage and WhatsApp chats to CRM syncs and calendar bookings 24/7.</p>
+        <ul class="space-y-3 md:space-y-4">
+            <li class="flex items-center gap-3 text-xs md:text-sm text-zinc-300 font-medium"><i class='bx bx-check-circle text-[#60a5fa] text-base md:text-lg'></i> Conversational Voice Call AI</li>
+            <li class="flex items-center gap-3 text-xs md:text-sm text-zinc-300 font-medium"><i class='bx bx-check-circle text-[#60a5fa] text-base md:text-lg'></i> Automated WhatsApp Nurturing</li>
+            <li class="flex items-center gap-3 text-xs md:text-sm text-zinc-300 font-medium"><i class='bx bx-check-circle text-[#60a5fa] text-base md:text-lg'></i> Seamless CRM & Calendar Sync</li>
+        </ul>
+    </div>
+
+    <!-- Visual Section: Increased min-height and vertical padding to provide top headroom -->
+    <div class="lg:w-1/2 min-h-[450px] md:min-h-[600px] bg-[#030303] relative flex items-center justify-center overflow-hidden py-16 md:py-20">
+        <div class="absolute inset-0 bg-grid opacity-20 z-0"></div>
+        
+        <!-- The Ring -->
+        <div class="relative w-[200px] h-[200px] md:w-[360px] md:h-[360px] flex items-center justify-center z-10">
+            
+            <!-- Center Node -->
+            <div class="relative z-30 w-16 h-16 md:w-24 md:h-24 bg-gradient-to-br from-brand-deepblue to-[#1e1b4b] rounded-full flex items-center justify-center shadow-[0_0_50px_rgba(4,52,87,0.5)] hover:scale-110 hover:shadow-[0_0_80px_rgba(59,130,246,0.6)] transition-all duration-500 border border-blue-400/30 cursor-pointer">
+                <i class='bx bx-bot text-3xl md:text-5xl text-white drop-shadow-md'></i>
+                <div class="absolute inset-0 rounded-full border border-blue-400/50 pointer-events-none" style="animation: radiate-ring 3s infinite ease-out;"></div>
+                <div class="absolute inset-0 rounded-full border border-[#D48A9A]/50 pointer-events-none" style="animation: radiate-ring 3s infinite ease-out; animation-delay: 1.5s;"></div>
+            </div>
+
+            <!-- Orbiting Wrapper -->
+            <div class="absolute w-full h-full rounded-full border border-white/5 shadow-[inset_0_0_30px_rgba(255,255,255,0.02)] pointer-events-none" style="animation: orbit 30s linear infinite;">
+                
+                <!-- Node 1: Voice Call (0deg) -->
+                <div class="absolute inset-0 pointer-events-none" style="transform: rotate(0deg)">
+                    <div class="absolute -top-5 md:-top-8 left-1/2 -translate-x-1/2 pointer-events-none" style="animation: anti-orbit 30s linear infinite;">
+                        <div style="transform: rotate(0deg);">
+                            <div tabindex="0" class="mobile-node-touch w-10 h-10 md:w-16 md:h-16 bg-[#111] border border-blue-500/40 rounded-2xl flex items-center justify-center shadow-[0_0_20px_rgba(59,130,246,0.2)] relative group/node hover:border-blue-400 focus:border-blue-400 hover:scale-110 focus:scale-110 hover:shadow-[0_0_40px_rgba(59,130,246,0.7)] transition-all duration-300 cursor-pointer outline-none pointer-events-auto z-10 hover:z-[100] focus:z-[100]">
+                                <i class='bx bx-phone-call text-lg md:text-2xl text-blue-400 group-hover/node:text-white group-focus/node:text-white transition-colors'></i>
+                                <div class="absolute -top-10 md:-top-14 left-1/2 -translate-x-1/2 opacity-0 scale-95 group-hover/node:opacity-100 group-focus/node:opacity-100 group-hover/node:-translate-y-1 md:group-hover/node:-translate-y-2 group-focus/node:-translate-y-1 md:group-focus/node:-translate-y-2 group-hover/node:scale-100 group-focus/node:scale-100 transition-all duration-300 pointer-events-none flex flex-col items-center min-w-max">
+                                    <div class="bg-[#0a0a0c] border border-blue-500/70 px-2 md:px-3 py-1 md:py-1.5 rounded-md md:rounded-lg text-[8px] md:text-xs font-bold text-blue-400 whitespace-nowrap shadow-[0_15px_30px_rgba(59,130,246,0.5)] backdrop-blur-md uppercase tracking-wider">Voice Call AI</div>
+                                    <div class="w-2 h-2 md:w-2.5 md:h-2.5 bg-[#0a0a0c] border-b border-r border-blue-500/70 rotate-45 -mt-1 md:-mt-1.5"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Node 2: WhatsApp (72deg) -->
+                <div class="absolute inset-0 pointer-events-none" style="transform: rotate(72deg)">
+                    <div class="absolute -top-5 md:-top-8 left-1/2 -translate-x-1/2 pointer-events-none" style="animation: anti-orbit 30s linear infinite;">
+                        <div style="transform: rotate(-72deg);">
+                            <div tabindex="0" class="mobile-node-touch w-10 h-10 md:w-16 md:h-16 bg-[#111] border border-emerald-500/40 rounded-2xl flex items-center justify-center shadow-[0_0_20px_rgba(16,185,129,0.2)] relative group/node hover:border-emerald-400 focus:border-emerald-400 hover:scale-110 focus:scale-110 hover:shadow-[0_0_40px_rgba(16,185,129,0.7)] transition-all duration-300 cursor-pointer outline-none pointer-events-auto z-10 hover:z-[100] focus:z-[100]">
+                                <i class='bx bxl-whatsapp text-lg md:text-2xl text-emerald-400 group-hover/node:text-white group-focus/node:text-white transition-colors'></i>
+                                <div class="absolute -top-10 md:-top-14 left-1/2 -translate-x-1/2 opacity-0 scale-95 group-hover/node:opacity-100 group-focus/node:opacity-100 group-hover/node:-translate-y-1 md:group-hover/node:-translate-y-2 group-focus/node:-translate-y-1 md:group-focus/node:-translate-y-2 group-hover/node:scale-100 group-focus/node:scale-100 transition-all duration-300 pointer-events-none flex flex-col items-center min-w-max">
+                                    <div class="bg-[#0a0a0c] border border-emerald-500/70 px-2 md:px-3 py-1 md:py-1.5 rounded-md md:rounded-lg text-[8px] md:text-xs font-bold text-emerald-400 whitespace-nowrap shadow-[0_15px_30px_rgba(16,185,129,0.5)] backdrop-blur-md uppercase tracking-wider">WhatsApp Nurture</div>
+                                    <div class="w-2 h-2 md:w-2.5 md:h-2.5 bg-[#0a0a0c] border-b border-r border-emerald-500/70 rotate-45 -mt-1 md:-mt-1.5"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Node 3: Chatbot (144deg) -->
+                <div class="absolute inset-0 pointer-events-none" style="transform: rotate(144deg)">
+                    <div class="absolute -top-5 md:-top-8 left-1/2 -translate-x-1/2 pointer-events-none" style="animation: anti-orbit 30s linear infinite;">
+                        <div style="transform: rotate(-144deg);">
+                            <div tabindex="0" class="mobile-node-touch w-10 h-10 md:w-16 md:h-16 bg-[#111] border border-purple-500/40 rounded-2xl flex items-center justify-center shadow-[0_0_20px_rgba(168,85,247,0.2)] relative group/node hover:border-purple-400 focus:border-purple-400 hover:scale-110 focus:scale-110 hover:shadow-[0_0_40px_rgba(168,85,247,0.7)] transition-all duration-300 cursor-pointer outline-none pointer-events-auto z-10 hover:z-[100] focus:z-[100]">
+                                <i class='bx bx-message-square-dots text-lg md:text-2xl text-purple-400 group-hover/node:text-white group-focus/node:text-white transition-colors'></i>
+                                <div class="absolute -top-10 md:-top-14 left-1/2 -translate-x-1/2 opacity-0 scale-95 group-hover/node:opacity-100 group-focus/node:opacity-100 group-hover/node:-translate-y-1 md:group-hover/node:-translate-y-2 group-focus/node:-translate-y-1 md:group-focus/node:-translate-y-2 group-hover/node:scale-100 group-focus/node:scale-100 transition-all duration-300 pointer-events-none flex flex-col items-center min-w-max">
+                                    <div class="bg-[#0a0a0c] border border-purple-500/70 px-2 md:px-3 py-1 md:py-1.5 rounded-md md:rounded-lg text-[8px] md:text-xs font-bold text-purple-400 whitespace-nowrap shadow-[0_15px_30px_rgba(168,85,247,0.5)] backdrop-blur-md uppercase tracking-wider">Smart Chatbot</div>
+                                    <div class="w-2 h-2 md:w-2.5 md:h-2.5 bg-[#0a0a0c] border-b border-r border-purple-500/70 rotate-45 -mt-1 md:-mt-1.5"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Node 4: AI CRM Sync (216deg) -->
+                <div class="absolute inset-0 pointer-events-none" style="transform: rotate(216deg)">
+                    <div class="absolute -top-5 md:-top-8 left-1/2 -translate-x-1/2 pointer-events-none" style="animation: anti-orbit 30s linear infinite;">
+                        <div style="transform: rotate(-216deg);">
+                            <div tabindex="0" class="mobile-node-touch w-10 h-10 md:w-16 md:h-16 bg-[#111] border border-amber-500/40 rounded-2xl flex items-center justify-center shadow-[0_0_20px_rgba(245,158,11,0.2)] relative group/node hover:border-amber-400 focus:border-amber-400 hover:scale-110 focus:scale-110 hover:shadow-[0_0_40px_rgba(245,158,11,0.7)] transition-all duration-300 cursor-pointer outline-none pointer-events-auto z-10 hover:z-[100] focus:z-[100]">
+                                <i class='bx bx-data text-lg md:text-2xl text-amber-400 group-hover/node:text-white group-focus/node:text-white transition-colors'></i>
+                                <div class="absolute -top-10 md:-top-14 left-1/2 -translate-x-1/2 opacity-0 scale-95 group-hover/node:opacity-100 group-focus/node:opacity-100 group-hover/node:-translate-y-1 md:group-hover/node:-translate-y-2 group-focus/node:-translate-y-1 md:group-focus/node:-translate-y-2 group-hover/node:scale-100 group-focus/node:scale-100 transition-all duration-300 pointer-events-none flex flex-col items-center min-w-max">
+                                    <div class="bg-[#0a0a0c] border border-amber-500/70 px-2 md:px-3 py-1 md:py-1.5 rounded-md md:rounded-lg text-[8px] md:text-xs font-bold text-amber-400 whitespace-nowrap shadow-[0_15px_30px_rgba(245,158,11,0.5)] backdrop-blur-md uppercase tracking-wider">AI CRM Sync</div>
+                                    <div class="w-2 h-2 md:w-2.5 md:h-2.5 bg-[#0a0a0c] border-b border-r border-amber-500/70 rotate-45 -mt-1 md:-mt-1.5"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Node 5: Auto-Booking (288deg) -->
+                <div class="absolute inset-0 pointer-events-none" style="transform: rotate(288deg)">
+                    <div class="absolute -top-5 md:-top-8 left-1/2 -translate-x-1/2 pointer-events-none" style="animation: anti-orbit 30s linear infinite;">
+                        <div style="transform: rotate(-288deg);">
+                            <div tabindex="0" class="mobile-node-touch w-10 h-10 md:w-16 md:h-16 bg-[#111] border border-rose-500/40 rounded-2xl flex items-center justify-center shadow-[0_0_20px_rgba(244,63,94,0.2)] relative group/node hover:border-rose-400 focus:border-rose-400 hover:scale-110 focus:scale-110 hover:shadow-[0_0_40px_rgba(244,63,94,0.7)] transition-all duration-300 cursor-pointer outline-none pointer-events-auto z-10 hover:z-[100] focus:z-[100]">
+                                <i class='bx bx-calendar-event text-lg md:text-2xl text-rose-400 group-hover/node:text-white group-focus/node:text-white transition-colors'></i>
+                                <div class="absolute -top-10 md:-top-14 left-1/2 -translate-x-1/2 opacity-0 scale-95 group-hover/node:opacity-100 group-focus/node:opacity-100 group-hover/node:-translate-y-1 md:group-hover/node:-translate-y-2 group-focus/node:-translate-y-1 md:group-focus/node:-translate-y-2 group-hover/node:scale-100 group-focus/node:scale-100 transition-all duration-300 pointer-events-none flex flex-col items-center min-w-max">
+                                    <div class="bg-[#0a0a0c] border border-rose-500/70 px-2 md:px-3 py-1 md:py-1.5 rounded-md md:rounded-lg text-[8px] md:text-xs font-bold text-rose-400 whitespace-nowrap shadow-[0_15px_30px_rgba(244,63,94,0.5)] backdrop-blur-md uppercase tracking-wider">Auto-Booking</div>
+                                    <div class="w-2 h-2 md:w-2.5 md:h-2.5 bg-[#0a0a0c] border-b border-r border-rose-500/70 rotate-45 -mt-1 md:-mt-1.5"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            
+            <div class="absolute w-[1px] h-full bg-gradient-to-b from-transparent via-blue-500/10 to-transparent pointer-events-none"></div>
+            <div class="absolute w-full h-[1px] bg-gradient-to-r from-transparent via-blue-500/10 to-transparent pointer-events-none"></div>
+        </div>
+    </div>
+</div>
+            </div>
+    </section>
+
+    <section id="process" class="py-24 md:py-32 px-6 md:px-12 bg-gradient-to-b from-[#020202] via-[#050505] to-[#020202] border-y border-white/5 relative overflow-hidden scroll-reveal">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-20 md:mb-24 relative z-10">
+                <h2 class="text-3xl md:text-5xl font-display font-semibold text-white tracking-tight mb-4 inline-block relative">
+                    4-Step Growth <span class="relative z-10 text-gradient-wine">System
+                        <svg class="absolute w-[110%] h-[15px] -bottom-2 -left-[5%] pointer-events-none" viewBox="0 0 100 15" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="animate-draw" d="M2 10C30 3 70 3 98 12" stroke="#9C1F42" stroke-width="3" stroke-linecap="round" />
+                        </svg>
+                    </span>
+                </h2>
+                <p class="text-zinc-400 text-base md:text-lg max-w-2xl mx-auto mt-4 px-4">Our proven framework uncovers growth opportunities and drives scalable results with absolute clarity.</p>
+            </div>
+
+            <div class="relative grid grid-cols-1 lg:grid-cols-4 gap-10 lg:gap-8 z-10">
+                
+                <div class="hidden lg:block absolute top-[48px] left-[12%] right-[12%] h-[2px] bg-white/5 z-0 overflow-hidden rounded-full">
+                    <div class="absolute h-full w-[30%] bg-gradient-to-r from-transparent via-brand-rose to-transparent" style="animation: flow-right 3s linear infinite;"></div>
+                </div>
+
+                <div class="lg:hidden absolute top-[32px] bottom-[32px] left-[32px] md:left-[40px] w-[2px] bg-white/5 z-0 overflow-hidden rounded-full">
+                    <div class="absolute w-full h-[40%] bg-gradient-to-b from-transparent via-brand-rose to-transparent" style="animation: flow-down 3s linear infinite;"></div>
+                </div>
+                
+                <div class="relative z-10 flex flex-row lg:flex-col items-start lg:items-center text-left lg:text-center group gap-6 lg:gap-0">
+                    <div class="w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 shrink-0 rounded-full bg-[#050505] border border-white/10 flex items-center justify-center text-xl md:text-2xl font-display font-bold text-white lg:mb-8 group-hover:border-brand-rose group-hover:shadow-[0_0_30px_rgba(212,138,154,0.2)] transition-all duration-500 relative overflow-hidden z-10">
+                        <div class="absolute inset-0 bg-brand-wine/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                        <span class="relative z-10">01</span>
+                    </div>
+                    <div class="pt-1 lg:pt-0">
+                        <h3 class="text-lg md:text-xl font-semibold text-white mb-2 group-hover:text-brand-rose transition-colors">Growth Audit</h3>
+                        <p class="text-zinc-400 text-sm leading-relaxed max-w-xs lg:px-2">We analyze your existing funnel, targeting, and messaging to locate immediate revenue leaks.</p>
+                    </div>
+                </div>
+
+                <div class="relative z-10 flex flex-row lg:flex-col items-start lg:items-center text-left lg:text-center group gap-6 lg:gap-0">
+                    <div class="w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 shrink-0 rounded-full bg-[#050505] border border-white/10 flex items-center justify-center text-xl md:text-2xl font-display font-bold text-white lg:mb-8 group-hover:border-brand-rose group-hover:shadow-[0_0_30px_rgba(212,138,154,0.2)] transition-all duration-500 relative overflow-hidden z-10">
+                        <div class="absolute inset-0 bg-brand-wine/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                        <span class="relative z-10">02</span>
+                    </div>
+                    <div class="pt-1 lg:pt-0">
+                        <h3 class="text-lg md:text-xl font-semibold text-white mb-2 group-hover:text-brand-rose transition-colors">Strategy & Setup</h3>
+                        <p class="text-zinc-400 text-sm leading-relaxed max-w-xs lg:px-2">We design your custom AI workflow, build the high-converting landing pages, and script the ads.</p>
+                    </div>
+                </div>
+
+                <div class="relative z-10 flex flex-row lg:flex-col items-start lg:items-center text-left lg:text-center group gap-6 lg:gap-0">
+                    <div class="w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 shrink-0 rounded-full bg-[#050505] border border-white/10 flex items-center justify-center text-xl md:text-2xl font-display font-bold text-white lg:mb-8 group-hover:border-brand-rose group-hover:shadow-[0_0_30px_rgba(212,138,154,0.2)] transition-all duration-500 relative overflow-hidden z-10">
+                        <div class="absolute inset-0 bg-brand-wine/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                        <span class="relative z-10">03</span>
+                    </div>
+                    <div class="pt-1 lg:pt-0">
+                        <h3 class="text-lg md:text-xl font-semibold text-white mb-2 group-hover:text-brand-rose transition-colors">Launch & Optimize</h3>
+                        <p class="text-zinc-400 text-sm leading-relaxed max-w-xs lg:px-2">Campaigns go live. We monitor data in real-time, refining targeting to drive down acquisition costs.</p>
+                    </div>
+                </div>
+
+                <div class="relative z-10 flex flex-row lg:flex-col items-start lg:items-center text-left lg:text-center group gap-6 lg:gap-0">
+                    <div class="w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 shrink-0 rounded-full bg-[#050505] border border-white/10 flex items-center justify-center text-xl md:text-2xl font-display font-bold text-white lg:mb-8 group-hover:border-emerald-500/50 group-hover:shadow-[0_0_30px_rgba(16,185,129,0.2)] transition-all duration-500 relative overflow-hidden z-10">
+                        <div class="absolute inset-0 bg-emerald-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                        <span class="relative z-10">04</span>
+                    </div>
+                    <div class="pt-1 lg:pt-0">
+                        <h3 class="text-lg md:text-xl font-semibold text-white mb-2 group-hover:text-emerald-400 transition-colors">Scale Predictably</h3>
+                        <p class="text-zinc-400 text-sm leading-relaxed max-w-xs lg:px-2">Once we hit winning metrics, we increase ad spend to multiply your calendar bookings sustainably.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    
+  <section id="reviews" class="pt-10 pb-20 px-6 md:px-12 max-w-7xl mx-auto scroll-reveal">
+    <div class="text-center mb-20 relative z-10">
+        <span class="text-emerald-400 font-bold tracking-[0.2em] uppercase text-[10px] md:text-xs mb-4 block">Proven Results</span>
+        <h2 class="text-3xl md:text-5xl font-display font-semibold text-white tracking-tight mb-4">Our Clients' Thoughts</h2>
+        <p class="text-zinc-400 text-lg max-w-2xl mx-auto">Don't just take our word for it. Listen to the founders scaling with our systems.</p>
+    </div>
+
+    <!-- Removed pb-12 and changed mb-20 to mb-16 to reduce space above the button -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 gap-y-16 md:gap-y-8 mb-16">
+        
+        <div class="relative group">
+            <div class="w-full aspect-[9/16] rounded-[2rem] overflow-hidden relative shadow-[0_20px_40px_rgba(0,0,0,0.8)] border border-white/5 transition-colors duration-500 group-hover:border-white/10 bg-[#050505]">
+                <video class="review-video absolute inset-0 w-full h-full object-cover z-0 cursor-pointer" poster="thumbnail-1.jpg" autoplay loop muted playsinline onclick="togglePlayPause(this)">
+                    <source src="Jr.Hardik_Pandya-case-study.mp4" type="video/mp4">
+                </video>
+                <div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors duration-500 pointer-events-none"></div>
+                
+                <div class="absolute top-4 right-4 z-30 flex items-center bg-black/40 backdrop-blur-md border border-white/20 rounded-full shadow-[0_0_15px_rgba(0,0,0,0.5)] overflow-hidden">
+                    <button class="play-toggle w-10 h-10 flex items-center justify-center text-white hover:bg-white/10 transition-colors border-r border-white/10" onclick="togglePlayBtn(this)">
+                        <i class='bx bx-pause text-xl'></i>
+                    </button>
+                    <button class="mute-toggle w-10 h-10 flex items-center justify-center text-white hover:bg-white/10 transition-colors" onclick="toggleMute(this)">
+                        <i class='bx bx-volume-mute text-xl'></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="absolute -bottom-10 left-4 right-4 bg-[#0a0a0c]/90 backdrop-blur-xl border border-white/10 rounded-2xl p-5 z-40 transform transition-all duration-500 group-hover:-translate-y-2 shadow-[0_15px_35px_rgba(0,0,0,0.7)]">
+                <div class="flex items-center gap-2 mb-3">
+                    <div class="flex items-center gap-1.5 bg-emerald-500/10 border border-emerald-500/20 px-2 py-1 rounded-md text-[9px] font-bold text-emerald-400 uppercase tracking-wider w-max">
+                        <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse shadow-[0_0_8px_#10b981]"></span> Upscale Brand 3x ROI
+                    </div>
+                    <div class="bg-white/5 border border-white/10 px-2 py-1 rounded-md text-[9px] font-semibold text-zinc-400 uppercase tracking-wider w-max">
+                        Fitness 
+                    </div>
+                </div>
+                <p class="text-white font-display font-medium text-sm md:text-base leading-snug mb-4 line-clamp-3">"We stopped chasing vanity metrics and started building a system that turned attention into enquiries and real business growth."</p>
+                <div class="flex items-center gap-3 pt-3 border-t border-white/5">
+                    <div class="w-8 h-8 rounded-full bg-gradient-to-tr from-brand-wine to-brand-rose p-[1.5px] shrink-0">
+                        <div class="w-full h-full rounded-full bg-[#111] flex items-center justify-center text-[10px] font-bold text-white">JH</div>
+                    </div>
+                    <div class="overflow-hidden">
+                        <p class="text-white text-xs font-semibold tracking-wide truncate">Paddy Ch. | Jr.Hardik Pandyaa</p>
+                        <p class="text-zinc-500 text-[10px] uppercase tracking-widest mt-0.5 truncate">Founder, Fitness Brand</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="relative group md:-translate-y-8">
+            <div class="w-full aspect-[9/16] rounded-[2rem] overflow-hidden relative shadow-[0_20px_40px_rgba(0,0,0,0.8)] border border-white/5 transition-colors duration-500 group-hover:border-white/10 bg-[#050505]">
+                <video class="review-video absolute inset-0 w-full h-full object-cover z-0 cursor-pointer" poster="thumbnail-2.jpg" autoplay loop muted playsinline onclick="togglePlayPause(this)">
+                    <source src="client-video-2.mp4" type="video/mp4">
+                </video>
+                <div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors duration-500 pointer-events-none"></div>
+                
+                <div class="absolute top-4 right-4 z-30 flex items-center bg-black/40 backdrop-blur-md border border-white/20 rounded-full shadow-[0_0_15px_rgba(0,0,0,0.5)] overflow-hidden">
+                    <button class="play-toggle w-10 h-10 flex items-center justify-center text-white hover:bg-white/10 transition-colors border-r border-white/10" onclick="togglePlayBtn(this)">
+                        <i class='bx bx-pause text-xl'></i>
+                    </button>
+                    <button class="mute-toggle w-10 h-10 flex items-center justify-center text-white hover:bg-white/10 transition-colors" onclick="toggleMute(this)">
+                        <i class='bx bx-volume-mute text-xl'></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="absolute -bottom-10 left-4 right-4 bg-[#0a0a0c]/90 backdrop-blur-xl border border-white/10 rounded-2xl p-5 z-40 transform transition-all duration-500 group-hover:-translate-y-2 shadow-[0_15px_35px_rgba(0,0,0,0.7)]">
+                <div class="flex items-center gap-2 mb-3">
+                    <div class="flex items-center gap-1.5 bg-blue-500/10 border border-blue-500/20 px-2 py-1 rounded-md text-[9px] font-bold text-blue-400 uppercase tracking-wider w-max">
+                        <span class="w-1.5 h-1.5 rounded-full bg-blue-500 animate-pulse shadow-[0_0_8px_#3b82f6]"></span> CRO Increased
+                    </div>
+                    <div class="bg-white/5 border border-white/10 px-2 py-1 rounded-md text-[9px] font-semibold text-zinc-400 uppercase tracking-wider w-max">
+                        Fitness
+                    </div>
+                </div>
+                <p class="text-white font-display font-medium text-sm md:text-base leading-snug mb-4 line-clamp-3">"Their Meta Ads, creatives, and funnel system helped us increase our conversion rate and generate more qualified client conversations consistently."</p>
+                <div class="flex items-center gap-3 pt-3 border-t border-white/5">
+                    <div class="w-8 h-8 rounded-full bg-gradient-to-tr from-brand-wine to-brand-rose p-[1.5px] shrink-0">
+                        <div class="w-full h-full rounded-full bg-[#111] flex items-center justify-center text-[10px] font-bold text-white">AM</div>
+                    </div>
+                    <div class="overflow-hidden">
+                        <p class="text-white text-xs font-semibold tracking-wide truncate">Amit Kumar</p>
+                        <p class="text-zinc-500 text-[10px] uppercase tracking-widest mt-0.5 truncate">Fitness Coach</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="relative group">
+            <div class="w-full aspect-[9/16] rounded-[2rem] overflow-hidden relative shadow-[0_20px_40px_rgba(0,0,0,0.8)] border border-white/5 transition-colors duration-500 group-hover:border-white/10 bg-[#050505]">
+                <video class="review-video absolute inset-0 w-full h-full object-cover z-0 cursor-pointer" poster="thumbnail-3.jpg" autoplay loop muted playsinline onclick="togglePlayPause(this)">
+                    <source src="client-video-3.mp4" type="video/mp4">
+                </video>
+                <div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors duration-500 pointer-events-none"></div>
+                
+                <div class="absolute top-4 right-4 z-30 flex items-center bg-black/40 backdrop-blur-md border border-white/20 rounded-full shadow-[0_0_15px_rgba(0,0,0,0.5)] overflow-hidden">
+                    <button class="play-toggle w-10 h-10 flex items-center justify-center text-white hover:bg-white/10 transition-colors border-r border-white/10" onclick="togglePlayBtn(this)">
+                        <i class='bx bx-pause text-xl'></i>
+                    </button>
+                    <button class="mute-toggle w-10 h-10 flex items-center justify-center text-white hover:bg-white/10 transition-colors" onclick="toggleMute(this)">
+                        <i class='bx bx-volume-mute text-xl'></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="absolute -bottom-10 left-4 right-4 bg-[#0a0a0c]/90 backdrop-blur-xl border border-white/10 rounded-2xl p-5 z-40 transform transition-all duration-500 group-hover:-translate-y-2 shadow-[0_15px_35px_rgba(0,0,0,0.7)]">
+                <div class="flex items-center gap-2 mb-3">
+                    <div class="flex items-center gap-1.5 bg-emerald-500/10 border border-emerald-500/20 px-2 py-1 rounded-md text-[9px] font-bold text-emerald-400 uppercase tracking-wider w-max">
+                        <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse shadow-[0_0_8px_#10b981]"></span> Cost Cut by 45%
+                    </div>
+                    <div class="bg-white/5 border border-white/10 px-2 py-1 rounded-md text-[9px] font-semibold text-zinc-400 uppercase tracking-wider w-max">
+                        B2B Services
+                    </div>
+                </div>
+                <p class="text-white font-display font-medium text-sm md:text-base leading-snug mb-4 line-clamp-3">"Transformed our lead gen overnight. The scale and speed of their funnels is unmatched."</p>
+                <div class="flex items-center gap-3 pt-3 border-t border-white/5">
+                    <div class="w-8 h-8 rounded-full bg-gradient-to-tr from-brand-wine to-brand-rose p-[1.5px] shrink-0">
+                        <div class="w-full h-full rounded-full bg-[#111] flex items-center justify-center text-[10px] font-bold text-white">DR</div>
+                    </div>
+                    <div class="overflow-hidden">
+                        <p class="text-white text-xs font-semibold tracking-wide truncate">Daniel Rivers</p>
+                        <p class="text-zinc-500 text-[10px] uppercase tracking-widest mt-0.5 truncate">B2B CEO</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Removed mt-8 from this div to bring the button closer to the cards above -->
+    <div class="flex justify-center">
+        <a href="https://calendly.com/your-calendly-link" class="btn-brand px-8 py-4 rounded-full text-sm font-bold uppercase tracking-widest flex items-center gap-2 shadow-[0_0_20px_rgba(156,31,66,0.3)] hover:-translate-y-0.5">
+            Book an Intro Call <i class='bx bx-right-arrow-alt text-xl'></i>
+        </a>
+    </div>
+</section>
+    
+
+<section id="qualification" class="pt-8 pb-24 md:pt-12 md:pb-32 px-4 sm:px-6 md:px-12 bg-[#020202] relative overflow-hidden">
+    
+    <!-- Premium Ambient Particles Container -->
+    <div id="particles-container" class="absolute inset-0 pointer-events-none opacity-40 z-0"></div>
+    
+    <div class="max-w-6xl mx-auto relative z-10">
+        
+        <!-- Section Header -->
+        <div class="text-center mb-16 md:mb-24 stagger-reveal">
+            <span class="inline-block text-brand-rose font-bold tracking-[0.2em] uppercase text-[10px] md:text-xs mb-4 md:mb-6 px-4 py-1.5 rounded-full border border-brand-rose/20 bg-brand-rose/5">
+                Exclusivity Matters
+            </span>
+            <h2 class="text-4xl sm:text-5xl md:text-6xl font-display font-bold tracking-tight leading-[1.05]">
+                <span class="text-white block mb-1">Built For Businesses Ready To Scale.</span>
+                <span class="text-zinc-500 block font-medium">Not Everyone Qualifies.</span>
+            </h2>
+        </div>
+        
+        <!-- Qualification Grid -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8">
+            
+            <!-- LEFT CARD: Who We Partner With (High Focus) -->
+            <div id="partner-card" class="relative group glass-panel bg-[#0a0a0a]/90 backdrop-blur-2xl border border-white/5 rounded-[2rem] p-8 sm:p-12 flex flex-col h-full overflow-hidden transition-all duration-700 hover:-translate-y-2 hover:shadow-[0_20px_40px_-10px_rgba(16,185,129,0.15)] stagger-reveal">
+                
+                <!-- Animated Hover Border Gradient -->
+                <div class="absolute inset-0 bg-gradient-to-br from-emerald-500/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none z-0"></div>
+                
+                <!-- Mouse Tracking Spotlight -->
+                <div class="spotlight-overlay absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none z-0"></div>
+                
+                <!-- Background Watermark -->
+                <div class="absolute -right-10 -bottom-10 text-[12rem] text-emerald-500/5 rotate-[-15deg] pointer-events-none z-0 group-hover:scale-110 group-hover:text-emerald-500/10 transition-all duration-700 ease-out">
+                    <i class='bx bxs-check-circle'></i>
+                </div>
+                
+                <!-- Content -->
+                <div class="relative z-10">
+                    <h3 class="text-2xl sm:text-3xl font-semibold mb-10 flex items-center gap-3 text-white tracking-tight">
+                        <div class="w-10 h-10 rounded-full bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center shadow-[0_0_15px_rgba(16,185,129,0.2)]">
+                            <i class='bx bx-check text-emerald-400 text-2xl'></i>
+                        </div>
+                        Who We Partner With
+                    </h3>
+                    
+                    <ul class="space-y-6 text-base md:text-lg text-zinc-400 font-normal">
+                        <li class="flex items-start gap-4 bullet-reveal">
+                            <span class="mt-2 w-1.5 h-1.5 rounded-full bg-emerald-400 shrink-0 shadow-[0_0_8px_#34d399]"></span>
+                            <span><strong class="text-white font-medium">Established businesses</strong> with validated offers.</span>
+                        </li>
+                        <li class="flex items-start gap-4 bullet-reveal">
+                            <span class="mt-2 w-1.5 h-1.5 rounded-full bg-emerald-400 shrink-0 shadow-[0_0_8px_#34d399]"></span>
+                            <span><strong class="text-white font-medium">Founders focused on revenue,</strong> not vanity metrics.</span>
+                        </li>
+                        <li class="flex items-start gap-4 bullet-reveal">
+                            <span class="mt-2 w-1.5 h-1.5 rounded-full bg-emerald-400 shrink-0 shadow-[0_0_8px_#34d399]"></span>
+                            <span><strong class="text-white font-medium">Businesses ready to invest</strong> in scalable growth systems.</span>
+                        </li>
+                        <li class="flex items-start gap-4 bullet-reveal">
+                            <span class="mt-2 w-1.5 h-1.5 rounded-full bg-emerald-400 shrink-0 shadow-[0_0_8px_#34d399]"></span>
+                            <span><strong class="text-white font-medium">Teams committed to execution</strong> and long-term success.</span>
+                        </li>
+                        <li class="flex items-start gap-4 bullet-reveal">
+                            <span class="mt-2 w-1.5 h-1.5 rounded-full bg-emerald-400 shrink-0 shadow-[0_0_8px_#34d399]"></span>
+                            <span class="leading-relaxed">Service providers, coaches, consultants, wellness brands, and growth-focused companies.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- RIGHT CARD: Who We Don't Work With (Low Focus / Muted) -->
+            <div class="relative group glass-panel bg-[#050505]/40 backdrop-blur-md border border-white/5 rounded-[2rem] p-8 sm:p-12 flex flex-col h-full overflow-hidden opacity-50 grayscale blur-[1px] hover:opacity-100 hover:grayscale-0 hover:blur-none transition-all duration-700 ease-out stagger-reveal">
+                
+                <div class="relative z-10">
+                    <h3 class="text-2xl sm:text-3xl font-semibold mb-10 flex items-center gap-3 text-zinc-500 group-hover:text-zinc-300 transition-colors duration-500 tracking-tight">
+                        <div class="w-10 h-10 rounded-full bg-zinc-800/50 border border-zinc-700/50 flex items-center justify-center">
+                            <i class='bx bx-x text-zinc-400 text-2xl'></i>
+                        </div>
+                        Who We Don't Work With
+                    </h3>
+                    
+                    <ul class="space-y-6 text-base md:text-lg text-zinc-500 font-normal">
+                        <li class="flex items-start gap-4 bullet-reveal-right">
+                            <i class='bx bx-x text-xl text-zinc-600 shrink-0 mt-1'></i>
+                            <span class="group-hover:text-zinc-400 transition-colors duration-500">Businesses looking for overnight results.</span>
+                        </li>
+                        <li class="flex items-start gap-4 bullet-reveal-right">
+                            <i class='bx bx-x text-xl text-zinc-600 shrink-0 mt-1'></i>
+                            <span class="group-hover:text-zinc-400 transition-colors duration-500">"Let's test and see" decision-makers with no commitment.</span>
+                        </li>
+                        <li class="flex items-start gap-4 bullet-reveal-right">
+                            <i class='bx bx-x text-xl text-zinc-600 shrink-0 mt-1'></i>
+                            <span class="group-hover:text-zinc-400 transition-colors duration-500">Companies unwilling to invest in growth.</span>
+                        </li>
+                        <li class="flex items-start gap-4 bullet-reveal-right">
+                            <i class='bx bx-x text-xl text-zinc-600 shrink-0 mt-1'></i>
+                            <span class="group-hover:text-zinc-400 transition-colors duration-500">Businesses without the capacity to fulfill demand.</span>
+                        </li>
+                        <li class="flex items-start gap-4 bullet-reveal-right">
+                            <i class='bx bx-x text-xl text-zinc-600 shrink-0 mt-1'></i>
+                            <span class="group-hover:text-zinc-400 transition-colors duration-500">Anyone seeking shortcuts instead of systems.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Advanced Interaction Script -->
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        
+        // 1. Mouse-Tracking Spotlight (Left Card Only)
+        const partnerCard = document.getElementById('partner-card');
+        
+        if(partnerCard) {
+            partnerCard.addEventListener('mousemove', (e) => {
+                const rect = partnerCard.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                
+                const overlay = partnerCard.querySelector('.spotlight-overlay');
+                // Subtle emerald glow following the cursor
+                overlay.style.background = `radial-gradient(600px circle at ${x}px ${y}px, rgba(16, 185, 129, 0.05), transparent 40%)`;
+            });
+        }
+
+        // 2. Premium Viewport Scroll Reveal Sequence
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px 0px -50px 0px',
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    
+                    // Reveal Main Containers
+                    if (entry.target.classList.contains('stagger-reveal')) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                        observer.unobserve(entry.target);
+                    }
+                    
+                    // Reveal Left Card Bullets (Staggered)
+                    if (entry.target.id === 'partner-card') {
+                        const bullets = entry.target.querySelectorAll('.bullet-reveal');
+                        bullets.forEach((bullet, index) => {
+                            setTimeout(() => {
+                                bullet.style.opacity = '1';
+                                bullet.style.transform = 'translateY(0)';
+                            }, 150 * (index + 1)); // 150ms delay per bullet
+                        });
+                    }
+                    
+                    // Reveal Right Card Bullets (Staggered)
+                    if (entry.target.classList.contains('opacity-50')) {
+                        const bulletsRight = entry.target.querySelectorAll('.bullet-reveal-right');
+                        bulletsRight.forEach((bullet, index) => {
+                            setTimeout(() => {
+                                bullet.style.opacity = '1';
+                                bullet.style.transform = 'translateY(0)';
+                            }, 150 * (index + 1)); 
+                        });
+                    }
+                }
+            });
+        }, observerOptions);
+
+        // Setup Initial Hidden States & Observe
+        document.querySelectorAll('.stagger-reveal').forEach((el, i) => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'all 1s cubic-bezier(0.16, 1, 0.3, 1)';
+            el.style.transitionDelay = `${i * 100}ms`;
+            observer.observe(el);
+        });
+
+        document.querySelectorAll('.bullet-reveal, .bullet-reveal-right').forEach((el) => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(15px)';
+            el.style.transition = 'all 0.6s cubic-bezier(0.16, 1, 0.3, 1)';
+        });
+
+        // 3. Floating Ambient Particles Generator
+        const container = document.getElementById('particles-container');
+        if(container && window.innerWidth > 768) { // Only generate on desktop for performance
+            const particleCount = 15;
+            for (let i = 0; i < particleCount; i++) {
+                const particle = document.createElement('div');
+                
+                // Randomize size, position, and opacity
+                const size = Math.random() * 3 + 1; // 1px to 4px
+                const posX = Math.random() * 100; // 0% to 100%
+                const posY = Math.random() * 100;
+                const opacity = Math.random() * 0.5 + 0.1;
+                const animDuration = Math.random() * 20 + 10; // 10s to 30s
+                const animDelay = Math.random() * 5;
+                
+                particle.style.cssText = `
+                    position: absolute;
+                    width: ${size}px;
+                    height: ${size}px;
+                    background-color: #fff;
+                    border-radius: 50%;
+                    left: ${posX}%;
+                    top: ${posY}%;
+                    opacity: ${opacity};
+                    box-shadow: 0 0 ${size * 2}px rgba(255,255,255,0.8);
+                    animation: float ${animDuration}s linear infinite;
+                    animation-delay: -${animDelay}s;
+                `;
+                
+                container.appendChild(particle);
+            }
+        }
+    });
+</script>
+
+<!-- Add this to your main CSS file for the particle animation -->
+<style>
+    @keyframes float {
+        0% { transform: translateY(0) scale(1); opacity: 0; }
+        10% { opacity: 0.5; }
+        50% { transform: translateY(-50px) scale(1.2); }
+        90% { opacity: 0.5; }
+        100% { transform: translateY(-100px) scale(1); opacity: 0; }
+    }
+</style>
+<section class="py-24 relative overflow-hidden bg-[#050505] border-y border-white/5 scroll-reveal">
+        <div class="digital-grid absolute inset-0 pointer-events-none opacity-30"></div>
+        <div class="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_50%_50%,rgba(123,3,35,0.15),transparent_70%)] pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
+            <div class="text-center mb-16">
+                <span class="text-[#7b0323] font-bold tracking-widest uppercase text-[10px] md:text-xs mb-3 block">Direct from WhatsApp & Slack</span>
+                <h2 class="text-3xl md:text-5xl font-bold text-white">Live Wins from <br><span class="text-transparent bg-clip-text bg-gradient-to-r from-white to-neutral-500">The Front Lines.</span></h2>
+                <p class="mt-4 text-neutral-400 max-w-xl mx-auto text-sm md:text-base">
+                    No case study PDFs. Just raw screenshots from our client groups happening right now.
+                </p>
+            </div>
+
+            <!-- Slider Container -->
+            <div id="proof-slider" class="flex md:grid md:grid-cols-3 gap-6 md:gap-8 overflow-x-auto md:overflow-visible pb-12 px-4 md:px-0 snap-x snap-mandatory no-scrollbar" style="-webkit-overflow-scrolling: touch;">
+                
+                <div class="snap-center shrink-0 w-[280px] md:w-auto">
+                    <div class="phone-frame relative h-[560px] rounded-[2.5rem] overflow-hidden group">
+                        <div class="result-scan-line"></div>
+                        
+                        <div class="absolute top-6 left-1/2 -translate-x-1/2 z-30 bg-emerald-500/10 backdrop-blur-md border border-emerald-500/30 px-3 py-1 rounded-full flex items-center gap-1.5 shadow-lg">
+                            <i class='bx bxs-check-circle text-emerald-400 text-xs'></i>
+                            <span class="text-[10px] font-bold text-emerald-100 uppercase tracking-wider">Verified Win</span>
+                        </div>
+
+                        <div class="reaction-bubble">🔥</div>
+                        <div class="reaction-bubble r-delay-1">🚀</div>
+
+                        <div class="relative h-full w-full bg-black">
+                            <img src="scone.png" alt="Client Win Screenshot 1" class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/30"></div>
+                        </div>
+
+                        <div class="absolute bottom-0 left-0 w-full p-6 bg-gradient-to-t from-black via-black/90 to-transparent pt-12">
+                            <p class="text-white font-bold text-lg mb-1">Qualified Appointment 250 +/mo</p>
+                            <p class="text-xs text-neutral-400">Consultation • Ai + Meta Ads</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="snap-center shrink-0 w-[280px] md:w-auto">
+                    <div class="phone-frame relative h-[560px] rounded-[2.5rem] overflow-hidden group mt-0 md:-mt-8"> 
+                        <div class="result-scan-line" style="animation-delay: 1s;"></div>
+                        
+                        <div class="absolute top-6 left-1/2 -translate-x-1/2 z-30 bg-emerald-500/10 backdrop-blur-md border border-emerald-500/30 px-3 py-1 rounded-full flex items-center gap-1.5 shadow-lg">
+                            <i class='bx bxs-check-circle text-emerald-400 text-xs'></i>
+                            <span class="text-[10px] font-bold text-emerald-100 uppercase tracking-wider">Verified Win</span>
+                        </div>
+
+                        <div class="reaction-bubble">💰</div>
+                        <div class="reaction-bubble r-delay-2">📈</div>
+
+                        <div class="relative h-full w-full bg-black">
+                             <img src="scthree.png" alt="Client Win Screenshot 2" class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/30"></div>
+                        </div>
+
+                        <div class="absolute bottom-0 left-0 w-full p-6 bg-gradient-to-t from-black via-black/90 to-transparent pt-12">
+                            <p class="text-white font-bold text-lg mb-1">Leads capturing Funnel</p>
+                            <p class="text-xs text-neutral-400">Service • Lending Page</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="snap-center shrink-0 w-[280px] md:w-auto">
+                    <div class="phone-frame relative h-[560px] rounded-[2.5rem] overflow-hidden group">
+                        <div class="result-scan-line" style="animation-delay: 2s;"></div>
+                        
+                        <div class="absolute top-6 left-1/2 -translate-x-1/2 z-30 bg-emerald-500/10 backdrop-blur-md border border-emerald-500/30 px-3 py-1 rounded-full flex items-center gap-1.5 shadow-lg">
+                            <i class='bx bxs-check-circle text-emerald-400 text-xs'></i>
+                            <span class="text-[10px] font-bold text-emerald-100 uppercase tracking-wider">Verified Win</span>
+                        </div>
+
+                        <div class="reaction-bubble">🤯</div>
+                        <div class="reaction-bubble r-delay-1">⚡</div>
+
+                        <div class="relative h-full w-full bg-black">
+                             <img src="sctwo.png" alt="Client Win Screenshot 3" class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/30"></div>
+                        </div>
+
+                        <div class="absolute bottom-0 left-0 w-full p-6 bg-gradient-to-t from-black via-black/90 to-transparent pt-12">
+                            <p class="text-white font-bold text-lg mb-1">Closing in 2 Days</p>
+                            <p class="text-xs text-neutral-400">Fitness Program • Conversion Strategy</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Auto-Swiping Indicators Text -->
+            <div class="md:hidden flex justify-center items-center gap-2 text-neutral-500 text-[10px] uppercase tracking-widest animate-pulse mt-4">
+                <i class='bx bx-left-arrow-alt'></i> Auto-swiping Proof <i class='bx bx-right-arrow-alt'></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Premium Circular Infinite Loop Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const slider = document.getElementById('proof-slider');
+            if (!slider) return;
+
+            let isMobile = window.innerWidth < 768;
+            let autoScrollInterval;
+            const scrollDelay = 3500; // 3.5 seconds per slide
+            
+            // 1. Setup Clones for Infinite Loop
+            const originalItems = Array.from(slider.children);
+            
+            // Clone the original items twice to create a seamless track in both directions
+            const createClones = () => {
+                originalItems.forEach(item => {
+                    let clone = item.cloneNode(true);
+                    clone.classList.add('md:hidden'); // Ensures desktop grid never breaks
+                    slider.appendChild(clone);
+                });
+            };
+            
+            createClones(); // Set 2
+            createClones(); // Set 3
+            // Total items: 9 (Original 3 + Cloned 6)
+
+            let cardWidth = 0;
+            let originalTrackWidth = 0;
+
+            const updateDimensions = () => {
+                if (!isMobile) return;
+                // Width of one card + the gap (Tailwind gap-6 is 24px)
+                cardWidth = originalItems[0].offsetWidth + 24; 
+                originalTrackWidth = cardWidth * originalItems.length;
+            };
+
+            const startAutoScroll = () => {
+                if (!isMobile) return;
+                
+                autoScrollInterval = setInterval(() => {
+                    slider.scrollBy({ left: cardWidth, behavior: 'smooth' });
+                }, scrollDelay);
+            };
+
+            const stopAutoScroll = () => {
+                clearInterval(autoScrollInterval);
+            };
+
+            // 2. The Illusion: Silent Rewind on Scroll
+            slider.addEventListener('scroll', () => {
+                if (!isMobile) return;
+                
+                // If scrolled past the second set, instantly jump back to the identical card in the first set
+                if (slider.scrollLeft >= originalTrackWidth * 2) {
+                    slider.scrollLeft = slider.scrollLeft - originalTrackWidth;
+                } 
+                // If user manually swipes left past the start, jump forward
+                else if (slider.scrollLeft <= 0) {
+                    slider.scrollLeft = slider.scrollLeft + originalTrackWidth;
+                }
+            }, { passive: true });
+
+            // 3. User Interaction Logic
+            slider.addEventListener('touchstart', stopAutoScroll, { passive: true });
+            slider.addEventListener('touchend', () => {
+                setTimeout(() => {
+                    stopAutoScroll();
+                    startAutoScroll();
+                }, 2000);
+            }, { passive: true });
+
+            // 4. Handle Viewport Resizing
+            window.addEventListener('resize', () => {
+                const wasMobile = isMobile;
+                isMobile = window.innerWidth < 768;
+                
+                if (!wasMobile && isMobile) {
+                    updateDimensions();
+                    slider.scrollLeft = originalTrackWidth; // Start in the middle
+                    startAutoScroll();
+                } else if (wasMobile && !isMobile) {
+                    stopAutoScroll();
+                    slider.scrollTo({ left: 0, behavior: 'auto' });
+                }
+            });
+
+            // 5. Initial Boot
+            if (isMobile) {
+                // Short timeout ensures images/DOM calculate correct widths before scrolling
+                setTimeout(() => {
+                    updateDimensions();
+                    // Set initial position to the middle clone set so we can swipe in either direction seamlessly
+                    slider.scrollLeft = originalTrackWidth; 
+                    startAutoScroll();
+                }, 150);
+            }
+        });
+    </script>
+
+<section class="py-32 px-6 md:px-12 max-w-4xl mx-auto relative overflow-hidden scroll-reveal">
+        
+        <!-- Background Glow -->
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-brand-wine/5 blur-[150px] rounded-full pointer-events-none z-0"></div>
+
+        <!-- Section Header -->
+        <div class="text-center mb-16 relative z-10">
+            <span class="text-brand-rose font-bold tracking-[0.2em] uppercase text-[10px] md:text-xs mb-4 block">Clarity & Transparency</span>
+            <h2 class="text-3xl md:text-5xl font-display font-semibold text-white tracking-tight mb-4">Your Questions Answered</h2>
+            <p class="text-zinc-400 text-lg">Everything you need to know about scaling with Creativ Plus.</p>
+        </div>
+
+        <!-- Accordion Wrapper -->
+        <div class="space-y-4 relative z-10">
+            
+            <!-- FAQ Item 1 -->
+            <div class="group glass-panel bg-[#050505] border border-white/5 rounded-2xl relative transition-all duration-500 has-[:checked]:border-brand-rose/30 has-[:checked]:shadow-[0_0_30px_rgba(212,138,154,0.05)] has-[:checked]:bg-[#080506]">
+                <input type="radio" name="faq_group" id="faq1" class="hidden">
+                <label for="faq1" class="p-6 text-base md:text-lg font-medium text-white flex justify-between items-center cursor-pointer transition-colors z-20 relative hover:text-brand-rose group-has-[:checked]:text-brand-rose">
+                    How does it work?
+                    <span class="relative w-8 h-8 shrink-0 flex items-center justify-center rounded-full bg-white/5 border border-white/10 transition-all duration-500 shadow-inner group-hover:border-white/20 group-has-[:checked]:border-brand-rose/40 group-has-[:checked]:bg-brand-rose/10">
+                        <i class='bx bx-plus absolute text-zinc-400 transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] text-xl group-has-[:checked]:rotate-90 group-has-[:checked]:opacity-0'></i>
+                        <i class='bx bx-minus absolute text-brand-rose opacity-0 -rotate-90 transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] text-xl group-has-[:checked]:rotate-0 group-has-[:checked]:opacity-100'></i>
+                    </span>
+                </label>
+                <!-- Premium Grid Animation -->
+                <div class="grid grid-rows-[0fr] transition-[grid-template-rows] duration-300 ease-out group-has-[:checked]:duration-700 group-has-[:checked]:ease-[cubic-bezier(0.16,1,0.3,1)] group-has-[:checked]:grid-rows-[1fr]">
+                    <div class="overflow-hidden">
+                        <div class="px-6 pb-6 border-t border-white/5 mt-2 opacity-0 translate-y-4 transition-all duration-300 ease-out group-has-[:checked]:opacity-100 group-has-[:checked]:translate-y-0 group-has-[:checked]:duration-700 group-has-[:checked]:delay-150 group-has-[:checked]:ease-[cubic-bezier(0.16,1,0.3,1)]">
+                            <div class="pt-4 text-zinc-300 text-sm md:text-base leading-relaxed">
+                                We deploy our <strong class="text-white font-semibold">proven 4-step framework</strong>: First, we audit your current bottlenecks. Then, we build your <strong class="text-brand-rose font-medium">custom AI workflows</strong> and <strong class="text-white font-medium">high-converting landing pages</strong>. Next, we launch targeted Meta and Google ads. Finally, we optimize the data in real-time to <strong class="text-white font-medium">scale your lead flow predictably</strong>.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ Item 2 -->
+            <div class="group glass-panel bg-[#050505] border border-white/5 rounded-2xl relative transition-all duration-500 has-[:checked]:border-brand-rose/30 has-[:checked]:shadow-[0_0_30px_rgba(212,138,154,0.05)] has-[:checked]:bg-[#080506]">
+                <input type="radio" name="faq_group" id="faq2" class="hidden">
+                <label for="faq2" class="p-6 text-base md:text-lg font-medium text-white flex justify-between items-center cursor-pointer transition-colors z-20 relative hover:text-brand-rose group-has-[:checked]:text-brand-rose">
+                    How much budget do I need?
+                    <span class="relative w-8 h-8 shrink-0 flex items-center justify-center rounded-full bg-white/5 border border-white/10 transition-all duration-500 shadow-inner group-hover:border-white/20 group-has-[:checked]:border-brand-rose/40 group-has-[:checked]:bg-brand-rose/10">
+                        <i class='bx bx-plus absolute text-zinc-400 transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] text-xl group-has-[:checked]:rotate-90 group-has-[:checked]:opacity-0'></i>
+                        <i class='bx bx-minus absolute text-brand-rose opacity-0 -rotate-90 transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] text-xl group-has-[:checked]:rotate-0 group-has-[:checked]:opacity-100'></i>
+                    </span>
+                </label>
+                <div class="grid grid-rows-[0fr] transition-[grid-template-rows] duration-300 ease-out group-has-[:checked]:duration-700 group-has-[:checked]:ease-[cubic-bezier(0.16,1,0.3,1)] group-has-[:checked]:grid-rows-[1fr]">
+                    <div class="overflow-hidden">
+                        <div class="px-6 pb-6 border-t border-white/5 mt-2 opacity-0 translate-y-4 transition-all duration-300 ease-out group-has-[:checked]:opacity-100 group-has-[:checked]:translate-y-0 group-has-[:checked]:duration-700 group-has-[:checked]:delay-150 group-has-[:checked]:ease-[cubic-bezier(0.16,1,0.3,1)]">
+                            <div class="pt-4 text-zinc-300 text-sm md:text-base leading-relaxed">
+                                While our management plans are transparent (starting at <strong class="text-white font-semibold">$850/mo</strong>), we strongly recommend a minimum monthly ad spend budget of <strong class="text-brand-rose font-medium">$1,500 to $2,000</strong>. This ensures we can gather statistically significant data quickly, <strong class="text-white font-medium">train the AI algorithms</strong>, and optimize your campaigns for the <strong class="text-white font-semibold">lowest cost-per-acquisition</strong>.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ Item 3 -->
+            <div class="group glass-panel bg-[#050505] border border-white/5 rounded-2xl relative transition-all duration-500 has-[:checked]:border-brand-rose/30 has-[:checked]:shadow-[0_0_30px_rgba(212,138,154,0.05)] has-[:checked]:bg-[#080506]">
+                <input type="radio" name="faq_group" id="faq3" class="hidden">
+                <label for="faq3" class="p-6 text-base md:text-lg font-medium text-white flex justify-between items-center cursor-pointer transition-colors z-20 relative hover:text-brand-rose group-has-[:checked]:text-brand-rose">
+                    Do you guarantee results?
+                    <span class="relative w-8 h-8 shrink-0 flex items-center justify-center rounded-full bg-white/5 border border-white/10 transition-all duration-500 shadow-inner group-hover:border-white/20 group-has-[:checked]:border-brand-rose/40 group-has-[:checked]:bg-brand-rose/10">
+                        <i class='bx bx-plus absolute text-zinc-400 transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] text-xl group-has-[:checked]:rotate-90 group-has-[:checked]:opacity-0'></i>
+                        <i class='bx bx-minus absolute text-brand-rose opacity-0 -rotate-90 transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] text-xl group-has-[:checked]:rotate-0 group-has-[:checked]:opacity-100'></i>
+                    </span>
+                </label>
+                <div class="grid grid-rows-[0fr] transition-[grid-template-rows] duration-300 ease-out group-has-[:checked]:duration-700 group-has-[:checked]:ease-[cubic-bezier(0.16,1,0.3,1)] group-has-[:checked]:grid-rows-[1fr]">
+                    <div class="overflow-hidden">
+                        <div class="px-6 pb-6 border-t border-white/5 mt-2 opacity-0 translate-y-4 transition-all duration-300 ease-out group-has-[:checked]:opacity-100 group-has-[:checked]:translate-y-0 group-has-[:checked]:duration-700 group-has-[:checked]:delay-150 group-has-[:checked]:ease-[cubic-bezier(0.16,1,0.3,1)]">
+                            <div class="pt-4 text-zinc-300 text-sm md:text-base leading-relaxed">
+                                We stand strictly by our <strong class="text-white font-semibold">performance</strong>. While no legitimate agency can guarantee exact conversion numbers due to market variables, our higher-tier management plans include <strong class="text-brand-rose font-medium">conditional performance benchmarks</strong>. If we don't hit the agreed-upon milestones, <strong class="text-white font-semibold underline decoration-brand-rose/50 underline-offset-4">we work for free until we do</strong>.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ Item 4 -->
+            <div class="group glass-panel bg-[#050505] border border-white/5 rounded-2xl relative transition-all duration-500 has-[:checked]:border-brand-rose/30 has-[:checked]:shadow-[0_0_30px_rgba(212,138,154,0.05)] has-[:checked]:bg-[#080506]">
+                <input type="radio" name="faq_group" id="faq4" class="hidden">
+                <label for="faq4" class="p-6 text-base md:text-lg font-medium text-white flex justify-between items-center cursor-pointer transition-colors z-20 relative hover:text-brand-rose group-has-[:checked]:text-brand-rose">
+                    How quickly can I scale?
+                    <span class="relative w-8 h-8 shrink-0 flex items-center justify-center rounded-full bg-white/5 border border-white/10 transition-all duration-500 shadow-inner group-hover:border-white/20 group-has-[:checked]:border-brand-rose/40 group-has-[:checked]:bg-brand-rose/10">
+                        <i class='bx bx-plus absolute text-zinc-400 transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] text-xl group-has-[:checked]:rotate-90 group-has-[:checked]:opacity-0'></i>
+                        <i class='bx bx-minus absolute text-brand-rose opacity-0 -rotate-90 transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] text-xl group-has-[:checked]:rotate-0 group-has-[:checked]:opacity-100'></i>
+                    </span>
+                </label>
+                <div class="grid grid-rows-[0fr] transition-[grid-template-rows] duration-300 ease-out group-has-[:checked]:duration-700 group-has-[:checked]:ease-[cubic-bezier(0.16,1,0.3,1)] group-has-[:checked]:grid-rows-[1fr]">
+                    <div class="overflow-hidden">
+                        <div class="px-6 pb-6 border-t border-white/5 mt-2 opacity-0 translate-y-4 transition-all duration-300 ease-out group-has-[:checked]:opacity-100 group-has-[:checked]:translate-y-0 group-has-[:checked]:duration-700 group-has-[:checked]:delay-150 group-has-[:checked]:ease-[cubic-bezier(0.16,1,0.3,1)]">
+                            <div class="pt-4 text-zinc-300 text-sm md:text-base leading-relaxed">
+                                Speed depends on your starting point, but most of our clients see their first influx of qualified leads within <strong class="text-white font-semibold">14 days of launch</strong>. Month 1 is dedicated to <strong class="text-white font-medium">aggressive testing</strong>, Month 2 is for <strong class="text-brand-rose font-medium">refining and lowering acquisition costs</strong>, and Month 3+ is where we push the budget to <strong class="text-white font-semibold">scale exponentially</strong>.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ Item 5 (Default Open - Emerald Accent) -->
+            <div class="group glass-panel bg-[#050505] border border-white/5 rounded-2xl relative transition-all duration-500 has-[:checked]:border-emerald-500/30 has-[:checked]:shadow-[0_0_30px_rgba(16,185,129,0.05)] has-[:checked]:bg-[#050a08]">
+                <!-- ADDED CHECKED HERE -->
+                <input type="radio" name="faq_group" id="faq5" class="hidden" checked>
+                <label for="faq5" class="p-6 text-base md:text-lg font-medium text-white flex justify-between items-center cursor-pointer transition-colors z-20 relative hover:text-emerald-400 group-has-[:checked]:text-emerald-400">
+                    Can you explain how the consultation process works?
+                    <span class="relative w-8 h-8 shrink-0 flex items-center justify-center rounded-full bg-white/5 border border-white/10 transition-all duration-500 shadow-inner group-hover:border-white/20 group-has-[:checked]:border-emerald-400/40 group-has-[:checked]:bg-emerald-400/10">
+                        <i class='bx bx-plus absolute text-zinc-400 transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] text-xl group-has-[:checked]:rotate-90 group-has-[:checked]:opacity-0'></i>
+                        <i class='bx bx-minus absolute text-emerald-400 opacity-0 -rotate-90 transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] text-xl group-has-[:checked]:rotate-0 group-has-[:checked]:opacity-100'></i>
+                    </span>
+                </label>
+                <div class="grid grid-rows-[0fr] transition-[grid-template-rows] duration-300 ease-out group-has-[:checked]:duration-700 group-has-[:checked]:ease-[cubic-bezier(0.16,1,0.3,1)] group-has-[:checked]:grid-rows-[1fr]">
+                    <div class="overflow-hidden">
+                        <div class="px-6 pb-6 border-t border-white/5 mt-2 opacity-0 translate-y-4 transition-all duration-300 ease-out group-has-[:checked]:opacity-100 group-has-[:checked]:translate-y-0 group-has-[:checked]:duration-700 group-has-[:checked]:delay-150 group-has-[:checked]:ease-[cubic-bezier(0.16,1,0.3,1)]">
+                            <div class="pt-4 text-zinc-300 text-sm md:text-base leading-relaxed">
+                                It starts with a complimentary <strong class="text-emerald-400 font-semibold">30-minute discovery call</strong> where we analyze your current operations, target audience, and revenue goals. If we determine that our systems are a mutual fit for your practice, we’ll outline a <strong class="text-white font-medium">custom growth roadmap</strong>. Once approved, we move immediately into the <strong class="text-white font-medium">onboarding and build phase</strong>.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <footer id="contact" class="border-t border-white/5 bg-[#020202] pt-24 pb-12 relative overflow-hidden">
+        <div class="glow-orb w-[800px] h-[800px] bg-brand-wine top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-[0.05]"></div>
+        
+        <div class="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 lg:gap-8 mb-20">
+                
+                <div class="lg:col-span-5">
+                    <div class="w-[180px] mb-8">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="200 280 680 130" class="w-full h-auto drop-shadow-lg">
+                      <defs><linearGradient id="brand" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" style="stop-color:#9C1F42"/><stop offset="100%" style="stop-color:#4A0E1F"/></linearGradient></defs>
+                      <g fill="url(#brand)"><path d="M329.24,358.88l-22.57,22.61c-7.85,7.86-20.58,7.86-28.44,0.02l-23.01-22.98c-7.86-7.85-7.87-20.58-0.02-28.44l22.98-23.01c7.85-7.86,20.58-7.87,28.44-0.02l22.5,22.47c5.16,5.16,13.53,5.15,18.69-0.01s5.15-13.53-0.01-18.69l-20.6-20.57c-6.42-6.41-16.81-6.4-23.21,0.01c-6.41,6.42-16.79,6.43-23.21,0.02c-3.21-3.2-7.4-4.8-11.6-4.8c-4.2,0-8.39,1.61-11.6,4.82l-19.18,19.21c-6.41,6.42-6.4,16.81,0.01,23.21c3.21,3.2,4.81,7.4,4.82,11.6c0,4.2-1.6,8.4-4.8,11.6c-3.2,3.2-4.8,7.41-4.79,11.61c0,4.2,1.61,8.39,4.82,11.6l19.21,19.18c6.42,6.41,16.8,6.39,23.2-0.02c3.2-3.21,7.4-4.81,11.61-4.81c4.2,0,8.4,1.6,11.6,4.8c3.2,3.2,7.41,4.8,11.6,4.8c4.21-0.01,8.4-1.62,11.61-4.83l20.68-20.7c5.16-5.16,5.15-13.53-0.01-18.69C342.77,353.71,334.4,353.72,329.24,358.88z"/><path d="M375.84,342.88c-5.61-3.07-10.22-7.68-13.29-13.29l-1.4-2.57l-1.4,2.57c-3.07,5.61-7.68,10.22-13.29,13.29l-2.57,1.4l2.57,1.4c5.61,3.07,10.22,7.68,13.29,13.29l1.4,2.57l1.4-2.57c3.07-5.61,7.68-10.22,13.29-13.29l2.57-1.4L375.84,342.88z"/><path d="M294.1,329.59l-1.4-2.57l-1.4,2.57c-3.07,5.61-7.68,10.22-13.29,13.29l-2.57,1.4l2.57,1.4c5.61,3.07,10.22,7.68,13.29,13.29l1.4,2.57l1.4-2.57c3.07-5.61,7.68-10.22,13.29-13.29l2.57-1.4l-2.57-1.4C301.78,339.81,297.17,335.2,294.1,329.59z"/></g>
+                      <g transform="translate(315, -112)" fill="#FFFFFF"><path d="M123.77,485.36c-2.21,2.49-4.86,4.44-7.96,5.83c-3.1,1.39-6.37,2.09-9.79,2.09c-6.67,0-12.38-2.12-17.14-6.35c-5.05-4.52-7.57-10.29-7.57-17.31c0-6.79,2.32-12.63,6.96-17.53c4.64-4.9,10.5-7.35,17.57-7.35c4.12,0,8.18,1.19,12.18,3.57c1.33,0.75,2.93,1.97,4.79,3.65l-6.7,6.44c-1.22-1.28-2.81-2.33-4.79-3.18c-1.97-0.84-4.03-1.26-6.18-1.26c-4.06,0-7.45,1.51-10.18,4.52c-2.73,3.02-4.09,6.61-4.09,10.79c0,4.29,1.45,7.83,4.35,10.62c2.9,2.78,6.38,4.18,10.44,4.18c1.97,0,4.03-0.52,6.18-1.57c2.15-1.04,3.86-2.2,5.13-3.48L123.77,485.36z"/><path d="M155.44,444.64l-1.39,9.4c-4.7,0.7-8.24,2.55-10.61,5.57c-2.61,3.31-3.92,8.18-3.92,14.62v18.18h-9.48v-46.98h9.48v7.4c1.98-2.61,4.4-4.62,7.26-6.05C149.64,445.35,152.52,444.64,155.44,444.64z"/><path d="M205.64,472.92h-32.63v-8h22.97c-0.75-3.02-2.49-5.57-5.22-7.66c-2.73-2.09-5.69-3.13-8.87-3.13c-4.23,0-7.79,1.44-10.66,4.31c-2.87,2.87-4.31,6.48-4.31,10.83c0,4.29,1.45,7.86,4.35,10.7c2.9,2.84,6.44,4.26,10.61,4.26c1.39,0,3.6-0.75,6.61-2.26c0.99-0.46,2.38-1.25,4.18-2.35l6.87,5.92c-2.03,2.38-4.63,4.26-7.79,5.66c-3.16,1.39-6.51,2.09-10.05,2.09c-6.67,0-12.3-2.03-16.88-6.09c-4.99-4.41-7.48-10.27-7.48-17.58c0-6.61,2.44-12.35,7.31-17.23c4.87-4.87,10.56-7.31,17.05-7.31c6.55,0,12.27,2.55,17.14,7.66c4.7,4.93,7.05,10.59,7.05,16.97C205.9,470.8,205.82,471.87,205.64,472.92z"/><path d="M258.71,492.41h-9.57v-3.65c0-2.03,0.49-3.92,1.48-5.66c-1.62,2.26-3.04,3.95-4.26,5.05c-3.83,3.42-8.12,5.13-12.88,5.13c-6.15,0-11.63-2.46-16.44-7.4c-4.81-4.93-7.22-10.58-7.22-16.97c0-6.21,2.39-11.73,7.18-16.57c4.79-4.84,10.16-7.26,16.14-7.26c4.81,0,9.19,1.71,13.14,5.13c1.27,1.1,2.75,2.84,4.44,5.22c-0.87-1.74-1.3-3.68-1.3-5.83v-4.18h9.31V492.41z M249.14,468.74c0-3.83-1.57-7.28-4.7-10.35c-3.13-3.07-6.61-4.61-10.44-4.61c-3.83,0-7.19,1.51-10.09,4.52c-2.9,3.02-4.35,6.53-4.35,10.53c0,4.23,1.39,7.89,4.18,10.96c2.78,3.08,6.09,4.61,9.92,4.61s7.31-1.45,10.44-4.35C247.46,476.98,249.14,473.21,249.14,468.74z"/><path d="M292.3,453.6h-12.79v38.8h-9.57v-38.8h-6.53v-8.18h6.53v-15.66h9.57v15.66h12.79V453.6z"/><path d="M307.78,439.94h-9.57v-10.18h9.57V439.94z M307.78,492.41h-9.57v-46.98h9.57V492.41z"/><path d="M361.89,445.42l-24.52,50.18l-24.54-50.18l10.46-0.01l14.08,30.18l14.08-30.18L361.89,445.42z"/></g>
+                      <g transform="translate(315, -112)" fill="url(#brand)"><path d="M425.41,467.74c0,6.51-2.32,12.29-6.96,17.35c-4.64,5.06-10.15,7.58-16.53,7.58c-3.42,0-6.5-0.69-9.22-2.06c-2.73-1.38-4.99-3.41-6.79-6.1l-1.39-2.11c0.87,1.86,1.31,3.81,1.31,5.85v19.9h-9.48v-62.73h9.48v3.65c0,0.93-0.09,1.8-0.27,2.61c-0.18,0.81-0.5,1.83-0.95,3.04c0.75-1.39,1.45-2.46,2.09-3.22c3.94-4.76,8.96-7.13,15.05-7.13c6.21,0,11.7,2.34,16.49,7.02S425.41,461.52,425.41,467.74z M415.67,467.56c0-3.78-1.38-7.08-4.13-9.9c-2.76-2.82-6.02-4.23-9.79-4.23c-3.89,0-7.34,1.34-10.35,4.01c-3.36,2.97-5.05,6.72-5.05,11.26c0,4.25,1.45,7.76,4.35,10.56c2.9,2.79,6.41,4.19,10.53,4.19c4,0,7.41-1.61,10.22-4.84S415.67,471.69,415.67,467.56z"/><path d="M441.6,492.41h-9.75v-62.64h9.75V492.41z"/><path d="M493.1,492.41h-9.48v-2.31c0-2.01,0.43-3.97,1.3-5.87c-1.16,2.54-3.09,4.66-5.79,6.35s-5.79,2.53-9.27,2.53c-5.57,0-10.24-1.97-14.01-5.92c-4-4.18-6-9.71-6-16.62v-25.14h9.31v23.84c0,4.52,1.1,8.15,3.31,10.88c2.2,2.73,5.02,4.09,8.44,4.09c3.83,0,6.73-0.87,8.7-2.61c2.67-2.38,4-6.47,4-12.27v-23.93h9.48V492.41z"/><path d="M530.69,477.27c0,5.1-1.65,9.11-4.96,12.01c-3.02,2.67-6.82,4-11.4,4c-4.87,0-8.85-1.38-11.92-4.13c-3.08-2.75-4.61-6.48-4.61-11.18h9.22c0,1.91,0.68,3.58,2.04,5c1.36,1.42,3.18,2.13,5.44,2.13c1.86,0,3.42-0.49,4.7-1.48c1.28-0.99,1.91-2.26,1.91-3.83c0.35-2.9-1.33-5.05-5.05-6.44l-3.83-1.31c-5.39-1.86-9.06-3.81-11.01-5.87c-1.94-2.06-2.92-4.74-2.92-8.05c0-3.77,1.64-7.09,4.92-9.96c3.28-2.87,6.86-4.31,10.75-4.31c5.28,0,9.25,1.68,11.92,5.05c1.91,2.44,3.05,5.54,3.39,9.31h-9.74v-0.44c-0.41-1.16-0.75-2-1.04-2.52c-1.04-1.68-2.38-2.52-4-2.52c-1.97,0-3.48,0.49-4.52,1.48c-1.04,0.99-1.57,2.12-1.57,3.39c0.12,1.04,0.51,1.96,1.17,2.74c0.67,0.78,1.84,1.41,3.52,1.87l6.96,2.52C527.15,467.29,530.69,471.47,530.69,477.27z"/></g>
+                    </svg>
+                    </div>
+                    <p class="text-zinc-400 text-sm md:text-base leading-relaxed mb-8 max-w-sm">
+                        AI-Powered Client Acquisition Systems for forward-thinking health & wellness experts. Scale predictably without the burnout.
+                    </p>
+                </div>
+
+                <div class="lg:col-span-7 grid grid-cols-2 md:grid-cols-3 gap-8 pt-4 lg:pt-0">
+                    
+                    <div class="flex flex-col gap-5">
+                        <h4 class="text-white font-semibold tracking-wider text-sm uppercase">Company</h4>
+                        <a href="#services" class="text-zinc-400 hover:text-brand-rose transition-colors text-sm w-fit">Services</a>
+                        <a href="#process" class="text-zinc-400 hover:text-brand-rose transition-colors text-sm w-fit">Our Process</a>
+                        <a href="#reviews" class="text-zinc-400 hover:text-brand-rose transition-colors text-sm w-fit">Client Wins</a>
+                    </div>
+
+                    <div class="flex flex-col gap-5">
+                        <h4 class="text-white font-semibold tracking-wider text-sm uppercase">Legal</h4>
+                        <a href="https://creativplus.in/privacy-policy" class="text-zinc-400 hover:text-brand-rose transition-colors text-sm w-fit">Privacy Policy</a>
+                        <a href="https://creativplus.in/terms-conditions" class="text-zinc-400 hover:text-brand-rose transition-colors text-sm w-fit">Terms & Conditions</a>
+                        <a href="https://creativplus.in/refund-policy" class="text-zinc-400 hover:text-brand-rose transition-colors text-sm w-fit">Refund Policy</a>
+                    </div>
+
+                    <div class="flex flex-col gap-5 col-span-2 md:col-span-1">
+                        <h4 class="text-white font-semibold tracking-wider text-sm uppercase">Connect</h4>
+                        <a href="https://creativplus.in/netcollab" class="text-zinc-400 hover:text-brand-rose transition-colors text-sm w-fit flex items-center gap-2"><i class='bx bx-network-chart'></i> Netcollab</a>
+                        <a href="https://creativplus.in/contact-us" class="text-zinc-400 hover:text-brand-rose transition-colors text-sm w-fit flex items-center gap-2"><i class='bx bx-envelope'></i> Contact Us</a>
+                        <div class="flex items-center gap-3 mt-2">
+                            <a href="#" class="w-10 h-10 rounded-full glass-panel flex items-center justify-center text-zinc-400 hover:text-white hover:border-white/30 transition-all"><i class='bx bxl-instagram text-xl'></i></a>
+                            <a href="#" class="w-10 h-10 rounded-full glass-panel flex items-center justify-center text-zinc-400 hover:text-white hover:border-white/30 transition-all"><i class='bx bxl-linkedin text-xl'></i></a>
+                            <a href="#" class="w-10 h-10 rounded-full glass-panel flex items-center justify-center text-zinc-400 hover:text-white hover:border-white/30 transition-all"><i class='bx bxl-youtube text-xl'></i></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="border-t border-white/5 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-zinc-500 text-xs tracking-wide">
+                <div class="flex items-center gap-3">
+                    <span class="font-display font-medium text-white tracking-wider uppercase text-[10px]">Creativ Plus</span>
+                </div>
+                <p>&copy; 2026 Creativ Plus. All rights reserved.</p>
+                <div class="flex gap-4">
+                    <span>Designed for Scale</span>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <script>
+        // Reveal elements smoothly on scroll
+        const observerOptions = { root: null, rootMargin: '0px', threshold: 0.1 };
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-premium-in');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+        document.querySelectorAll('.scroll-reveal').forEach(el => observer.observe(el));
+
+        // Smooth floating luxury navbar scroll effect
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('bg-[#050505]/80', 'backdrop-blur-2xl', 'shadow-[0_10px_30px_rgba(0,0,0,0.8)]');
+                nav.classList.remove('border-white/5');
+                nav.classList.add('border-white/10');
+            } else {
+                nav.classList.remove('bg-[#050505]/80', 'backdrop-blur-2xl', 'shadow-[0_10px_30px_rgba(0,0,0,0.8)]');
+                nav.classList.remove('border-white/10');
+                nav.classList.add('border-white/5');
+            }
+        });
+
+        // Advanced Mobile Menu interactions
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const closeMenuBtn = document.getElementById('close-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.remove('hidden');
+            setTimeout(() => mobileMenu.classList.add('active'), 10);
+            document.body.style.overflow = 'hidden';
+        });
+        
+        closeMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.remove('active');
+            setTimeout(() => mobileMenu.classList.add('hidden'), 500);
+            document.body.style.overflow = '';
+        });
+
+        document.querySelectorAll('#mobile-menu .menu-link a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.remove('active');
+                setTimeout(() => mobileMenu.classList.add('hidden'), 500);
+                document.body.style.overflow = '';
+            });
+        });
+
+        // AI Nodes Mobile Touch Fix
+        document.addEventListener('DOMContentLoaded', () => {
+            const nodes = document.querySelectorAll('.mobile-node-touch');
+            
+            nodes.forEach(node => {
+                node.addEventListener('click', (e) => {
+                    // Remove hover state from all other nodes
+                    nodes.forEach(n => {
+                        if (n !== node) {
+                            n.classList.remove('force-hover-tooltip');
+                        }
+                    });
+                    // Toggle the clicked node
+                    node.classList.toggle('force-hover-tooltip');
+                    e.stopPropagation(); // Prevent document click from immediately closing it
+                });
+            });
+
+            // Close tooltips when clicking anywhere else on the screen
+            document.addEventListener('click', (e) => {
+                if (!e.target.closest('.mobile-node-touch')) {
+                    nodes.forEach(n => n.classList.remove('force-hover-tooltip'));
+                }
+            });
+        });
+        
+        // Video Controls
+        function togglePlayBtn(btnElement) {
+            const container = btnElement.closest('.relative.group');
+            const video = container.querySelector('video');
+            const icon = btnElement.querySelector('i');
+            if (video.paused) { video.play(); icon.className = 'bx bx-pause text-xl'; } 
+            else { video.pause(); icon.className = 'bx bx-play text-xl ml-0.5'; }
+        }
+        function togglePlayPause(videoElement) {
+            const container = videoElement.closest('.relative.group');
+            const playBtnIcon = container.querySelector('.play-toggle i');
+            if (videoElement.paused) { videoElement.play(); playBtnIcon.className = 'bx bx-pause text-xl'; } 
+            else { videoElement.pause(); playBtnIcon.className = 'bx bx-play text-xl ml-0.5'; }
+        }
+        function toggleMute(btnElement) {
+            const container = btnElement.closest('.relative.group');
+            const video = container.querySelector('video');
+            const icon = btnElement.querySelector('i');
+            if (video.muted) {
+                video.muted = false; icon.className = 'bx bx-volume-full text-xl text-emerald-400';
+                document.querySelectorAll('.review-video').forEach(v => {
+                    if(v !== video && !v.muted) {
+                        v.muted = true;
+                        const otherContainer = v.closest('.relative.group');
+                        const otherIcon = otherContainer.querySelector('.mute-toggle i');
+                        otherIcon.className = 'bx bx-volume-mute text-xl';
+                    }
+                });
+            } else { video.muted = true; icon.className = 'bx bx-volume-mute text-xl text-white'; }
+        }
+        document.addEventListener('DOMContentLoaded', () => {
+    // 1. Select all the links inside your mobile menu
+    const menuLinks = document.querySelectorAll('#mobile-menu a');
+    
+    // 2. Select your existing close button
+    const closeButton = document.getElementById('close-menu');
+
+    // 3. Loop through each link and add a click listener
+    menuLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            // When a link is clicked, programmatically trigger the close button
+            if (closeButton) {
+                closeButton.click();
+            }
+        });
+    });
+});
+    </script>
+</body>
+</html>
