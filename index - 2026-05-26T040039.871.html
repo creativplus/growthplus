@@ -1,0 +1,1616 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arpit AI | The 24/7 Agentic Sales Force</title>
+    
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='227 267 154 154'%3E%3Cdefs%3E%3ClinearGradient id='wineGrad' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%23E61C53'/%3E%3Cstop offset='100%25' stop-color='%237B0323'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='url(%23wineGrad)'%3E%3Cpath d='M329.24,358.88l-22.57,22.61c-7.85,7.86-20.58,7.86-28.44,0.02l-23.01-22.98c-7.86-7.85-7.87-20.58-0.02-28.44l22.98-23.01c7.85-7.86,20.58-7.87,28.44-0.02l22.5,22.47c5.16,5.16,13.53,5.15,18.69-0.01s5.15-13.53-0.01-18.69l-20.6-20.57c-6.42-6.41-16.81-6.4-23.21,0.01c-6.41,6.42-16.79,6.43-23.21,0.02c-3.21-3.2-7.4-4.8-11.6-4.8c-4.2,0-8.39,1.61-11.6,4.82l-19.18,19.21c-6.41,6.42-6.4,16.81,0.01,23.21c3.21,3.2,4.81,7.4,4.82,11.6c0,4.2-1.6,8.4-4.8,11.6c-3.2,3.2-4.8,7.41-4.79,11.61c0,4.2,1.61,8.39,4.82,11.6l19.21,19.18c6.42,6.41,16.8,6.39,23.2-0.02c3.2-3.21,7.4-4.81,11.61-4.81c4.2,0,8.4,1.6,11.6,4.8c3.2,3.2,7.41,4.8,11.6,4.8c4.21-0.01,8.4-1.62,11.61-4.83l20.68-20.7c5.16-5.16,5.15-13.53-0.01-18.69C342.77,353.71,334.4,353.72,329.24,358.88z'/%3E%3Cpath d='M375.84,342.88c-5.61-3.07-10.22-7.68-13.29-13.29l-1.4-2.57l-1.4,2.57c-3.07,5.61-7.68,10.22-13.29,13.29l-2.57,1.4l2.57,1.4c5.61,3.07,10.22,7.68,13.29,13.29l1.4,2.57l1.4-2.57c3.07-5.61,7.68-10.22,13.29-13.29l2.57-1.4L375.84,342.88z'/%3E%3Cpath d='M294.1,329.59l-1.4-2.57l-1.4,2.57c-3.07,5.61-7.68,10.22-13.29,13.29l-2.57,1.4l2.57,1.4c5.61,3.07,10.22,7.68,13.29,13.29l1.4,2.57l1.4-2.57c3.07-5.61,7.68-10.22,13.29-13.29l2.57-1.4l-2.57-1.4C301.78,339.81,297.17,335.2,294.1,329.59z'/%3E%3C/g%3E%3C/svg%3E">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Space Grotesk', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            wine: '#7b0323',
+                            dark: '#050505',
+                            card: '#0a0a0c'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Core Visuals */
+        body { background-color: #050505; color: #f4f4f5; overflow-x: hidden; }
+        
+        /* Glassmorphism */
+        .glass-panel {
+            background: rgba(20, 20, 23, 0.6);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+        }
+        
+        .premium-card {
+            background: linear-gradient(145deg, rgba(10, 10, 12, 0.8) 0%, rgba(5, 5, 5, 0.9) 100%);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: all 0.4s ease;
+        }
+        .premium-card:hover {
+            border-color: #7b0323;
+            box-shadow: 0 10px 40px -10px rgba(123, 3, 35, 0.3);
+            transform: translateY(-5px);
+        }
+
+        /* Text Gradients */
+        .text-gradient {
+            background: linear-gradient(to right, #ffffff, #7b0323);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* Neural Network Animation Background */
+        .neural-bg {
+            background-color: #000;
+            background-image: 
+                radial-gradient(circle at 50% 50%, rgba(123, 3, 35, 0.1) 0%, transparent 50%),
+                linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+            background-size: 100% 100%, 40px 40px, 40px 40px;
+        }
+
+        /* Pulse Animation for Nodes */
+        @keyframes nodePulse {
+            0% { box-shadow: 0 0 0 0 rgba(123, 3, 35, 0.4); }
+            70% { box-shadow: 0 0 0 10px rgba(123, 3, 35, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(123, 3, 35, 0); }
+        }
+        .neural-node {
+            animation: nodePulse 2s infinite;
+        }
+
+        /* Marquee Animation */
+        @keyframes scroll { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+        .marquee-track { animation: scroll 40s linear infinite; }
+
+        /* Custom Scrollbar for Table */
+        .custom-scroll::-webkit-scrollbar { height: 6px; }
+        .custom-scroll::-webkit-scrollbar-track { background: #1a1a1a; }
+        .custom-scroll::-webkit-scrollbar-thumb { background: #7b0323; border-radius: 4px; }
+        
+        /* Swiper Pagination Color Override */
+        .swiper-pagination-bullet { background: #555; opacity: 0.5; }
+        .swiper-pagination-bullet-active { background: #7b0323 !important; opacity: 1; }
+
+        /* --- PREMIUM MOBILE MENU STYLES --- */
+        #mobile-menu {
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 100%;
+            max-width: 360px;
+            height: 100vh;
+            background: rgba(5, 5, 7, 0.95);
+            backdrop-filter: blur(30px);
+            -webkit-backdrop-filter: blur(30px);
+            border-left: 1px solid rgba(255, 255, 255, 0.08);
+            transform: translateX(100%);
+            transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+            z-index: 100;
+            display: flex;
+            flex-direction: column;
+            padding: 2.5rem 2rem;
+            box-shadow: -20px 0 60px rgba(0,0,0,0.8);
+        }
+
+        #mobile-menu.open { transform: translateX(0); }
+
+        /* Menu Items Animation */
+        .menu-item {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.4s ease;
+        }
+        #mobile-menu.open .menu-item {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        /* Staggered Delays */
+        #mobile-menu.open .menu-item:nth-child(1) { transition-delay: 0.1s; }
+        #mobile-menu.open .menu-item:nth-child(2) { transition-delay: 0.15s; }
+        #mobile-menu.open .menu-item:nth-child(3) { transition-delay: 0.2s; }
+        #mobile-menu.open .menu-item:nth-child(4) { transition-delay: 0.25s; }
+        #mobile-menu.open .menu-item-btn { transition-delay: 0.3s; }
+
+        .nav-link-mobile {
+            font-family: 'Inter', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 500;
+            color: #71717a;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1.25rem 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+            transition: all 0.3s ease;
+        }
+        .nav-link-mobile:hover, .nav-link-mobile.active {
+            color: #fff;
+            padding-left: 10px;
+        }
+        
+        /* Backdrop Overlay */
+        #menu-backdrop {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            background: rgba(0, 0, 0, 0.6);
+            backdrop-filter: blur(4px);
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.5s ease;
+            z-index: 90;
+        }
+        #menu-backdrop.open {
+            opacity: 1;
+            pointer-events: auto;
+        }
+        
+        .close-btn {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            border: 1px solid rgba(255,255,255,0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+        .close-btn:hover {
+            background: rgba(255,255,255,0.1);
+            border-color: rgba(255,255,255,0.3);
+            transform: rotate(90deg);
+        }
+        
+        .btn-brand-menu {
+            background: linear-gradient(135deg, #7b0323 0%, #5a021a 100%);
+            color: white;
+            transition: all 0.3s ease;
+        }
+        .btn-brand-menu:hover {
+            filter: brightness(1.1);
+            transform: scale(1.02);
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="antialiased">
+
+    <div id="menu-backdrop"></div>
+
+
+    <header class="fixed top-0 w-full z-50 transition-all duration-300 border-b border-white/5 bg-[#050505]/90 backdrop-blur-xl">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
+            <a href="index.html" class="flex items-center z-50">
+                <img src="logo.svg" alt="Creativ Plus" class="h-10 md:h-12 w-auto object-contain">
+            </a>
+
+            <nav class="hidden md:flex gap-8 text-sm font-medium text-zinc-400">
+                <a href="index.html" class="hover:text-white transition-colors">Home</a>
+                <a href="arpit.html" class="hover:text-white transition-colors">Arpit AI</a>
+                <a href="arpit_demo.html" class="hover:text-white transition-colors">Arpit Demo</a>
+                <a href="https://dashboard.creativplus.in" class="hover:text-white transition-colors">Dashboard</a>
+            </nav>
+
+            <div class="flex items-center gap-4">
+                <a href="contact-us.html#contact-section" class="hidden md:block bg-brand-wine hover:bg-red-900 text-white px-6 py-2.5 rounded-full text-xs font-bold tracking-wide transition-all shadow-[0_0_20px_rgba(123,3,35,0.4)]">
+                    GET STARTED
+                </a>
+                <button id="mobile-menu-btn" class="md:hidden text-3xl text-white z-50 focus:outline-none hover:text-brand-wine transition-colors">
+                    <i class='bx bx-menu-alt-right'></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="relative pt-20">
+
+<section class="relative flex justify-center items-center overflow-hidden px-4 pt-28 pb-20 lg:py-28 w-full">
+    
+    <div class="absolute inset-0 bg-[#050505] z-0">
+        <div class="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] bg-brand-wine/20 blur-[80px] rounded-full animate-pulse lg:hidden"></div>
+        <div class="hidden lg:block absolute top-[-10%] left-[-10%] w-[600px] h-[600px] bg-brand-wine/20 blur-[120px] rounded-full mix-blend-screen"></div>
+        <div class="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20 mix-blend-soft-light"></div>
+    </div>
+
+    <div class="max-w-7xl w-full grid lg:grid-cols-2 gap-6 items-center relative z-10">
+        
+        <div class="flex flex-col items-center lg:items-start text-center lg:text-left" data-aos="fade-up">
+            
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-brand-wine/30 bg-brand-wine/10 backdrop-blur-md mb-2 shadow-[0_0_15px_rgba(123,3,35,0.2)]">
+                <span class="relative flex h-2 w-2">
+                  <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-500 opacity-75"></span>
+                  <span class="relative inline-flex rounded-full h-2 w-2 bg-brand-wine"></span>
+                </span>
+                <span class="text-[9px] font-bold tracking-[0.15em] text-red-100 uppercase">AI-POWERD GROWTH PARTNER</span>
+            </div>
+            
+            <h1 class="text-4xl sm:text-6xl lg:text-7xl font-display font-bold leading-[1.05] mb-2 text-white tracking-tight">
+                Stop Losing<br>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-white via-red-200 to-brand-wine italic pr-1">Revenue Daily.</span>
+            </h1>
+            
+            <p class="text-sm sm:text-lg text-zinc-400 leading-relaxed max-w-lg mb-3 font-light">
+                Stop losing revenue. let AI create opportunities to close deals <span class="text-white font-semibold border-b border-brand-wine/50">under 30 seconds</span>—24/7 autonomous logic.
+            </p>
+
+            <div class="flex flex-col w-full sm:w-auto sm:flex-row gap-2 mb-4">
+                <a href="https://calendly.com/kishansingh/ai-powerd-growth" class="relative w-full sm:w-auto overflow-hidden bg-brand-wine hover:bg-red-900 text-white px-6 py-2.5 rounded-xl font-bold text-xs tracking-widest uppercase transition-all shadow-[0_0_20px_-5px_rgba(123,3,35,0.6)] flex items-center justify-center gap-2">
+                    <span>Book Your Growth Call</span>
+                    <i class='bx bx-right-arrow-alt text-lg animate-pulse'></i>
+                </a>
+                <a href="#process" class="w-full sm:w-auto px-6 py-2.5 rounded-xl border border-white/10 hover:bg-white/5 text-white font-bold text-xs tracking-widest uppercase transition-all flex items-center justify-center gap-2">
+                    <i class='bx bx-play-circle text-lg text-brand-wine'></i>
+                    How It Works
+                </a>
+            </div>
+
+             <div class="w-full flex justify-center lg:justify-start mb-4">
+                <div class="grid grid-cols-3 gap-2 w-full max-w-md lg:max-w-none">
+                    <div class="p-2.5 rounded-xl bg-white/5 border border-white/5 backdrop-blur-sm flex flex-col justify-center items-center lg:items-start">
+                        <p class="text-lg font-display font-bold text-white mb-0.5">&lt;30s</p>
+                        <p class="text-[8px] text-zinc-500 uppercase tracking-wider font-bold">Speed to Lead</p>
+                    </div>
+                    <div class="p-2.5 rounded-xl bg-white/5 border border-white/5 backdrop-blur-sm flex flex-col justify-center items-center lg:items-start">
+                        <p class="text-lg font-display font-bold text-white mb-0.5">24/7</p>
+                        <p class="text-[8px] text-zinc-500 uppercase tracking-wider font-bold">Zero Downtime</p>
+                    </div>
+                    <div class="p-2.5 rounded-xl bg-white/5 border border-white/5 backdrop-blur-sm flex flex-col justify-center items-center lg:items-start">
+                        <p class="text-lg font-display font-bold text-white mb-0.5">-75%</p>
+                        <p class="text-[8px] text-zinc-500 uppercase tracking-wider font-bold">Operational Cost</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="reveal delay-200 order-1 lg:order-2 flex justify-center lg:-ml-8 items-center h-[350px] sm:h-[450px] lg:h-[500px] w-full" data-aos="fade-left" data-aos-delay="200">
+            <div class="ai-orbit-wrapper scale-[0.75] sm:scale-[0.9] lg:scale-100 origin-center mt-8 lg:mt-0">
+                
+                <div class="ai-core">
+                    <i class="fa-solid fa-bolt text-3xl text-white drop-shadow-[0_0_10px_rgba(255,255,255,0.8)]"></i>
+                </div>
+
+                <div class="orbit-ring-inner">
+                    <div class="orbit-node inner-node-1 group bg-[#741731]/20 border-[#741731]/50 text-red-200 hover:text-white hover:bg-[#741731]/40">
+                        <span class="absolute -top-1.5 -right-1.5 flex h-3 w-3">
+                            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#741731] opacity-75"></span>
+                            <span class="relative inline-flex rounded-full h-3 w-3 bg-red-500 border-2 border-[#050505]"></span>
+                        </span>
+                        <div class="counter-spin flex items-center justify-center w-full h-full">
+                            <i class="fa-solid fa-microphone text-lg"></i>
+                            <div class="tooltip absolute -top-10 bg-[#0a0a0c] text-white text-[10px] font-bold px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap border border-[#741731]/40 shadow-[0_0_15px_rgba(116,23,49,0.5)] pointer-events-none">Voice AI</div>
+                        </div>
+                    </div>
+                    
+                    <div class="orbit-node inner-node-2 group bg-[#741731]/20 border-[#741731]/50 text-red-200 hover:text-white hover:bg-[#741731]/40">
+                        <span class="absolute -bottom-1.5 -left-1.5 flex h-3 w-3">
+                            <span class="animate-pulse absolute inline-flex h-full w-full rounded-full bg-[#741731] opacity-75"></span>
+                            <span class="relative inline-flex rounded-full h-3 w-3 bg-red-500 border-2 border-[#050505]"></span>
+                        </span>
+                        <div class="counter-spin flex items-center justify-center w-full h-full">
+                            <i class="fa-solid fa-envelope text-lg"></i>
+                            <div class="tooltip absolute -top-10 bg-[#0a0a0c] text-white text-[10px] font-bold px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap border border-[#741731]/40 shadow-[0_0_15px_rgba(116,23,49,0.5)] pointer-events-none">Email AI</div>
+                        </div>
+                    </div>
+                    
+                    <div class="orbit-node inner-node-3 group bg-[#741731]/20 border-[#741731]/50 text-red-200 hover:text-white hover:bg-[#741731]/40">
+                        <span class="absolute -top-1.5 -left-1.5 flex h-3 w-3">
+                            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#741731] opacity-75" style="animation-duration: 2s;"></span>
+                            <span class="relative inline-flex rounded-full h-3 w-3 bg-red-500 border-2 border-[#050505]"></span>
+                        </span>
+                        <div class="counter-spin flex items-center justify-center w-full h-full">
+                            <i class="fa-solid fa-comment-sms text-lg"></i>
+                            <div class="tooltip absolute -top-10 bg-[#0a0a0c] text-white text-[10px] font-bold px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap border border-[#741731]/40 shadow-[0_0_15px_rgba(116,23,49,0.5)] pointer-events-none">SMS Bot</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="orbit-ring-outer">
+                    <div class="orbit-node outer-node-1 group bg-[#741731]/10 border-[#741731]/40 text-red-200 hover:text-white hover:bg-[#741731]/40">
+                         <span class="absolute -top-1.5 -right-1.5 flex h-3 w-3">
+                            <span class="animate-pulse absolute inline-flex h-full w-full rounded-full bg-[#741731] opacity-75"></span>
+                            <span class="relative inline-flex rounded-full h-3 w-3 bg-red-500 border-2 border-[#050505]"></span>
+                        </span>
+                        <div class="counter-spin-reverse flex items-center justify-center w-full h-full">
+                            <i class="fa-solid fa-headset text-lg"></i>
+                            <div class="tooltip absolute -top-10 bg-[#0a0a0c] text-white text-[10px] font-bold px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap border border-[#741731]/40 shadow-[0_0_15px_rgba(116,23,49,0.5)] pointer-events-none">Support AI</div>
+                        </div>
+                    </div>
+                    
+                    <div class="orbit-node outer-node-2 group bg-[#741731]/10 border-[#741731]/40 text-red-200 hover:text-white hover:bg-[#741731]/40">
+                         <span class="absolute -bottom-1.5 -right-1.5 flex h-3 w-3">
+                            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#741731] opacity-75"></span>
+                            <span class="relative inline-flex rounded-full h-3 w-3 bg-red-500 border-2 border-[#050505]"></span>
+                        </span>
+                        <div class="counter-spin-reverse flex items-center justify-center w-full h-full">
+                            <i class="fa-solid fa-calendar text-lg"></i>
+                            <div class="tooltip absolute -top-10 bg-[#0a0a0c] text-white text-[10px] font-bold px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap border border-[#741731]/40 shadow-[0_0_15px_rgba(116,23,49,0.5)] pointer-events-none">Schedule AI</div>
+                        </div>
+                    </div>
+                    
+                    <div class="orbit-node outer-node-3 group bg-[#741731]/10 border-[#741731]/40 text-red-200 hover:text-white hover:bg-[#741731]/40">
+                         <span class="absolute -top-1.5 -left-1.5 flex h-3 w-3">
+                            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#741731] opacity-75" style="animation-duration: 1.5s;"></span>
+                            <span class="relative inline-flex rounded-full h-3 w-3 bg-red-500 border-2 border-[#050505]"></span>
+                        </span>
+                        <div class="counter-spin-reverse flex items-center justify-center w-full h-full">
+                            <i class="fa-brands fa-whatsapp text-lg"></i>
+                            <div class="tooltip absolute -top-10 bg-[#0a0a0c] text-white text-[10px] font-bold px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap border border-[#741731]/40 shadow-[0_0_15px_rgba(116,23,49,0.5)] pointer-events-none">WhatsApp AI</div>
+                        </div>
+                    </div>
+                    
+                    <div class="orbit-node outer-node-4 group bg-[#741731]/10 border-[#741731]/40 text-red-200 hover:text-white hover:bg-[#741731]/40">
+                         <span class="absolute -bottom-1.5 -left-1.5 flex h-3 w-3">
+                            <span class="animate-pulse absolute inline-flex h-full w-full rounded-full bg-[#741731] opacity-75"></span>
+                            <span class="relative inline-flex rounded-full h-3 w-3 bg-red-500 border-2 border-[#050505]"></span>
+                        </span>
+                        <div class="counter-spin-reverse flex items-center justify-center w-full h-full">
+                            <i class="fa-solid fa-chart-pie text-lg"></i>
+                            <div class="tooltip absolute -top-10 bg-[#0a0a0c] text-white text-[10px] font-bold px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap border border-[#741731]/40 shadow-[0_0_15px_rgba(116,23,49,0.5)] pointer-events-none">Analytics AI</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <style>
+        /* --- ORBITAL ANIMATION CSS (Required for this specific div) --- */
+        .ai-orbit-wrapper { position: relative; width: 340px; height: 340px; display: flex; justify-content: center; align-items: center; }
+        
+        .ai-core { position: absolute; width: 80px; height: 80px; background: rgba(116,23,49,0.4); border: 2px solid #741731; border-radius: 50%; display: flex; justify-content: center; align-items: center; z-index: 10; box-shadow: 0 0 40px rgba(116,23,49,0.6); }
+        
+        .orbit-ring-inner { position: absolute; width: 200px; height: 200px; border: 1px dashed rgba(116,23,49,0.4); border-radius: 50%; animation: spin-clockwise 15s linear infinite; z-index: 5; }
+        .orbit-ring-outer { position: absolute; width: 320px; height: 320px; border: 1px dashed rgba(116,23,49,0.3); border-radius: 50%; animation: spin-counterclockwise 25s linear infinite; z-index: 4; }
+        
+        .orbit-node { position: absolute; width: 44px; height: 44px; border-radius: 50%; display: flex; justify-content: center; align-items: center; border: 1px solid; backdrop-filter: blur(4px); cursor: pointer; transition: all 0.3s ease; }
+        .orbit-node:hover { transform: scale(1.15); z-index: 20; border-color: #ff8fa3; box-shadow: 0 0 20px rgba(116,23,49,0.8); }
+        
+        /* Counter-spin wrappers so the icons/tooltips don't go upside down while orbiting */
+        .counter-spin { animation: spin-counterclockwise 15s linear infinite; }
+        .counter-spin-reverse { animation: spin-clockwise 25s linear infinite; }
+
+        /* Inner Ring Positions */
+        .inner-node-1 { top: -22px; left: 50%; margin-left: -22px; } 
+        .inner-node-2 { bottom: 15px; right: -5px; } 
+        .inner-node-3 { bottom: 15px; left: -5px; } 
+
+        /* Outer Ring Positions */
+        .outer-node-1 { top: -22px; left: 50%; margin-left: -22px; }
+        .outer-node-2 { top: 50%; right: -22px; margin-top: -22px; }
+        .outer-node-3 { bottom: -22px; left: 50%; margin-left: -22px; }
+        .outer-node-4 { top: 50%; left: -22px; margin-top: -22px; }
+
+        @keyframes spin-clockwise { 100% { transform: rotate(360deg); } }
+        @keyframes spin-counterclockwise { 100% { transform: rotate(-360deg); } }
+    </style>
+</section>
+
+        <div class="border-y border-white/5 bg-black/50 backdrop-blur-sm overflow-hidden py-4">
+            <div class="marquee-track flex gap-12 whitespace-nowrap">
+                <span class="text-xs font-bold tracking-[0.2em] text-zinc-500 flex items-center gap-4">
+                    AI WORKFORCE <span class="text-brand-wine">●</span> 30-SEC RESPONSE <span class="text-brand-wine">●</span> ZERO HEADCOUNT <span class="text-brand-wine">●</span> 24/7 ACTIVE
+                </span>
+                <span class="text-xs font-bold tracking-[0.2em] text-zinc-500 flex items-center gap-4">
+                    AI WORKFORCE <span class="text-brand-wine">●</span> 30-SEC RESPONSE <span class="text-brand-wine">●</span> ZERO HEADCOUNT <span class="text-brand-wine">●</span> 24/7 ACTIVE
+                </span>
+                <span class="text-xs font-bold tracking-[0.2em] text-zinc-500 flex items-center gap-4">
+                    AI WORKFORCE <span class="text-brand-wine">●</span> 30-SEC RESPONSE <span class="text-brand-wine">●</span> ZERO HEADCOUNT <span class="text-brand-wine">●</span> 24/7 ACTIVE
+                </span>
+                <span class="text-xs font-bold tracking-[0.2em] text-zinc-500 flex items-center gap-4">
+                    AI WORKFORCE <span class="text-brand-wine">●</span> 30-SEC RESPONSE <span class="text-brand-wine">●</span> ZERO HEADCOUNT <span class="text-brand-wine">●</span> 24/7 ACTIVE
+                </span>
+            </div>
+        </div>
+
+        <section class="py-24 px-6 bg-brand-dark">
+            <div class="max-w-7xl mx-auto">
+                <div class="mb-16 text-center" data-aos="fade-up">
+                    <span class="text-brand-wine font-bold tracking-widest text-[10px] uppercase mb-4 block">// THE LEAKAGE</span>
+                    <h2 class="text-4xl md:text-5xl font-display font-bold text-white">
+                        Every Minute You Wait, <br>
+                        <span class="text-zinc-600">Revenue Leaks Out.</span>
+                    </h2>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="premium-card p-10 rounded-3xl relative group" data-aos="fade-up">
+                        <div class="w-12 h-12 bg-brand-wine/10 rounded-lg flex items-center justify-center mb-6">
+                            <i class='bx bx-time-five text-brand-wine text-2xl'></i>
+                        </div>
+                        <h3 class="text-xl font-display font-bold text-white mb-4">Slow Response = <br>Revenue Leakage</h3>
+                        <p class="text-zinc-400 text-sm leading-relaxed">
+                            78% of customers buy from the first responder. Waiting 30 minutes decreases qualification odds by 21x.
+                        </p>
+                    </div>
+
+                    <div class="premium-card p-10 rounded-3xl relative group" data-aos="fade-up" data-aos-delay="100">
+                        <div class="w-12 h-12 bg-brand-wine/10 rounded-lg flex items-center justify-center mb-6">
+                            <i class='bx bx-user-x text-brand-wine text-2xl'></i>
+                        </div>
+                        <h3 class="text-xl font-display font-bold text-white mb-4">Missed Leads & <br>Inconsistent Follow-up</h3>
+                        <p class="text-zinc-400 text-sm leading-relaxed">
+                            Human teams give up after 1-2 calls. Arpit follows up 7-10 times across channels until a decision is made.
+                        </p>
+                    </div>
+
+                    <div class="premium-card p-10 rounded-3xl relative group" data-aos="fade-up" data-aos-delay="200">
+                        <div class="w-12 h-12 bg-brand-wine/10 rounded-lg flex items-center justify-center mb-6">
+                            <i class='bx bx-money-withdraw text-brand-wine text-2xl'></i>
+                        </div>
+                        <h3 class="text-xl font-display font-bold text-white mb-4">Operational Costs & <br>Manpower Issues</h3>
+                        <p class="text-zinc-400 text-sm leading-relaxed">
+                            Attrition, training, and bad days cost you money. AI doesn't quit, doesn't sleep, and costs 70% less.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="mt-12 p-8 rounded-3xl bg-gradient-to-r from-brand-wine/20 to-transparent border border-brand-wine/30 text-center" data-aos="zoom-in">
+                    <p class="text-xl md:text-2xl font-medium text-white italic">
+                        "The average high-ticket business loses <span class="font-bold text-brand-wine">₹2–5 Crore annually</span> due to slow lead response."
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-32 px-6 relative neural-bg overflow-hidden">
+            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-brand-wine/5 rounded-full blur-[100px] pointer-events-none"></div>
+
+            <div class="max-w-7xl mx-auto relative z-10">
+                <div class="text-center mb-16" data-aos="fade-up">
+                    <span class="text-brand-wine font-bold tracking-widest text-[10px] uppercase mb-4 block">// THE ARCHITECTURE</span>
+                    <h2 class="text-4xl md:text-6xl font-display font-bold text-white">
+                        Meet Arpit — <br>Your <span class="text-gradient">24/7 Sales Engine.</span>
+                    </h2>
+                </div>
+
+                <div class="relative w-full flex justify-center items-center mb-24" data-aos="zoom-in">
+                    <div class="relative w-72 h-72 md:w-96 md:h-96 flex justify-center items-center">
+                        <div class="absolute inset-0 rounded-full border-[1px] border-brand-wine/20 border-t-brand-wine/80 border-b-brand-wine/80 animate-[spin_10s_linear_infinite]"></div>
+                        <div class="absolute inset-4 rounded-full border-[1px] border-dashed border-white/10 animate-[spin_20s_linear_infinite_reverse]"></div>
+                        <div class="absolute inset-[-20px] pointer-events-none">
+                            <div class="absolute top-0 left-0 w-8 h-8 border-t-2 border-l-2 border-brand-wine/60"></div>
+                            <div class="absolute top-0 right-0 w-8 h-8 border-t-2 border-r-2 border-brand-wine/60"></div>
+                            <div class="absolute bottom-0 left-0 w-8 h-8 border-b-2 border-l-2 border-brand-wine/60"></div>
+                            <div class="absolute bottom-0 right-0 w-8 h-8 border-b-2 border-r-2 border-brand-wine/60"></div>
+                        </div>
+                        <div class="relative z-10 flex items-center justify-center gap-2 h-32 w-32 bg-black/40 backdrop-blur-sm rounded-full border border-white/5 overflow-hidden">
+                            <div class="absolute w-full h-[2px] bg-brand-wine/80 shadow-[0_0_15px_#ff0055] animate-[bounce_2s_infinite]"></div>
+                            <div class="w-1.5 bg-brand-wine rounded-sm animate-[pulse_0.5s_ease-in-out_infinite] h-8"></div>
+                            <div class="w-1.5 bg-white rounded-sm animate-[pulse_0.8s_ease-in-out_infinite] h-14 delay-75"></div>
+                            <div class="w-1.5 bg-brand-wine rounded-sm animate-[pulse_0.4s_ease-in-out_infinite] h-20 delay-150"></div>
+                            <div class="w-1.5 bg-white rounded-sm animate-[pulse_0.7s_ease-in-out_infinite] h-12 delay-200"></div>
+                            <div class="w-1.5 bg-brand-wine rounded-sm animate-[pulse_0.6s_ease-in-out_infinite] h-6 delay-300"></div>
+                        </div>
+                        <div class="absolute -bottom-12 flex flex-col items-center gap-1">
+                            <div class="text-[10px] font-mono text-brand-wine tracking-widest animate-pulse">● SYSTEM ONLINE</div>
+                            <div class="text-[9px] font-mono text-white/30">AI AGENT ACTIVE</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="glass-panel p-8 rounded-3xl neural-node" data-aos="fade-up">
+                        <i class='bx bx-brain text-brand-wine text-3xl mb-4'></i>
+                        <h4 class="text-white font-bold text-lg mb-2">Contextual Understanding</h4>
+                        <p class="text-zinc-400 text-sm">Remembers context from previous interactions.</p>
+                    </div>
+                    <div class="glass-panel p-8 rounded-3xl" data-aos="fade-up" data-aos-delay="100">
+                        <i class='bx bx-phone-call text-brand-wine text-3xl mb-4'></i>
+                        <h4 class="text-white font-bold text-lg mb-2">Instant Human-Like Voice</h4>
+                        <p class="text-zinc-400 text-sm">< 500ms latency. Feels completely natural.</p>
+                    </div>
+                    <div class="glass-panel p-8 rounded-3xl" data-aos="fade-up" data-aos-delay="200">
+                        <i class='bx bx-git-branch text-brand-wine text-3xl mb-4'></i>
+                        <h4 class="text-white font-bold text-lg mb-2">Multi-Turn Logic</h4>
+                        <p class="text-zinc-400 text-sm">Can handle complex objections and pivots.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+       <section class="py-24 relative" id="voice-ai">
+            <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
+                <div class="reveal" data-aos="fade-right">
+                    <div class="w-12 h-12 rounded-xl bg-[#7b0323]/10 flex items-center justify-center mb-6 border border-[#7b0323]/40 shadow-[0_0_15px_rgba(123,3,35,0.3)]">
+                        <i class="fa-solid fa-phone-volume text-[#7b0323] text-xl drop-shadow-[0_0_8px_rgba(123,3,35,0.8)]"></i>
+                    </div>
+                    <h2 class="text-3xl lg:text-5xl font-bold text-white mb-6">AI Voice Agents That <span class="text-transparent bg-clip-text bg-gradient-to-r from-white to-[#7b0323]">Never Miss A Call</span></h2>
+                    <p class="text-gray-400 text-lg mb-8">Deploy human-like voice agents capable of handling inbound inquiries, routing calls, answering FAQs, and booking appointments directly over the phone.</p>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-3 text-white"><i class="fa-solid fa-arrow-right text-[#7b0323]"></i> Seamless Lead Qualification</div>
+                        <div class="flex items-center gap-3 text-white"><i class="fa-solid fa-arrow-right text-[#7b0323]"></i> Multi-language Support</div>
+                        <div class="flex items-center gap-3 text-white"><i class="fa-solid fa-arrow-right text-[#7b0323]"></i> Real-time CRM Syncing</div>
+                    </div>
+                </div>
+                <style>
+    .animate-wave {
+        height: 8px;
+        animation: wave 1.2s ease-in-out infinite;
+    }
+    @keyframes wave {
+        0%, 100% { height: 8px; }
+        50% { height: 24px; }
+    }
+</style>
+
+                <div class="reveal delay-200 flex justify-center" data-aos="fade-left">
+                    <div class="w-[320px] h-[650px] glass-panel rounded-[3rem] border-[6px] border-[#0a0a0c] bg-[#050505]/80 backdrop-blur-xl p-4 relative shadow-[0_20px_50px_rgba(0,0,0,0.8)] flex flex-col justify-between overflow-hidden">
+                        <div class="flex justify-between items-center text-xs text-gray-500 px-2 pt-2">
+                            <span>9:41</span>
+                            <div class="flex gap-1">
+                                <i class="fa-solid fa-signal"></i>
+                                <i class="fa-solid fa-wifi"></i>
+                                <i class="fa-solid fa-battery-full"></i>
+                            </div>
+                        </div>
+                        
+                        <div class="text-center mt-10">
+                            <div class="w-20 h-20 mx-auto rounded-full bg-gradient-to-tr from-[#7b0323] to-black border border-[#7b0323]/50 flex items-center justify-center mb-4 shadow-[0_0_30px_rgba(123,3,35,0.5)]">
+                                <i class="fa-solid fa-robot text-3xl text-white"></i>
+                            </div>
+                            <h4 class="text-white text-xl font-bold">Arpita Voice AI</h4>
+                            <p class="text-[#7b0323] font-bold text-sm mt-1 animate-pulse">00:14 / Active Call</p>
+                        </div>
+
+                        <div class="waveform my-8 flex justify-center gap-1 h-8 items-center">
+                            <div class="w-1 bg-[#7b0323] rounded-full animate-wave" style="animation-delay: 0.1s"></div>
+                            <div class="w-1 bg-[#7b0323] rounded-full animate-wave" style="animation-delay: 0.2s"></div>
+                            <div class="w-1 bg-[#7b0323] rounded-full animate-wave" style="animation-delay: 0.3s"></div>
+                            <div class="w-1 bg-[#7b0323] rounded-full animate-wave" style="animation-delay: 0.2s"></div>
+                            <div class="w-1 bg-[#7b0323] rounded-full animate-wave" style="animation-delay: 0.1s"></div>
+                        </div>
+
+                        <div class="bg-black/50 rounded-2xl p-4 mb-8 text-sm h-48 overflow-hidden relative border border-white/5">
+                            <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#050505] z-10 pointer-events-none"></div>
+                            <div id="transcription-feed" class="space-y-3 transition-transform duration-500 ease-out transform translate-y-0 relative z-0">
+                                <p class="text-gray-400"><span class="text-white font-bold">User:</span> Hi, I'd like to know more about your enterprise plans.</p>
+                                <p class="text-white"><span class="text-[#7b0323] font-bold drop-shadow-[0_0_5px_rgba(123,3,35,0.8)]">AI:</span> Absolutely! I'd be happy to help. What is the current size of your sales team?</p>
+                                <p class="text-gray-400"><span class="text-white font-bold">User:</span> We have about 15 reps right now.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex justify-center gap-6 pb-6 relative z-20">
+                            <div class="w-14 h-14 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-white transition-colors cursor-pointer"><i class="fa-solid fa-microphone-slash"></i></div>
+                            <div class="w-14 h-14 rounded-full bg-[#7b0323] flex items-center justify-center text-white shadow-[0_0_20px_rgba(123,3,35,0.6)] cursor-pointer"><i class="fa-solid fa-phone-slash"></i></div>
+                            <div class="w-14 h-14 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-white transition-colors cursor-pointer"><i class="fa-solid fa-volume-high"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-24 relative bg-[#0a0a0a] border-t border-white/5 overflow-hidden" id="conversations">
+            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-[#7b0323]/10 rounded-full blur-[150px] -z-10 pointer-events-none"></div>
+
+            <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+                <div class="reveal relative w-full flex items-center justify-center h-[550px] sm:h-[650px] order-1" data-aos="fade-right">
+                    <div class="relative w-[340px] sm:w-[520px] lg:w-[620px] h-[600px] sm:h-[650px] scale-[0.85] sm:scale-100 origin-center flex items-center justify-center">
+
+                        <style>
+                            .chat-anim { animation: 15s infinite ease-out; opacity: 0; animation-fill-mode: forwards; }
+                            @keyframes c-0 { 0%, 5% { opacity: 0; transform: translateY(10px); } 7%, 95% { opacity: 1; transform: translateY(0); } 97%, 100% { opacity: 0; transform: translateY(-10px); } }
+                            @keyframes t-1 { 0%, 13% { opacity: 0; transform: translateY(10px); } 15%, 25% { opacity: 1; transform: translateY(0); } 27%, 100% { opacity: 0; transform: translateY(-10px); } }
+                            @keyframes c-1 { 0%, 25% { opacity: 0; transform: translateY(10px); } 27%, 95% { opacity: 1; transform: translateY(0); } 97%, 100% { opacity: 0; transform: translateY(-10px); } }
+                            @keyframes c-2 { 0%, 45% { opacity: 0; transform: translateY(10px); } 47%, 95% { opacity: 1; transform: translateY(0); } 97%, 100% { opacity: 0; transform: translateY(-10px); } }
+                            @keyframes t-2 { 0%, 53% { opacity: 0; transform: translateY(10px); } 55%, 65% { opacity: 1; transform: translateY(0); } 67%, 100% { opacity: 0; transform: translateY(-10px); } }
+                            @keyframes c-3 { 0%, 65% { opacity: 0; transform: translateY(10px); } 67%, 95% { opacity: 1; transform: translateY(0); } 97%, 100% { opacity: 0; transform: translateY(-10px); } }
+                            @keyframes c-sys { 0%, 78% { opacity: 0; transform: scale(0.9); } 80%, 95% { opacity: 1; transform: scale(1); } 97%, 100% { opacity: 0; } }
+
+                            .chat-m1 { animation-name: c-0; }
+                            .chat-t1 { animation-name: t-1; }
+                            .chat-m2 { animation-name: c-1; }
+                            .chat-m3 { animation-name: c-2; }
+                            .chat-t2 { animation-name: t-2; }
+                            .chat-m4 { animation-name: c-3; }
+                            .chat-sys { animation-name: c-sys; }
+
+                            .dot { animation: typing-dot 1.4s infinite ease-in-out both; width: 5px; height: 5px; background-color: #9ca3af; border-radius: 50%; display: inline-block; margin: 0 2px; }
+                            .dot:nth-child(1) { animation-delay: -0.32s; }
+                            .dot:nth-child(2) { animation-delay: -0.16s; }
+                            @keyframes typing-dot { 0%, 80%, 100% { transform: scale(0); } 40% { transform: scale(1); } }
+
+                            .crm-data-1 { animation: crm-fade 15s infinite; opacity: 0.3; }
+                            @keyframes crm-fade { 0%, 46% { opacity: 0.3; color: #6b7280; } 48%, 95% { opacity: 1; color: #fff; text-shadow: 0 0 10px rgba(255,255,255,0.3); } 97%, 100% { opacity: 0.3; color: #6b7280; } }
+                            
+                            .crm-data-2 { animation: crm-status 15s infinite; }
+                            @keyframes crm-status { 0%, 66% { background-color: rgba(255,255,255,0.05); color: #6b7280; border-color: rgba(255,255,255,0.1); } 68%, 95% { background-color: rgba(34, 197, 94, 0.15); color: #4ade80; border-color: #22c55e; box-shadow: 0 0 15px rgba(34, 197, 94, 0.2); } 97%, 100% { background-color: rgba(255,255,255,0.05); color: #6b7280; border-color: rgba(255,255,255,0.1); } }
+                        </style>
+
+                        <div class="absolute left-0 lg:-left-4 top-0 sm:top-2 w-[320px] sm:w-[380px] lg:w-[420px] glass-panel bg-[#050505]/90 backdrop-blur-xl rounded-2xl border border-white/10 p-4 sm:p-5 shadow-[0_20px_50px_rgba(0,0,0,0.5)] z-10">
+                            <div class="flex justify-between items-center mb-4 sm:mb-5 pb-3 sm:pb-4 border-b border-white/5 pr-2 sm:pr-8">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-8 h-8 rounded-lg bg-[#7b0323]/10 flex items-center justify-center border border-[#7b0323]/30 text-[#7b0323]">
+                                        <i class="fa-solid fa-users"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="text-white font-bold text-sm leading-none">Coaching CRM</h4>
+                                        <span class="text-gray-500 text-[10px]">app.arpita-ai.com/pipeline</span>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-1.5 text-white font-bold text-[10px] bg-[#7b0323]/30 px-2.5 py-1 rounded-full border border-[#7b0323]/50">
+                                    <span class="w-1.5 h-1.5 rounded-full bg-[#7b0323] animate-pulse"></span> Auto-Sync
+                                </div>
+                            </div>
+                            
+                            <div class="space-y-3 pr-1 sm:pr-8">
+                                <h5 class="text-xs text-gray-400 font-bold mb-3 px-1 uppercase tracking-wider">Active Prospect</h5>
+                                <div class="bg-white/5 border border-white/5 rounded-xl p-3 sm:p-4 text-sm">
+                                    <div class="flex items-center gap-3 border-b border-white/5 pb-3 mb-3">
+                                        <div class="w-10 h-10 rounded-full bg-gradient-to-br from-[#7b0323] to-black border border-white/10 flex items-center justify-center text-white">
+                                            <i class="fa-brands fa-instagram"></i>
+                                        </div>
+                                        <div>
+                                            <div class="text-white font-bold text-sm">@sarah_growth</div>
+                                            <div class="text-xs text-gray-500">Instagram DM Lead</div>
+                                        </div>
+                                    </div>
+                                    <div class="space-y-2 text-xs">
+                                        <div class="flex justify-between items-center">
+                                            <span class="text-gray-500">Goal:</span>
+                                            <span class="text-white font-medium">Scale to $20k/mo</span>
+                                        </div>
+                                        <div class="flex justify-between items-center">
+                                            <span class="text-gray-500">Current MRR:</span>
+                                            <span class="crm-data-1 font-bold font-mono text-white">$5,000 / mo</span>
+                                        </div>
+                                        <div class="flex justify-between items-center pt-2">
+                                            <span class="text-gray-500">Pipeline Status:</span>
+                                            <span class="crm-data-2 px-3 py-1 rounded-full font-bold transition-all duration-300">
+                                                High-Ticket Qualified
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="absolute right-0 sm:-right-6 lg:-right-8 bottom-[-10px] sm:bottom-0 w-[310px] sm:w-[350px] lg:w-[360px] glass-panel bg-[#0d0d0d]/95 backdrop-blur-2xl rounded-[2rem] border border-white/10 shadow-[0_30px_80px_rgba(0,0,0,0.8)] z-20">
+                            <div class="bg-gradient-to-r from-black to-[#0a0a0c] p-4 border-b border-white/5 rounded-t-[2rem] flex items-center gap-3">
+                                <div class="w-10 h-10 rounded-full bg-[#7b0323] flex items-center justify-center relative shadow-[0_0_15px_rgba(123,3,35,0.5)] border border-[#7b0323]/50">
+                                    <i class="fa-solid fa-headset text-white text-sm"></i>
+                                    <div class="absolute bottom-0 right-0 w-3 h-3 bg-emerald-500 rounded-full border-2 border-black"></div>
+                                </div>
+                                <div>
+                                    <h4 class="text-white font-bold text-sm leading-none">Conversational AI Agent</h4>
+                                    <p class="text-[11px] text-white mt-0.5 flex items-center gap-1"><i class="fa-solid fa-bolt text-[#7b0323]"></i> Replies instantly</p>
+                                </div>
+                            </div>
+                            
+                            <div class="p-3 sm:p-4 h-[420px] flex flex-col justify-end space-y-2.5 overflow-hidden relative text-[12.5px] sm:text-[13px] bg-black/30">
+                                <div class="self-end max-w-[85%] bg-[#7b0323] text-white p-2.5 rounded-2xl rounded-tr-sm shadow-[0_10px_20px_rgba(123,3,35,0.2)] chat-anim chat-m1 border border-[#7b0323]">
+                                    Hey! I saw your reel and I'm interested in the 1-on-1 mentorship.
+                                </div>
+                                <div class="self-start max-w-[85%] bg-[#0a0a0c] text-white p-3 rounded-2xl rounded-tl-sm border border-white/5 chat-anim chat-t1 absolute bottom-[180px] left-4">
+                                    <div class="flex items-center"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+                                </div>
+                                <div class="self-start max-w-[85%] bg-[#0a0a0c] text-white p-2.5 rounded-2xl rounded-tl-sm border border-white/5 chat-anim chat-m2 shadow-md">
+                                    Hey Sarah! 👋 We'd love to help you scale. Before I send over the details, what is your current monthly revenue?
+                                </div>
+                                <div class="self-end max-w-[85%] bg-[#7b0323] text-white p-2.5 rounded-2xl rounded-tr-sm shadow-[0_10px_20px_rgba(123,3,35,0.2)] chat-anim chat-m3 border border-[#7b0323]">
+                                    I'm stuck at around $5k/mo, trying to hit $20k.
+                                </div>
+                                <div class="self-start max-w-[85%] bg-[#0a0a0c] text-white p-3 rounded-2xl rounded-tl-sm border border-white/5 chat-anim chat-t2 absolute bottom-[80px] left-4">
+                                    <div class="flex items-center"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+                                </div>
+                                <div class="self-start max-w-[90%] bg-[#0a0a0c] text-white p-2.5 rounded-2xl rounded-tl-sm border border-white/5 chat-anim chat-m4 shadow-md">
+                                    Perfect! You're exactly who this program is for. I've noted your goals—let me send over our <strong class="text-white border-b border-[#7b0323]">$20k/mo roadmap</strong> to see if it aligns with your vision!
+                                </div>
+                                <div class="self-center bg-gradient-to-r from-emerald-600/20 to-emerald-800/20 text-emerald-400 border border-emerald-500/30 text-[9px] sm:text-[10px] font-bold uppercase tracking-widest px-4 py-2 rounded-full chat-anim chat-sys mt-3 backdrop-blur-md shadow-[0_0_15px_rgba(16,185,129,0.1)]">
+                                    <i class="fa-solid fa-check mr-1"></i> Data Captured & Synced
+                                </div>
+                            </div>
+
+                            <div class="p-3 border-t border-white/5 bg-black rounded-b-[2rem] flex gap-2 sm:gap-3 items-center">
+                                <i class="fa-solid fa-paperclip text-gray-500 hover:text-white transition-colors cursor-pointer ml-1 hidden sm:block"></i>
+                                <div class="w-full bg-white/5 border border-white/10 rounded-full px-4 py-2 text-sm text-gray-500">Reply to Agent...</div>
+                                <div class="w-9 h-9 rounded-full bg-[#7b0323] flex items-center justify-center text-white shrink-0 shadow-[0_0_15px_rgba(123,3,35,0.4)] cursor-pointer"><i class="fa-solid fa-paper-plane text-xs"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="reveal delay-100 order-2 flex flex-col justify-center" data-aos="fade-left">
+                    <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full glass-panel border border-[#7b0323]/40 mb-6 mx-auto lg:mx-0 w-max bg-[#7b0323]/10">
+                        <i class="fa-solid fa-comments text-[#7b0323]"></i>
+                        <span class="text-xs font-semibold text-white uppercase tracking-wider">Automated Inquiry Management</span>
+                    </div>
+                    
+                    <h2 class="text-4xl lg:text-5xl font-extrabold text-white mb-6 leading-tight tracking-tight text-center lg:text-left">
+                        Qualify High-Ticket Clients <br>
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-white to-[#7b0323]">Entirely On Autopilot.</span>
+                    </h2>
+                    
+                    <p class="text-gray-400 text-lg mb-10 leading-relaxed text-center lg:text-left">
+                        Deploy conversational AI agents across Instagram DMs, Facebook, WhatsApp, and your Website. Our AI manages inbound inquiries 24/7—vetting prospects, understanding their goals, and filtering out unqualified leads before they reach your team.
+                    </p>
+                    
+                    <div class="space-y-6 max-w-lg mx-auto lg:mx-0">
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-full bg-[#7b0323]/10 flex items-center justify-center shrink-0 mt-0.5 border border-[#7b0323]/30 shadow-[0_0_10px_rgba(123,3,35,0.2)]">
+                                <i class="fa-solid fa-bullseye text-[#7b0323] text-sm"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-bold text-lg">Goal & Budget Extraction</h4>
+                                <p class="text-sm text-gray-500">AI automatically detects current revenue, pain points, and budget directly from natural chat interactions.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-full bg-[#7b0323]/10 flex items-center justify-center shrink-0 mt-0.5 border border-[#7b0323]/30 shadow-[0_0_10px_rgba(123,3,35,0.2)]">
+                                <i class="fa-solid fa-users-viewfinder text-[#7b0323] text-sm"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-bold text-lg">Coaching Pipeline Sync</h4>
+                                <p class="text-sm text-gray-500">Instantly creates and updates client profiles in GoHighLevel, ActiveCampaign, or HubSpot without manual data entry.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-full bg-[#7b0323]/10 flex items-center justify-center shrink-0 mt-0.5 border border-[#7b0323]/30 shadow-[0_0_10px_rgba(123,3,35,0.2)]">
+                                <i class="fa-solid fa-filter text-[#7b0323] text-sm"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-bold text-lg">24/7 Inquiry Management</h4>
+                                <p class="text-sm text-gray-500">Engages inbound leads instantly, answers complex FAQs about your program, and ensures only highly-qualified prospects move forward.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-24 relative bg-[#0a0a0a] border-t border-white/5 overflow-hidden" id="scheduling">
+            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-[#7b0323]/10 rounded-full blur-[150px] -z-10 pointer-events-none"></div>
+
+            <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+                <div class="reveal" data-aos="fade-right">
+                    <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full glass-panel border border-[#7b0323]/40 mb-6 mx-auto lg:mx-0 bg-[#7b0323]/10">
+                        <i class="fa-solid fa-calendar-check text-[#7b0323]"></i>
+                        <span class="text-xs font-semibold text-white uppercase tracking-wider">Frictionless Booking</span>
+                    </div>
+                    
+                    <h2 class="text-4xl lg:text-5xl font-extrabold text-white mb-6 leading-tight tracking-tight text-center lg:text-left">
+                        Let Conversational Agents <br>
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-white to-[#7b0323]">Book Your Meetings.</span>
+                    </h2>
+                    
+                    <p class="text-gray-400 text-lg mb-8 leading-relaxed text-center lg:text-left">
+                        Stop sending static booking links that kill conversions. Our Conversational Agents naturally interact with prospects, check your live availability in the background, handle time-zone math, and secure the meeting effortlessly.
+                    </p>
+                    
+                    <div class="space-y-4 max-w-lg mx-auto lg:mx-0">
+                        <div class="flex items-start gap-4">
+                            <div class="w-8 h-8 rounded-full bg-[#7b0323]/10 flex items-center justify-center shrink-0 mt-1 border border-[#7b0323]/30 shadow-[0_0_10px_rgba(123,3,35,0.2)]">
+                                <i class="fa-solid fa-bolt text-[#7b0323] text-sm"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-bold">Natural Language Scheduling</h4>
+                                <p class="text-sm text-gray-500">"How about tomorrow at 2 PM?" — The Conversational Agent understands context and intent.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-8 h-8 rounded-full bg-[#7b0323]/10 flex items-center justify-center shrink-0 mt-1 border border-[#7b0323]/30 shadow-[0_0_10px_rgba(123,3,35,0.2)]">
+                                <i class="fa-solid fa-rotate text-[#7b0323] text-sm"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-bold">Live 2-Way Sync</h4>
+                                <p class="text-sm text-gray-500">Connects instantly with Google Calendar, Outlook, and iCloud.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="reveal delay-200 relative w-full flex items-center justify-center h-[550px] sm:h-[650px]" data-aos="fade-left">
+                    <div class="relative w-[340px] sm:w-[520px] lg:w-[620px] h-[600px] sm:h-[650px] scale-[0.85] sm:scale-100 origin-center flex items-center justify-center">
+
+                        <style>
+                            .sync-anim { animation: 16s infinite ease-out; opacity: 0; animation-fill-mode: forwards; }
+                            @keyframes m-0 { 0%, 2% { opacity: 0; transform: translateY(10px); } 4%, 90% { opacity: 1; transform: translateY(0); } 95%, 100% { opacity: 0; transform: translateY(-10px); } }
+                            @keyframes m-1 { 0%, 12% { opacity: 0; transform: translateY(10px); } 14%, 90% { opacity: 1; transform: translateY(0); } 95%, 100% { opacity: 0; transform: translateY(-10px); } }
+                            @keyframes m-2 { 0%, 30% { opacity: 0; transform: translateY(10px); } 32%, 90% { opacity: 1; transform: translateY(0); } 95%, 100% { opacity: 0; transform: translateY(-10px); } }
+                            @keyframes m-3 { 0%, 50% { opacity: 0; transform: translateY(10px); } 52%, 90% { opacity: 1; transform: translateY(0); } 95%, 100% { opacity: 0; transform: translateY(-10px); } }
+                            @keyframes m-4 { 0%, 62% { opacity: 0; transform: translateY(10px); } 64%, 90% { opacity: 1; transform: translateY(0); } 95%, 100% { opacity: 0; transform: translateY(-10px); } }
+                            @keyframes m-5 { 0%, 75% { opacity: 0; transform: translateY(10px); } 77%, 90% { opacity: 1; transform: translateY(0); } 95%, 100% { opacity: 0; transform: translateY(-10px); } }
+                            @keyframes m-sys { 0%, 84% { opacity: 0; transform: scale(0.9); } 86%, 90% { opacity: 1; transform: scale(1); } 95%, 100% { opacity: 0; } }
+
+                            .msg-intro { animation-name: m-0; }
+                            .msg-1 { animation-name: m-1; }
+                            .msg-2 { animation-name: m-2; }
+                            .msg-3 { animation-name: m-3; }
+                            .msg-4 { animation-name: m-4; }
+                            .msg-5 { animation-name: m-5; }
+                            .msg-close { animation-name: m-sys; }
+
+                            .scan-slot { background-color: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); animation: scan-anim 16s infinite ease-in-out; }
+                            @keyframes scan-anim {
+                                0%, 18%, 32%, 100% { background-color: rgba(255,255,255,0.02); border-color: rgba(255,255,255,0.05); box-shadow: none; }
+                                22%, 28% { background-color: rgba(123, 3, 35, 0.4); border-color: rgba(123, 3, 35, 0.8); box-shadow: inset 0 0 20px rgba(123, 3, 35, 0.5); }
+                            }
+
+                            .target-slot { background-color: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); color: #9ca3af; animation: target-anim 16s infinite ease-in-out; }
+                            @keyframes target-anim {
+                                0%, 18% { background-color: rgba(255,255,255,0.02); border-color: rgba(255,255,255,0.05); box-shadow: none; color: #9ca3af; }
+                                22%, 28% { background-color: rgba(123, 3, 35, 0.4); border-color: rgba(123, 3, 35, 0.8); box-shadow: inset 0 0 20px rgba(123, 3, 35, 0.5); color: #9ca3af; }
+                                32%, 62% { background-color: rgba(255,255,255,0.02); border-color: rgba(255,255,255,0.05); box-shadow: none; color: #9ca3af; }
+                                64%, 90% { background-color: #059669; border-color: #10b981; box-shadow: 0 0 25px rgba(16, 185, 129, 0.3); color: #fff; font-weight: bold; }
+                                95%, 100% { background-color: rgba(255,255,255,0.02); border-color: rgba(255,255,255,0.05); box-shadow: none; color: #9ca3af; font-weight: normal; }
+                            }
+
+                            .text-available { animation: show-avail 16s infinite ease-in-out; }
+                            @keyframes show-avail { 0%, 62% { opacity: 0.5; } 64%, 90% { opacity: 0; } 95%, 100% { opacity: 0.5; } }
+                            .text-booked { opacity: 0; animation: show-booked 16s infinite ease-in-out; }
+                            @keyframes show-booked { 0%, 62% { opacity: 0; transform: translateY(5px); } 64%, 90% { opacity: 1; transform: translateY(0); } 95%, 100% { opacity: 0; transform: translateY(-5px); } }
+                            .target-bar { opacity: 0; animation: target-bar-anim 16s infinite ease-in-out; }
+                            @keyframes target-bar-anim { 0%, 62% { opacity: 0; } 64%, 90% { opacity: 1; background-color: rgba(0,0,0,0.4); } 95%, 100% { opacity: 0; } }
+                            .check-icon { opacity: 0; animation: check-icon-anim 16s infinite; }
+                            @keyframes check-icon-anim { 0%, 63%, 95%, 100% { opacity: 0; transform: scale(0.5); } 65%, 90% { opacity: 1; transform: scale(1); } }
+                        </style>
+
+                        <div class="absolute left-0 lg:-left-4 top-0 sm:top-2 w-[320px] sm:w-[380px] lg:w-[420px] glass-panel bg-[#050505]/90 backdrop-blur-xl rounded-2xl border border-white/10 p-4 sm:p-5 shadow-[0_20px_50px_rgba(0,0,0,0.5)] z-10">
+                            <div class="flex justify-between items-center mb-4 sm:mb-5 pb-3 sm:pb-4 border-b border-white/5 pr-2 sm:pr-8">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-8 h-8 rounded-lg bg-[#7b0323]/10 flex items-center justify-center border border-[#7b0323]/30 text-[#7b0323]">
+                                        <i class="fa-solid fa-calendar-day"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="text-white font-bold text-sm leading-none">Your Calendar</h4>
+                                        <span class="text-gray-500 text-[10px]">app.arpita-ai.com/cal</span>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-1.5 text-white font-bold text-[10px] bg-[#7b0323]/30 px-2.5 py-1 rounded-full border border-[#7b0323]/50">
+                                    <span class="w-1.5 h-1.5 rounded-full bg-[#7b0323] animate-pulse"></span> Sync
+                                </div>
+                            </div>
+                            
+                            <div class="space-y-2 sm:space-y-3 pr-1 sm:pr-8">
+                                <div class="flex justify-between text-xs text-gray-400 font-bold mb-2 px-1">
+                                    <span class="text-white">Tomorrow, 25th</span>
+                                    <span>PST Timezone</span>
+                                </div>
+                                
+                                <div class="flex items-stretch gap-3 sm:gap-4 text-sm">
+                                    <span class="text-gray-600 text-[11px] sm:text-xs w-12 sm:w-14 text-right pt-3 font-medium">1:00 PM</span>
+                                    <div class="flex-1 bg-white/5 border border-white/5 rounded-xl p-2.5 sm:p-3 text-gray-500 text-xs flex items-center relative overflow-hidden">
+                                        <div class="absolute left-0 top-0 bottom-0 w-1 bg-gray-600"></div>
+                                        <i class="fa-solid fa-lock text-[10px] mr-2"></i> Internal Sync
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-stretch gap-3 sm:gap-4 text-sm">
+                                    <span class="text-gray-300 font-bold text-[11px] sm:text-xs w-12 sm:w-14 text-right pt-3">2:00 PM</span>
+                                    <div class="flex-1 rounded-xl p-2.5 sm:p-3 text-xs transition-all duration-300 relative overflow-hidden flex items-center justify-between target-slot h-[38px] sm:h-[42px]">
+                                        <div class="absolute left-0 top-0 bottom-0 w-1 target-bar transition-colors duration-300"></div>
+                                        <div class="relative w-full h-full flex items-center">
+                                            <span class="text-available absolute inset-0 flex items-center pl-1 font-medium">Available</span>
+                                            <span class="text-booked absolute inset-0 flex items-center gap-2 pl-2 z-10 font-bold">
+                                                <i class="fa-solid fa-video"></i> Strategy Session
+                                            </span>
+                                        </div>
+                                        <i class="fa-solid fa-check-circle text-white check-icon text-sm z-10 absolute right-3"></i>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-stretch gap-3 sm:gap-4 text-sm">
+                                    <span class="text-gray-500 text-[11px] sm:text-xs w-12 sm:w-14 text-right pt-3 font-medium">3:00 PM</span>
+                                    <div class="flex-1 rounded-xl p-2.5 sm:p-3 text-gray-500 text-xs transition-colors duration-300 scan-slot flex items-center h-[38px] sm:h-[42px]">
+                                        <span class="opacity-50 pl-1 font-medium">Available</span>
+                                    </div>
+                                </div>
+                                <div class="flex items-stretch gap-3 sm:gap-4 text-sm">
+                                    <span class="text-gray-500 text-[11px] sm:text-xs w-12 sm:w-14 text-right pt-3 font-medium">4:00 PM</span>
+                                    <div class="flex-1 rounded-xl p-2.5 sm:p-3 text-gray-500 text-xs transition-colors duration-300 scan-slot flex items-center h-[38px] sm:h-[42px]">
+                                        <span class="opacity-50 pl-1 font-medium">Available</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="absolute right-0 sm:-right-6 lg:-right-8 bottom-[-10px] sm:bottom-0 w-[310px] sm:w-[350px] lg:w-[360px] glass-panel bg-[#0d0d0d]/95 backdrop-blur-2xl rounded-[2rem] border border-white/10 shadow-[0_30px_80px_rgba(0,0,0,0.8)] z-20">
+                            <div class="bg-gradient-to-r from-black to-[#0a0a0c] p-4 border-b border-white/5 rounded-t-[2rem] flex items-center gap-3">
+                                <div class="w-10 h-10 rounded-full bg-[#7b0323] flex items-center justify-center relative shadow-[0_0_15px_rgba(123,3,35,0.5)] border border-[#7b0323]/50">
+                                    <i class="fa-solid fa-robot text-white text-sm"></i>
+                                    <div class="absolute bottom-0 right-0 w-3 h-3 bg-emerald-500 rounded-full border-2 border-black"></div>
+                                </div>
+                                <div>
+                                    <h4 class="text-white font-bold text-sm leading-none">Conversational Agent</h4>
+                                    <p class="text-[11px] text-white mt-0.5 flex items-center gap-1"><i class="fa-solid fa-bolt text-[#7b0323]"></i> Replies instantly</p>
+                                </div>
+                            </div>
+                            
+                            <div class="p-3 sm:p-4 h-[420px] flex flex-col space-y-2.5 overflow-hidden relative text-[12.5px] sm:text-[13px] bg-black/30">
+                                <div class="self-start max-w-[85%] bg-[#0a0a0c] text-white p-2.5 rounded-2xl rounded-tl-sm border border-white/5 sync-anim msg-intro shadow-md">
+                                    Great! I'd love to show you a demo. When are you free to connect?
+                                </div>
+                                <div class="self-end max-w-[85%] bg-[#7b0323] text-white p-2.5 rounded-2xl rounded-tr-sm shadow-[0_10px_20px_rgba(123,3,35,0.2)] border border-[#7b0323] sync-anim msg-1">
+                                    Do you have any time tomorrow afternoon?
+                                </div>
+                                <div class="self-start max-w-[85%] bg-[#0a0a0c] text-white p-2.5 rounded-2xl rounded-tl-sm border border-white/5 sync-anim msg-2 shadow-md">
+                                    I have <strong class="text-white border-b border-[#7b0323]">2:00 PM</strong> or <strong class="text-white border-b border-[#7b0323]">4:00 PM PST</strong> available tomorrow. Which works better for you?
+                                </div>
+                                <div class="self-end max-w-[85%] bg-[#7b0323] text-white p-2.5 rounded-2xl rounded-tr-sm shadow-[0_10px_20px_rgba(123,3,35,0.2)] border border-[#7b0323] sync-anim msg-3">
+                                    Let's do 2:00 PM.
+                                </div>
+                                <div class="self-start max-w-[90%] bg-gradient-to-br from-emerald-600/20 to-emerald-800/20 text-white p-2.5 rounded-2xl rounded-tl-sm shadow-[0_10px_25px_rgba(16,185,129,0.1)] border border-emerald-500/30 sync-anim msg-4">
+                                    <i class="fa-solid fa-calendar-check text-emerald-400 mr-1.5"></i> Perfect! You're booked for tomorrow at 2:00 PM. I just sent the calendar invite.
+                                </div>
+                                <div class="self-start max-w-[85%] bg-[#0a0a0c] text-white p-2.5 rounded-2xl rounded-tl-sm border border-white/5 sync-anim msg-5 shadow-md">
+                                    Thank you! Have a great rest of your day! 👋
+                                </div>
+                                <div class="self-center bg-white/5 text-gray-500 text-[9px] sm:text-[10px] font-bold uppercase tracking-widest px-4 py-1.5 rounded-full border border-white/10 sync-anim msg-close mt-2 sm:mt-3 backdrop-blur-md">
+                                    Agent session closed
+                                </div>
+                            </div>
+
+                            <div class="p-3 border-t border-white/5 bg-black rounded-b-[2rem] flex gap-2 sm:gap-3 items-center">
+                                <i class="fa-solid fa-paperclip text-gray-500 hover:text-white transition-colors cursor-pointer ml-1 hidden sm:block"></i>
+                                <div class="w-full bg-white/5 border border-white/10 rounded-full px-4 py-2 text-sm text-gray-500">Reply to Agent...</div>
+                                <div class="w-9 h-9 rounded-full bg-[#7b0323] flex items-center justify-center text-white shrink-0 shadow-[0_0_15px_rgba(123,3,35,0.4)] cursor-pointer"><i class="fa-solid fa-paper-plane text-xs"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> 
+
+<section id="process" class="py-32 px-6 bg-[#08080a] relative overflow-hidden">
+    <div class="absolute left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-transparent via-brand-wine/20 to-transparent hidden lg:block"></div>
+
+    <style>
+        @keyframes flowHighlight {
+            0%, 100% { opacity: 0.5; border-color: rgba(63, 63, 70, 0.5); transform: scale(1); }
+            20% { opacity: 1; border-color: #7b0323; transform: scale(1.05); box-shadow: 0 0 20px rgba(123, 3, 35, 0.4); background-color: rgba(123, 3, 35, 0.1); }
+            40% { opacity: 0.5; border-color: rgba(63, 63, 70, 0.5); transform: scale(1); background-color: transparent; }
+        }
+
+        .auto-flow-step {
+            animation: flowHighlight 6s infinite; /* 6s total cycle */
+        }
+        
+        /* Stagger the animations */
+        .step-1 { animation-delay: 0s; }
+        .step-2 { animation-delay: 1.5s; }
+        .step-3 { animation-delay: 3s; }
+        .step-4 { animation-delay: 4.5s; }
+    </style>
+
+    <div class="max-w-7xl mx-auto relative z-10">
+        <div class="grid lg:grid-cols-2 gap-16 items-center">
+            
+            <div data-aos="fade-right">
+                <span class="text-brand-wine font-bold tracking-widest text-[10px] uppercase mb-4 block">// THE WORKFLOW</span>
+                <h2 class="text-4xl md:text-5xl font-display font-bold text-white mb-6">
+                    Seamless Integration.<br>Zero Friction.
+                </h2>
+                
+                <div class="inline-flex items-center gap-3 px-5 py-3 bg-brand-wine/10 border border-brand-wine/30 rounded-xl mb-10 shadow-[0_0_15px_rgba(123,3,35,0.1)]">
+                    <i class='bx bxs-check-shield text-brand-wine text-xl'></i>
+                    <span class="text-[11px] font-bold uppercase tracking-widest text-white">Zero Human Intervention Required</span>
+                </div>
+                
+                <div class="space-y-8 relative">
+                    <div class="absolute left-5 top-4 bottom-4 w-0.5 bg-zinc-800/50"></div>
+
+                    <div class="flex gap-6 relative z-10 group cursor-default">
+                        <div class="auto-flow-step step-1 flex-shrink-0 w-10 h-10 rounded-full bg-zinc-900 border border-zinc-700 flex items-center justify-center font-bold text-white transition-all duration-500">1</div>
+                        <div class="auto-flow-step step-1 p-2 -ml-2 rounded-lg border border-transparent transition-all duration-500">
+                            <h4 class="text-white font-bold mb-1 text-lg">Lead Capture</h4>
+                            <p class="text-zinc-500 text-sm">Lead enters via Ad, Web, or Social.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex gap-6 relative z-10 group cursor-default">
+                        <div class="auto-flow-step step-2 flex-shrink-0 w-10 h-10 rounded-full bg-zinc-900 border border-zinc-700 flex items-center justify-center font-bold text-white transition-all duration-500">2</div>
+                        <div class="auto-flow-step step-2 p-2 -ml-2 rounded-lg border border-transparent transition-all duration-500">
+                            <h4 class="text-white font-bold mb-1 text-lg">Instant AI Call</h4>
+                            <p class="text-zinc-500 text-sm">Arpit dials within 30 seconds.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-6 relative z-10 group cursor-default">
+                        <div class="auto-flow-step step-3 flex-shrink-0 w-10 h-10 rounded-full bg-zinc-900 border border-zinc-700 flex items-center justify-center font-bold text-white transition-all duration-500">3</div>
+                        <div class="auto-flow-step step-3 p-2 -ml-2 rounded-lg border border-transparent transition-all duration-500">
+                            <h4 class="text-white font-bold mb-1 text-lg">Qualification & Booking</h4>
+                            <p class="text-zinc-500 text-sm">Filters intent and books the meeting.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-6 relative z-10 group cursor-default">
+                        <div class="auto-flow-step step-4 flex-shrink-0 w-10 h-10 rounded-full bg-zinc-900 border border-zinc-700 flex items-center justify-center font-bold text-white transition-all duration-500">4</div>
+                        <div class="auto-flow-step step-4 p-2 -ml-2 rounded-lg border border-transparent transition-all duration-500">
+                            <h4 class="text-white font-bold mb-1 text-lg">Reminders & Follow-ups</h4>
+                            <p class="text-zinc-500 text-sm">Consistent nudges to ensure they show up.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="glass-panel p-3 rounded-[2.5rem]" data-aos="fade-left">
+                 <div class="bg-gradient-to-b from-[#0f0f11] to-black rounded-[2rem] p-8 md:p-12 border border-white/5 relative overflow-hidden">
+                    <div class="absolute top-1/2 right-0 w-64 h-64 bg-brand-wine/10 blur-[80px] rounded-full"></div>
+
+                    <h3 class="text-white font-bold mb-8 text-xl relative z-10">Operational Cost Impact</h3>
+                    
+                    <div class="space-y-8 relative z-10">
+                        <div>
+                            <div class="flex justify-between text-sm mb-3">
+                                <span class="text-zinc-400 font-medium flex items-center gap-2"><i class='bx bx-user'></i> Traditional 3 Team (Equipments + Traning + Space)</span>
+                                <span class="text-red-400 font-bold">₹90,000/mo</span>
+                            </div>
+                            <div class="w-full bg-zinc-800/50 h-3 rounded-full overflow-hidden backdrop-blur-sm border border-white/5">
+                                <div class="bg-gradient-to-r from-red-600 to-red-400 h-full w-[90%] shadow-[0_0_10px_rgba(248,113,113,0.3)]"></div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="flex justify-between text-sm mt-2 mb-3">
+                                <span class="text-white font-medium flex items-center gap-2"><i class='bx bxs-bot text-brand-wine'></i> Arpit AI (Unlimited)</span>
+                                <span class="text-emerald-400 font-bold">₹25,000/mo</span>
+                            </div>
+                            <div class="w-full bg-zinc-800/50 h-3 rounded-full overflow-hidden backdrop-blur-sm border border-white/5">
+                                <div class="bg-gradient-to-r from-emerald-600 to-emerald-400 h-full w-[25%] shadow-[0_0_10px_rgba(52,211,153,0.3)] animate-pulse"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-10 pt-8 border-t border-white/5 flex items-center gap-4">
+                        <div class="p-3 bg-brand-wine/10 rounded-xl text-brand-wine">
+                            <i class='bx bx-trending-down text-2xl'></i>
+                        </div>
+                        <div>
+                            <p class="text-white font-bold text-lg">72% Savings</p>
+                            <p class="text-zinc-500 text-xs">Immediate bottom-line impact</p>
+                        </div>
+                    </div>
+                 </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="py-12 md:py-24 px-6 relative overflow-hidden bg-brand-dark">
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1000px] h-[500px] bg-brand-wine/5 blur-[120px] rounded-full pointer-events-none animate-blob"></div>
+
+        <div class="max-w-6xl mx-auto relative z-10">
+            <div class="text-center mb-10 md:mb-16" data-aos="fade-up">
+                <span class="text-brand-wine font-black tracking-[0.4em] text-[10px] uppercase mb-4 block underline decoration-brand-wine/30 underline-offset-8">Operational Intelligence</span>
+                <h2 class="text-3xl md:text-6xl font-display font-bold text-white leading-tight">
+                    Traditional vs <span class="text-gradient">Agentic AI</span>
+                </h2>
+                <p class="text-zinc-500 mt-4 md:mt-6 max-w-2xl mx-auto text-xs md:text-sm uppercase tracking-widest font-medium">
+                    The analytical breakdown of your new 24/7 workforce.
+                </p>
+            </div>
+
+            <div class="glass-panel rounded-2xl md:rounded-[2.5rem] overflow-hidden border border-white/10 shadow-[0_20px_80px_-20px_rgba(163,22,54,0.15)]" data-aos="zoom-in">
+                <div class="overflow-x-auto no-scrollbar">
+                    <table class="w-full text-left border-collapse min-w-[700px] md:min-w-[850px]">
+                        <thead>
+                            <tr class="bg-white/5 text-[10px] md:text-[11px] uppercase tracking-[0.25em] text-zinc-400">
+                                <th class="p-6 md:p-8 font-bold border-b border-white/5">Performance Metric</th>
+                                <th class="p-6 md:p-8 font-bold border-b border-white/5">Traditional Team</th>
+                                <th class="p-6 md:p-8 font-bold border-b border-white/5 text-brand-wine bg-brand-wine/[0.04] text-center">Arpit AI Agent</th>
+                            </tr>
+                        </thead>
+                        <tbody class="text-xs md:text-sm text-zinc-300">
+                            <tr class="group hover:bg-white/[0.02] transition-all">
+                                <td class="p-4 md:p-6 border-b border-white/5 font-semibold text-white group-hover:pl-6 md:group-hover:pl-8 transition-all">Response Time</td>
+                                <td class="p-4 md:p-6 border-b border-white/5 text-zinc-500">15 - 60 Minutes</td>
+                                <td class="p-4 md:p-6 border-b border-white/5 text-emerald-400 font-bold bg-brand-wine/[0.04] text-center">&lt; 30 Seconds</td>
+                            </tr>
+                            <tr class="group hover:bg-white/[0.02] transition-all">
+                                <td class="p-4 md:p-6 border-b border-white/5 font-semibold text-white group-hover:pl-6 md:group-hover:pl-8 transition-all">Availability</td>
+                                <td class="p-4 md:p-6 border-b border-white/5 text-zinc-500">8 Hours / Day</td>
+                                <td class="p-4 md:p-6 border-b border-white/5 text-white font-bold bg-brand-wine/[0.04] text-center">24 / 7 / 365</td>
+                            </tr>
+                            <tr class="group hover:bg-white/[0.02] transition-all">
+                                <td class="p-4 md:p-6 border-b border-white/5 font-semibold text-white group-hover:pl-6 md:group-hover:pl-8 transition-all">Workspace Cost</td>
+                                <td class="p-4 md:p-6 border-b border-white/5 text-zinc-500">Rent, PC, Electricity, AC</td>
+                                <td class="p-4 md:p-6 border-b border-white/5 text-emerald-400 font-bold bg-brand-wine/[0.04] text-center">Zero Infrastructure</td>
+                            </tr>
+                            <tr class="group hover:bg-white/[0.02] transition-all">
+                                <td class="p-4 md:p-6 border-b border-white/5 font-semibold text-white group-hover:pl-6 md:group-hover:pl-8 transition-all">Training Period</td>
+                                <td class="p-4 md:p-6 border-b border-white/5 text-zinc-500">4 - 8 Weeks</td>
+                                <td class="p-4 md:p-6 border-b border-white/5 text-white font-bold bg-brand-wine/[0.04] text-center">Immediate Activation</td>
+                            </tr>
+                            <tr class="group hover:bg-white/[0.02] transition-all">
+                                <td class="p-4 md:p-6 border-b border-white/5 font-semibold text-white group-hover:pl-6 md:group-hover:pl-8 transition-all">Employee Leaves</td>
+                                <td class="p-4 md:p-6 border-b border-white/5 text-zinc-500">Sick, Paid, & Unplanned</td>
+                                <td class="p-4 md:p-6 border-b border-white/5 text-emerald-400 font-bold bg-brand-wine/[0.04] text-center">Zero Leaves / 100% Uptime</td>
+                            </tr>
+                            <tr class="group hover:bg-white/[0.02] transition-all">
+                                <td class="p-4 md:p-6 border-b border-white/5 font-semibold text-white group-hover:pl-6 md:group-hover:pl-8 transition-all">Management</td>
+                                <td class="p-4 md:p-6 border-b border-white/5 text-zinc-500">Managers, TLs, & HR Team</td>
+                                <td class="p-4 md:p-6 border-b border-white/5 text-white font-bold bg-brand-wine/[0.04] text-center">Autonomous Agent</td>
+                            </tr>
+                            <tr class="group hover:bg-white/[0.02] transition-all">
+                                <td class="p-4 md:p-6 border-b border-white/5 font-semibold text-white group-hover:pl-6 md:group-hover:pl-8 transition-all">Security</td>
+                                <td class="p-4 md:p-6 border-b border-white/5 text-zinc-500">Risk of Data Theft/Leaks</td>
+                                <td class="p-4 md:p-6 border-b border-white/5 text-emerald-400 font-bold bg-brand-wine/[0.04] text-center">High-Security API Encryption</td>
+                            </tr>
+                            <tr class="group hover:bg-white/[0.02] transition-all">
+                                <td class="p-4 md:p-6 font-semibold text-white group-hover:pl-6 md:group-hover:pl-8 transition-all">Performance</td>
+                                <td class="p-4 md:p-6 text-zinc-500">Human Errors & Moods</td>
+                                <td class="p-4 md:p-6 text-white font-bold bg-brand-wine/[0.04] text-center">
+                                    <span class="px-3 py-1 md:px-4 md:py-1.5 rounded-full border border-brand-wine/30 bg-brand-wine/10 text-[9px] md:text-[10px] uppercase tracking-tighter">100% Accurate Top Performer</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="mt-6 md:mt-8 text-center" data-aos="fade-up">
+                                    <h3 class="text-2xl font-bold text-white mb-2">Save ₹15–25 Lakhs/year per calling seat</h3>
+                    <p class="text-zinc-500 text-sm uppercase tracking-widest">While getting faster response times and higher conversion rates</p>
+            </div>
+ 
+        </div>
+    </section>
+
+
+
+<section class="py-32 relative bg-[#050505] border-t border-white/5 overflow-hidden z-0" id="impact-and-industries">
+    
+    <div class="absolute top-[20%] left-1/2 -translate-x-1/2 w-[1000px] h-[600px] bg-[#7b0323]/15 rounded-[100%] blur-[120px] -z-20 pointer-events-none"></div>
+    <div class="absolute bottom-[-10%] left-[-10%] w-[500px] h-[500px] bg-[#7b0323]/10 rounded-full blur-[100px] -z-20 pointer-events-none"></div>
+    
+    <div class="absolute inset-0 -z-10 opacity-[0.15] pointer-events-none" style="background-image: radial-gradient(circle at center, #ffffff 1px, transparent 1px); background-size: 32px 32px;"></div>
+    <div class="absolute inset-0 bg-gradient-to-b from-transparent via-[#050505]/50 to-[#050505] -z-10 pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-6 relative z-10">
+        
+        <div class="text-center mb-16 reveal">
+            <h2 class="text-3xl lg:text-5xl font-bold text-white mb-4 tracking-tight">Measurable <span class="text-transparent bg-clip-text bg-gradient-to-r from-white to-[#7b0323]">Business Impact</span></h2>
+            <p class="text-gray-400 max-w-2xl mx-auto text-lg">See how AI transformation scales key performance indicators.<br><span class="text-xs text-gray-500 font-mono mt-2 block">*Metrics represent average simulated/demo performance data.</span></p>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 mb-32">
+            <div class="glass-panel bg-[#0a0a0c]/80 backdrop-blur-xl border border-white/10 p-6 rounded-2xl text-center reveal hover-lift">
+                <div class="text-4xl font-extrabold text-white mb-2"><span class="counter" data-target="90">0</span>%</div>
+                <div class="text-emerald-400 text-xs font-bold mb-2"><i class="fa-solid fa-arrow-down"></i> Drop</div>
+                <p class="text-sm text-gray-400 font-medium">Response Time</p>
+            </div>
+            
+            <div class="glass-panel bg-[#0a0a0c]/95 backdrop-blur-xl border border-[#7b0323]/50 p-6 rounded-2xl text-center reveal delay-100 hover-lift shadow-[0_0_30px_rgba(123,3,35,0.2)] relative overflow-hidden">
+                <div class="absolute inset-0 bg-gradient-to-b from-[#7b0323]/10 to-transparent pointer-events-none"></div>
+                <div class="absolute top-0 inset-x-0 h-[1px] bg-gradient-to-r from-transparent via-[#7b0323] to-transparent"></div>
+                <div class="text-4xl font-extrabold text-[#7b0323] mb-2 relative z-10"><span class="counter" data-target="3">0</span>X</div>
+                <div class="text-emerald-400 text-xs font-bold mb-2 relative z-10"><i class="fa-solid fa-arrow-up"></i> Increase</div>
+                <p class="text-sm text-gray-400 font-medium relative z-10">Lead Qualification</p>
+            </div>
+            
+            <div class="glass-panel bg-[#0a0a0c]/80 backdrop-blur-xl border border-white/10 p-6 rounded-2xl text-center reveal delay-200 hover-lift">
+                <div class="text-4xl font-extrabold text-white mb-2"><span class="counter" data-target="250">0</span>%</div>
+                <div class="text-emerald-400 text-xs font-bold mb-2"><i class="fa-solid fa-arrow-up"></i> Increase</div>
+                <p class="text-sm text-gray-400 font-medium">Appts Booked</p>
+            </div>
+            
+            <div class="glass-panel bg-[#0a0a0c]/80 backdrop-blur-xl border border-white/10 p-6 rounded-2xl text-center reveal delay-300 hover-lift">
+                <div class="text-4xl font-extrabold text-white mb-2"><span class="counter" data-target="70">0</span>%</div>
+                <div class="text-emerald-400 text-xs font-bold mb-2"><i class="fa-solid fa-arrow-up"></i> Boost</div>
+                <p class="text-sm text-gray-400 font-medium">Operational Efficiency</p>
+            </div>
+            
+            <div class="glass-panel bg-[#0a0a0c]/80 backdrop-blur-xl border border-white/10 p-6 rounded-2xl text-center reveal delay-300 hover-lift col-span-2 md:col-span-1">
+                <div class="text-4xl font-extrabold text-white mb-2"><span class="counter" data-target="40">0</span>%</div>
+                <div class="text-emerald-400 text-xs font-bold mb-2"><i class="fa-solid fa-arrow-up"></i> Increase</div>
+                <p class="text-sm text-gray-400 font-medium">Customer Satisfaction</p>
+            </div>
+        </div>
+
+        <div class="max-w-4xl mx-auto text-center reveal relative">
+            
+            <p class="text-gray-500 text-xs font-bold uppercase tracking-[0.25em] mb-8 flex items-center justify-center gap-4">
+                <span class="w-12 h-[1px] bg-gradient-to-r from-transparent to-gray-500"></span>
+                Trusted across high-ticket industries
+                <span class="w-12 h-[1px] bg-gradient-to-l from-transparent to-gray-500"></span>
+            </p>
+            
+            <div class="flex flex-wrap justify-center gap-3 md:gap-4 mb-12">
+                <span class="px-6 py-2.5 rounded-full bg-white/5 backdrop-blur-md border border-white/10 text-gray-300 text-sm font-medium hover:bg-[#7b0323]/10 hover:border-[#7b0323]/50 hover:text-white hover:shadow-[0_0_15px_rgba(123,3,35,0.3)] transition-all duration-300 cursor-default">Real Estate</span>
+                <span class="px-6 py-2.5 rounded-full bg-white/5 backdrop-blur-md border border-white/10 text-gray-300 text-sm font-medium hover:bg-[#7b0323]/10 hover:border-[#7b0323]/50 hover:text-white hover:shadow-[0_0_15px_rgba(123,3,35,0.3)] transition-all duration-300 cursor-default">Healthcare</span>
+                <span class="px-6 py-2.5 rounded-full bg-white/5 backdrop-blur-md border border-white/10 text-gray-300 text-sm font-medium hover:bg-[#7b0323]/10 hover:border-[#7b0323]/50 hover:text-white hover:shadow-[0_0_15px_rgba(123,3,35,0.3)] transition-all duration-300 cursor-default">EdTech</span>
+                <span class="px-6 py-2.5 rounded-full bg-white/5 backdrop-blur-md border border-white/10 text-gray-300 text-sm font-medium hover:bg-[#7b0323]/10 hover:border-[#7b0323]/50 hover:text-white hover:shadow-[0_0_15px_rgba(123,3,35,0.3)] transition-all duration-300 cursor-default">Consulting</span>
+                <span class="px-6 py-2.5 rounded-full bg-white/5 backdrop-blur-md border border-white/10 text-gray-300 text-sm font-medium hover:bg-[#7b0323]/10 hover:border-[#7b0323]/50 hover:text-white hover:shadow-[0_0_15px_rgba(123,3,35,0.3)] transition-all duration-300 cursor-default">Fintech</span>
+                <span class="px-6 py-2.5 rounded-full bg-white/5 backdrop-blur-md border border-white/10 text-gray-300 text-sm font-medium hover:bg-[#7b0323]/10 hover:border-[#7b0323]/50 hover:text-white hover:shadow-[0_0_15px_rgba(123,3,35,0.3)] transition-all duration-300 cursor-default">B2B Services</span>
+                
+            </div>
+            
+            <div class="inline-flex items-center gap-3 bg-[#7b0323]/10 border border-[#7b0323]/30 px-6 py-3.5 rounded-full shadow-[0_0_20px_rgba(123,3,35,0.1)] backdrop-blur-sm">
+                <i class="fa-solid fa-circle-exclamation text-[#7b0323] text-lg animate-pulse"></i>
+                <p class="text-gray-300 text-xs md:text-sm font-medium tracking-wide">Not designed for low-ticket, impulse purchase businesses.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <style>
+        .reveal {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .delay-100 { transition-delay: 100ms; }
+        .delay-200 { transition-delay: 200ms; }
+        .delay-300 { transition-delay: 300ms; }
+
+        .hover-lift {
+            transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), border-color 0.4s ease, box-shadow 0.4s ease;
+        }
+        .hover-lift:hover {
+            transform: translateY(-10px);
+            border-color: rgba(123, 3, 35, 0.5);
+        }
+    </style>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const reveals = document.querySelectorAll("#impact-and-industries .reveal");
+            
+            const observerOptions = {
+                root: null,
+                rootMargin: "0px",
+                threshold: 0.15 // Triggers slightly earlier for a smoother feel
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("active");
+                        
+                        // Counter Logic
+                        const counters = entry.target.querySelectorAll(".counter");
+                        counters.forEach(counter => {
+                            if(counter.getAttribute('data-animated') === 'true') return;
+                            
+                            const target = +counter.getAttribute("data-target");
+                            const duration = 2000;
+                            const increment = target / (duration / 16);
+                            
+                            let current = 0;
+                            const updateCounter = () => {
+                                current += increment;
+                                if (current < target) {
+                                    counter.innerText = Math.ceil(current);
+                                    requestAnimationFrame(updateCounter);
+                                } else {
+                                    counter.innerText = target;
+                                    counter.setAttribute('data-animated', 'true');
+                                }
+                            };
+                            updateCounter();
+                        });
+                        
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            reveals.forEach(reveal => {
+                observer.observe(reveal);
+            });
+        });
+    </script>
+</section>
+
+</main>
+<section id="pilot" class="py-32 px-6 relative overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-brand-wine/5 pointer-events-none"></div>
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-brand-wine/10 rounded-full blur-[120px] pointer-events-none"></div>
+    
+    <div class="max-w-4xl mx-auto text-center relative z-10">
+        <div class="inline-block p-[1px] rounded-2xl bg-gradient-to-br from-brand-wine via-red-500 to-transparent mb-10 shadow-[0_0_20px_rgba(123,3,35,0.3)] animate-pulse" data-aos="zoom-in">
+            <div class="bg-black rounded-xl px-6 py-2 relative">
+                <div class="absolute inset-0 bg-brand-wine/10 rounded-xl"></div>
+                <span class="text-xs font-bold uppercase tracking-widest text-white relative z-10">Exclusive Pilot Program</span>
+            </div>
+        </div>
+
+        <h2 class="text-4xl md:text-6xl font-display font-bold text-white mb-16 tracking-tight leading-tight" data-aos="fade-up">
+            Results in <span class="italic text-brand-wine relative inline-block">
+                07 Days.
+                <svg class="absolute -bottom-2 left-0 w-full h-3 text-brand-wine opacity-60" viewBox="0 0 100 10" preserveAspectRatio="none">
+                    <path d="M0 5 Q 50 10 100 5" stroke="currentColor" stroke-width="2" fill="none" />
+                </svg>
+            </span>
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+            <div class="p-8 rounded-3xl bg-zinc-900/50 border border-zinc-800 hover:border-brand-wine/30 transition-all duration-300 hover:-translate-y-2 group" data-aos="fade-up" data-aos-delay="0">
+                <div class="text-4xl font-black text-white mb-2 group-hover:text-brand-wine transition-colors">100</div>
+                <div class="text-[10px] text-zinc-500 font-bold uppercase tracking-widest">AI Qualification Calls</div>
+            </div>
+            <div class="p-8 rounded-3xl bg-zinc-900/50 border border-zinc-800 hover:border-brand-wine/30 transition-all duration-300 hover:-translate-y-2 group" data-aos="fade-up" data-aos-delay="100">
+                <div class="text-4xl font-black text-white mb-2 group-hover:text-brand-wine transition-colors">07</div>
+                <div class="text-[10px] text-zinc-500 font-bold uppercase tracking-widest">Days Live Deployment</div>
+            </div>
+            <div class="p-8 rounded-3xl bg-gradient-to-br from-brand-wine/10 to-transparent border border-brand-wine/30 hover:shadow-[0_0_30px_rgba(123,3,35,0.15)] transition-all duration-300 hover:-translate-y-2" data-aos="fade-up" data-aos-delay="200">
+                <div class="text-4xl font-black text-brand-wine mb-2">18-20</div>
+                <div class="text-[10px] text-brand-wine font-bold uppercase tracking-widest">Appointments Booked</div>
+            </div>
+        </div>
+
+        <div class="bg-zinc-900/30 rounded-3xl p-8 border border-white/5 mb-16 backdrop-blur-sm" data-aos="fade-up">
+            <div class="grid md:grid-cols-2 gap-y-5 gap-x-12 text-left max-w-3xl mx-auto text-sm text-zinc-400">
+                
+                <div class="flex items-center gap-3 group">
+                    <i class='bx bxs-check-circle text-emerald-500 text-lg group-hover:scale-110 transition-transform'></i> 
+                    <span class="group-hover:text-zinc-200 transition-colors">100 AI Qualification calls (real leads)</span>
+                </div>
+
+                <div class="flex items-center gap-3 group">
+                    <i class='bx bxs-rocket text-brand-wine text-lg group-hover:scale-110 transition-transform'></i> 
+                    <span class="group-hover:text-white font-bold transition-colors">Train & Launch within 24-48 Hours</span>
+                </div>
+
+                <div class="flex items-center gap-3 group">
+                    <i class='bx bxs-check-circle text-emerald-500 text-lg group-hover:scale-110 transition-transform'></i> 
+                    <span class="group-hover:text-zinc-200 transition-colors">7-day live deployment</span>
+                </div>
+
+                <div class="flex items-center gap-3 group">
+                    <i class='bx bxs-check-circle text-emerald-500 text-lg group-hover:scale-110 transition-transform'></i> 
+                    <span class="group-hover:text-zinc-200 transition-colors">Automated Follow-up Setup</span>
+                </div>
+
+                <div class="flex items-center gap-3 group">
+                    <i class='bx bxs-check-circle text-emerald-500 text-lg group-hover:scale-110 transition-transform'></i> 
+                    <span class="group-hover:text-zinc-200 transition-colors">Custom scripts tailored to your business</span>
+                </div>
+
+                <div class="flex items-center gap-3 group">
+                    <i class='bx bxs-check-circle text-emerald-500 text-lg group-hover:scale-110 transition-transform'></i> 
+                    <span class="group-hover:text-zinc-200 transition-colors">Full Call Transparency (Recordings)</span>
+                </div>
+
+                <div class="flex items-center gap-3 group">
+                    <i class='bx bxs-check-circle text-emerald-500 text-lg group-hover:scale-110 transition-transform'></i> 
+                    <span class="group-hover:text-zinc-200 transition-colors">CRM integration & Dashboard</span>
+                </div>
+
+                <div class="flex items-center gap-3 group">
+                    <i class='bx bxs-check-circle text-emerald-500 text-lg group-hover:scale-110 transition-transform'></i> 
+                    <span class="group-hover:text-zinc-200 transition-colors">Dedicated success manager included</span>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="flex flex-col md:flex-row justify-center gap-6 mb-12" data-aos="fade-up">
+            <a href="https://dashboard.creativplus.in" class="relative group overflow-hidden bg-brand-wine text-white px-10 py-5 rounded-2xl font-bold text-sm uppercase tracking-widest shadow-[0_10px_40px_-10px_rgba(123,3,35,0.5)] transition-all hover:scale-105 hover:shadow-[0_20px_60px_-15px_rgba(123,3,35,0.6)]">
+                <span class="relative z-10 flex items-center gap-2">Start Pilot Program <i class='bx bx-right-arrow-alt text-lg'></i></span>
+                <div class="absolute inset-0 bg-gradient-to-r from-red-600 to-brand-wine opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            </a>
+            <a href="contact-us.html#contact-section" class="group px-10 py-5 rounded-2xl border border-zinc-700 hover:border-zinc-500 hover:bg-white/5 text-white font-bold text-sm uppercase tracking-widest transition-all flex items-center justify-center gap-2">
+                Talk to Sales <i class='bx bx-message-square-detail text-zinc-500 group-hover:text-white transition-colors'></i>
+            </a>
+        </div>
+        
+        <div class="inline-block relative group" data-aos="fade-in" data-aos-delay="300">
+            <div class="absolute -inset-0.5 bg-gradient-to-r from-brand-wine/50 to-zinc-800/50 rounded-xl blur opacity-30 group-hover:opacity-60 transition duration-500"></div>
+            <div class="relative bg-[#0a0a0c] p-5 rounded-xl border border-white/5 max-w-2xl mx-auto">
+                <div class="flex items-start justify-center gap-3">
+                    <i class='bx bx-info-circle text-brand-wine text-xl shrink-0 mt-0.5 animate-pulse'></i>
+                    <p class="text-xs text-zinc-400 font-medium leading-relaxed text-left">
+                        <span class="text-brand-wine font-bold uppercase text-[10px] tracking-wider block mb-1">Important Consideration</span>
+                        Results depend on lead quality, offer strength, and market readiness. <span class="text-white">Not suitable for low-ticket impulse purchases.</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+        
+<section class="py-24 px-6 bg-black relative">
+    <div class="max-w-5xl mx-auto">
+        <div class="premium-card p-10 md:p-16 rounded-[3rem] border border-zinc-800 bg-gradient-to-br from-zinc-900/40 to-black flex flex-col md:flex-row items-center gap-12 relative overflow-hidden" data-aos="fade-up">
+            
+            <div class="absolute top-0 left-0 w-64 h-64 bg-brand-wine/10 blur-[100px] rounded-full pointer-events-none"></div>
+
+            <div class="relative group">
+    <div class="absolute -inset-1 bg-gradient-to-br from-brand-wine to-transparent rounded-full blur opacity-40 group-hover:opacity-70 transition duration-500"></div>
+    
+    <div class="relative w-40 h-40 md:w-56 md:h-56 rounded-full border-2 border-zinc-800 bg-zinc-950 flex-shrink-0 overflow-hidden shadow-2xl">
+        <img src="kishan.jpg" alt="Kishan Singh" oncontextmenu="return false;" draggable="false" class="w-full h-full object-cover hover:scale-110 transition-transform duration-700 ease-in-out select-none">
+    </div>
+</div>
+
+            <div class="text-center md:text-left relative z-10">
+                <div class="inline-block mb-3">
+                    <span class="text-brand-wine font-black text-[10px] uppercase tracking-[0.2em] border-b border-brand-wine/30 pb-1">The Architect</span>
+                </div>
+                
+                <h3 class="text-4xl md:text-5xl font-display font-bold text-white mb-6 italic tracking-tight">
+                    Kishan Singh
+                </h3>
+                
+                <p class="text-zinc-400 text-lg leading-relaxed mb-8 max-w-2xl">
+                    "Arpit isn't just code; he's the manifestation of our vision to build a 24/7 autonomous workforce for India's MSMEs. We're here to replace bottlenecks with scalable reasoning."
+                </p>
+                
+                <div class="flex flex-wrap justify-center md:justify-start gap-3 mb-10">
+                    <div class="flex items-center gap-2 px-4 py-2 rounded-full bg-zinc-900/80 border border-zinc-700/50 backdrop-blur-sm">
+                        <i class='bx bxs-check-shield text-emerald-500'></i>
+                        <span class="text-[10px] font-bold text-zinc-300 uppercase tracking-wider">AI Strategist</span>
+                    </div>
+                    <div class="flex items-center gap-2 px-4 py-2 rounded-full bg-zinc-900/80 border border-zinc-700/50 backdrop-blur-sm">
+                        <i class='bx bxs-microphone text-brand-wine'></i>
+                        <span class="text-[10px] font-bold text-zinc-300 uppercase tracking-wider">THF Podcast Host</span>
+                    </div>
+                </div>
+
+                <div class="flex justify-center md:justify-start gap-6 border-t border-white/5 pt-8">
+                    <a href="https://www.linkedin.com/in/kishans-ai/" target="_blank" class="text-zinc-500 hover:text-[#0077b5] transition-colors duration-300 text-2xl transform hover:-translate-y-1">
+                        <i class='bx bxl-linkedin'></i>
+                    </a>
+                    <a href="https://www.instagram.com/kishans.ai" target="_blank" class="text-zinc-500 hover:text-[#E1306C] transition-colors duration-300 text-2xl transform hover:-translate-y-1">
+                        <i class='bx bxl-instagram'></i>
+                    </a>
+                    <a href="https://www.youtube.com/@kishans_ai" target="_blank" class="text-zinc-500 hover:text-[#FF0000] transition-colors duration-300 text-2xl transform hover:-translate-y-1">
+                        <i class='bx bxl-youtube'></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+        
+        
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            offset: 100,
+            once: true,
+            easing: 'ease-out-cubic'
+        });
+
+        // Initialize Swiper (Slider)
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+
+        // ==========================================
+        // Premium Mobile Menu Logic
+        // ==========================================
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuBackdrop = document.getElementById('menu-backdrop');
+        const closeMenuBtn = document.getElementById('close-menu-btn');
+
+        function toggleMenu() {
+            mobileMenu.classList.toggle('open');
+            menuBackdrop.classList.toggle('open');
+            
+            if (mobileMenu.classList.contains('open')) {
+                document.body.style.overflow = 'hidden';
+            } else {
+                document.body.style.overflow = 'auto';
+            }
+        }
+
+        mobileMenuBtn.addEventListener('click', toggleMenu);
+        closeMenuBtn.addEventListener('click', toggleMenu);
+        menuBackdrop.addEventListener('click', toggleMenu);
+
+        // Header Background on Scroll
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.classList.add('border-white/5');
+            }
+        });
+    </script>
+ <footer class="bg-black border-t border-zinc-900 pt-20 pb-10">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+                
+                <div class="space-y-6">
+                    <a href="index.html" class="flex items-center z-50">
+                        <img src="logo.svg" alt="Creativ Plus" class="h-10 md:h-12 w-auto object-contain">
+                    </a>
+                    <p class="text-zinc-500 text-sm leading-relaxed">
+                        Building India’s AI Workforce for MSMEs & SMEs. Deploying 24/7 Autonomous Agentic AI Agents to scale your operations.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="https://www.linkedin.com/company/creativplus/" target="_blank" class="w-10 h-10 rounded-full bg-zinc-900 border border-zinc-800 flex items-center justify-center text-zinc-400 hover:text-[#7b0323] hover:border-[#7b0323] transition-all"><i class='bx bxl-linkedin'></i></a>
+                        <a href="https://www.instagram.com/creativplus_official" target="_blank" class="w-10 h-10 rounded-full bg-zinc-900 border border-zinc-800 flex items-center justify-center text-zinc-400 hover:text-[#7b0323] hover:border-[#7b0323] transition-all"><i class='bx bxl-instagram'></i></a>
+                        <a href="https://wa.me/919155567700" target="_blank" class="w-10 h-10 rounded-full bg-zinc-900 border border-zinc-800 flex items-center justify-center text-zinc-400 hover:text-emerald-500 hover:border-emerald-500 transition-all"><i class='bx bxl-whatsapp'></i></a>
+                    </div>
+                </div>
+
+                <div>
+                    <h5 class="text-white font-bold mb-6 uppercase text-xs tracking-[0.2em]">AI Platforms</h5>
+                    <ul class="space-y-4">
+                        <li><a href="arpit.html" class="text-zinc-400 hover:text-white text-sm transition-colors flex items-center gap-2"><span class="w-1 h-1 rounded-full bg-[#7b0323]"></span> Arpit AI Voice</a></li>
+                        <li><a href="arpit_demo.html" class="text-zinc-400 hover:text-white text-sm transition-colors flex items-center gap-2"><span class="w-1 h-1 rounded-full bg-[#7b0323]"></span> Arpit Demo</a></li>
+                        <li><a href="https://dashboard.creativplus.in" class="text-zinc-400 hover:text-white text-sm transition-colors flex items-center gap-2"><span class="w-1 h-1 rounded-full bg-[#7b0323]"></span> Agent Dashboard</a></li>
+                        <li><a href="pricing.html" class="text-zinc-400 hover:text-white text-sm transition-colors flex items-center gap-2"><span class="w-1 h-1 rounded-full bg-[#7b0323]"></span> Pricing</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h5 class="text-white font-bold mb-6 uppercase text-xs tracking-[0.2em]">Quick Links</h5>
+                    <ul class="space-y-4 text-sm">
+                        <li><a href="index.html" class="text-zinc-400 hover:text-white transition-colors">Home</a></li>
+                        <li><a href="contact-us.html" class="text-zinc-400 hover:text-white transition-colors">Contact Us</a></li>
+                        <li><a href="privacy-policy.html" class="text-zinc-400 hover:text-white transition-colors">Privacy Policy</a></li>
+                        <li><a href="terms-conditions.html" class="text-zinc-400 hover:text-white transition-colors">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h5 class="text-white font-bold mb-6 uppercase text-xs tracking-[0.2em]">System Status</h5>
+                    <div class="bg-zinc-900/50 border border-zinc-800 p-5 rounded-2xl">
+                        <div class="flex items-center gap-3 mb-3">
+                            <span class="relative flex h-3 w-3">
+                                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                                <span class="relative inline-flex rounded-full h-3 w-3 bg-emerald-500"></span>
+                            </span>
+                            <span class="text-emerald-400 text-xs font-bold uppercase tracking-widest">All Systems Operational</span>
+                        </div>
+                        <p class="text-[11px] text-zinc-500 leading-tight">
+                            Our autonomous agents are currently processing leads across 12+ industry sectors in India.
+                        </p>
+                    </div>
+                    <a href="refund-policy.html" class="inline-block mt-6 text-zinc-600 hover:text-[#7b0323] text-xs transition-colors italic underline">Refund Policy</a>
+                </div>
+            </div>
+
+            <div class="pt-8 border-t border-zinc-900 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-zinc-600 text-[11px] uppercase tracking-widest">
+                    &copy; 2026 Creativ Plus. Built for India's AI Revolution.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
